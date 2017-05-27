@@ -1,0 +1,12 @@
+
+title: SONOFY
+email: ''
+description: 
+baseurl: ''
+url: ''
+twitter_username: jekyllrb
+markdown: kramdown
+theme: minima
+exclude:
+  - Gemfile
+  - Gemfile.lock

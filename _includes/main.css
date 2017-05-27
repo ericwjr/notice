@@ -1,0 +1,98 @@
+/*body{
+  background-image:url({{site.baseurl}}/sonofy.jpg);
+}*/
+header{
+  position:absolute !important;
+  width:100%;
+  top:0;
+  left:0;
+  z-index:99999 !important;
+  padding:15px 25px;
+  font-size:1.5em;
+  color:#fff; 
+  text-transform:uppercase;
+}
+header a,
+header .fa{
+  cursor:pointer;
+  color:inherit;
+}
+header a:hover{
+  color:#f0f0f0;
+  text-decoration:none;
+}
+.toggle-top-menu{
+  position:absolute;
+  right:25px;
+  top:15px;
+  width:50px;
+}
+.item{
+  position:relative;
+}
+.hold{
+  position:absolute;
+  left:25px;
+  bottom:45px;
+  z-index:99;
+  max-width:240px;
+  color:#fff;
+}
+.hold h1,
+.hold a,
+.hold p{
+  color:inherit;
+}
+.hold h1{
+  font-size:3em;
+}
+.carousel-fade .carousel-inner .item {
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+html,
+body,
+.carousel,
+.carousel-inner,
+.carousel-inner .item {
+  height: 100%;
+}
+.item:nth-child(1) {
+  background: rgba(0,0,0,0.9);
+}
+.item:nth-child(2) {
+  background: rgba(0,155,55,0.9);
+}
+.item:nth-child(3) {
+  background: rgba(0,155,255,0.9)
+}
+.item:nth-child(4){
+  background: rgba(155,0,255,0.9); 
+}
+
+@media screen and (min-width:567px){
+ .hold{
+   max-width:400px;
+ } 
+}
