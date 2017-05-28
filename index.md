@@ -10,13 +10,16 @@ layout: default
   </ol>
   <div class='carousel-inner'>
     {% for slide in site.data.slides %}
-      <div class='item {% if forloop.index == 1 %} {{'active'}}{%endif%}'>
-        <div class = 'hold'>
-        <h1>{{ slide.heading }}</h1>
-        <a> 
-          {{ slide.sub-heading }}
-          <i class="fa fa-arrow-circle-o-right" aria-hidden = 'true'></i>
-        </a>
+      <div class='item {% if forloop.index == 1 %} {{'active'}}{% endif %}'>
+        <video src = '{{site.baseurl}}/assets/video{{ forloop.index }}.mp4' autoplay loop></video>
+        <div class = 'shadow'>
+          <div class = 'hold'>
+          <h1>{{ slide.heading }}</h1>
+          <a> 
+            {{ slide.sub-heading }}
+            <i class="fa fa-arrow-circle-o-right" aria-hidden = 'true'></i>
+          </a>
+          </div>
         </div>
       </div>
     {% endfor %}
