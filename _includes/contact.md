@@ -1,13 +1,15 @@
-<form>
-  <div class = 'funga'>
-    <select name="Subject" id="Subject" class="select subject" placeholder="Choose Subject" required>
-    {% for option in site.data.options %}
-      <option value = '{{option}}'>{{ option }}</option>
-    {% endfor %}
-  </select>
-  </div>
-  <input type = 'text' name = 'fname' placeholder = 'First Name' required>
-  <input type = 'email' name = 'email' placeholder = 'Email Address' required>
-  <textarea></textarea>
-  <input type = 'submit' value = 'submit'>
-</form>
+<div class = 'form-widget'>
+  <form method = 'post'>
+    <div class = 'funga'>
+      <select name='Subject' id='Subject' class='select subject' placeholder='Choose Subject' required>
+      {% for option in site.data.options %}
+        <option value = '{{option}}'>{{ option }}</option>
+      {% endfor %}
+    </select>
+    </div>
+    <input type = 'text' name = 'fname' placeholder = 'First Name' required>
+    <input type = 'email' name = 'email' placeholder = 'Email Address' required>
+    <textarea placeholder = 'Leave us a further details'></textarea>
+    <input type = 'submit' value = 'submit'>
+  </form>
+</div>

@@ -25,3 +25,4 @@ layout: default
     {% endfor %}
   </div>
 </div>
+{% include contact.md %}
