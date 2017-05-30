@@ -3,7 +3,13 @@
     interval: 7500
   });
   $('.fa-comments').on('click', function () {
-     $('.form-widget').addClass('flip-open');
+     $('.form-widget').toggleClass('flip-open');
+  });
+  $('.form-widget').on('click', function(e) {
+    if (e.target === this) {
+        $('.form-widget').toggleClass('flip-open');
+        console.log( 'clicked the foobar' );
+    }
   });
   mail = $('#form');
     widget = $('.widget');

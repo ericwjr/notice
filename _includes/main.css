@@ -3,6 +3,9 @@
   margin:0;
   padding:0;
 }
+video{
+  height:100vh;
+}
 header{
   position:absolute !important;
   width:100%;
@@ -80,8 +83,9 @@ header a:hover{
   z-index: 2;
 }
 ol.carousel-indicators{
+  position:relative;
+  position:absolute;
   right:25px;
-  left:67%;
   bottom:30px;
   width:150px;
   margin-left:0;
@@ -136,6 +140,7 @@ body,
   z-index:999;
 }
 .flip-open{
+  cursor:pointer;
   position:fixed;
   top:0;
   bottom:0;
@@ -150,6 +155,18 @@ body,
 @keyframes spin {
   0% { transform:rotate(0deg); }
   100%{ transform:rotate(360deg); }
+}
+@keyframes grow{
+  0% {height:0;}
+  100% {height:initial;}
+}
+@keyframes show{
+  0%{
+    opacity:0;
+  }
+  100%{
+    opacity:1;
+  }
 }
 .form{min-height:72vh;}
 .widget{
@@ -188,8 +205,11 @@ body,
 }
 form{
   padding:25px;
-  width:100%;
+  width:90%;
   max-width:450px;
+  background:#fff;
+  overflow:hidden;
+  animation: grow 0.5s ease-in-out;
 }
 textarea{
   min-height:90px;
@@ -206,6 +226,8 @@ input, textarea{
   font-size:1.05em;
   margin:25px auto;
   border-radius:5px;
+  opacity:0;
+  animation: show 1s 0.75s ease-out forwards;
 }
 input:hover,
 textarea:hover,
@@ -240,7 +262,9 @@ input[type=submit]{
   display: block;
   width:100%;
   margin:0 auto;
+  opacity:0;
   user-select: none;
+  animation: show 1s 0.75s ease-out forwards;
 }
 .funga select {
   display: none;
