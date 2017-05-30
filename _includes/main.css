@@ -265,6 +265,7 @@ input[type=submit]{
   opacity:0;
   user-select: none;
   animation: show 1s 0.75s ease-out forwards;
+  z-index:9999;
 }
 .funga select {
   display: none;
