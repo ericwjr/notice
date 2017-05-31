@@ -2,7 +2,7 @@
 layout: default
 --- 
 <div id='carousel' class='carousel slide carousel-fade' data-ride='carousel'>
-  <ol class='carousel-indicators'>
+  <ol class='carousel-indicators' id = 'indicate'>
     {% for f in site.data.slides %}
       {% assign x = forloop.index | minus: 1 %}
       <li data-target='#carousel' data-slide-to='{{ x }}' {% if x == 0 %} class='active' {% endif %}></li>

@@ -13,13 +13,16 @@ header{
   left:0;
   z-index:998 !important;
   padding:15px 25px;
-  font-size:1.75em;
+  font-size:1.6em;
   color:#fff; 
   text-transform:uppercase;
+}
+header,
+header img{
   vertical-align:text-top;
 }
 header img{
-  width:30px;
+  width:24px;
   margin-right:7.5px;
 }
 header a,
@@ -82,10 +85,9 @@ header a:hover{
 .carousel-fade .carousel-control {
   z-index: 2;
 }
-ol.carousel-indicators{
-  position:relative;
+ol#indicate.carousel-indicators{
   position:absolute;
-  right:25px;
+  right:25px !important;
   bottom:30px;
   width:150px;
   margin-left:0;

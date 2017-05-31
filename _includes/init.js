@@ -1,7 +1,10 @@
 (function(){
+  // move the slides
   $('.carousel').carousel({
     interval: 7500
   });
+
+  //toggle the contact form in and out of view
   $('.fa-comments').on('click', function () {
      $('.form-widget').toggleClass('flip-open');
   });
@@ -11,37 +14,40 @@
         console.log( 'clicked the foobar' );
     }
   });
+
+  //collect form info
   mail = $('#form');
-    widget = $('.widget');
+    widget = $('.form-widget');
     mail.submit(function(e) {
       guest = document.getElementById('name').value.toLowerCase();
       mail = document.getElementById('email').value.toLowerCase();
       message = document.getElementById('message').value.toLowerCase();
       e.preventDefault();
         $.ajax({
-          url: '//formspree.io/info@funweirdscience.com',
+          url: '//formspree.io/{{site.email}}',
           method: 'POST',
           data: $(this).serialize(),
           dataType: 'json',
           beforeSend: function() {
-            widget.html(`
+            mail.html(`
               <h2>Sending</h2>
               <span class = 'spinner'></span>
             `);
           },
           success: function(data) {
-            widget.html(`
+            mail.html(`
               <div class = "confirm">
                 <h2 class = 'mark capital'>Hello ${guest}</h2>
-                <div class = 'big-icon  success'><i class = 'icon icon-cool'></i></div>
+                <div  class = 'response success'><i class = 'fa fa-thumbs-up' aria-hidden = 'true'></i></div>
                 <p>Great to hear from you. We will get back to you asap.</p>
               </div>
             `);
           },
           error: function(err) {
-            widget.html(`
+            mail.html(`
               <div class = "confirm">
-                <h2 class = 'error'>There was problem.</h2>
+                <div class = 'response error'><i class = 'fa fa-exclamation-circle' aria-hidden = 'true'></i></div>
+                <p>There was problem.</p>
                 <p>Refrsh and try again.</p>
               </div>
             `);
@@ -49,11 +55,7 @@
         });
     });
 
-    $('.previous').on('click', function() {
-      window.history.back();
-      console.log('I want to go back');
-    });
-
+  // control the form select input section
   $(".select").each(function() {
       var classes = $(this).attr("class"),
       id      = $(this).attr("id"),
