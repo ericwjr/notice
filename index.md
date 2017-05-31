@@ -14,6 +14,10 @@ layout: default
         <video src = '{{site.baseurl}}/assets/video{{ forloop.index }}.mp4' autoplay loop></video>
         <div class = 'shadow'>
           <div class = 'hold'>
+          <a class = 'download flex'>
+            <i class="fa fa-android" aria-hidden = 'true'></i>
+            <p>DOWNLOAD MOBILE APP</p>
+          </a>
           <h1>{{ slide.heading }}</h1>
           <a> 
             {{ slide.sub-heading }}
