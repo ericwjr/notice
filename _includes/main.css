@@ -5,7 +5,7 @@
   padding:0;
 }
 video{
-  min-height:100vh !important;
+  object-fit: fill;
 }
 header{
   position:absolute !important;
@@ -392,9 +392,4 @@ input[type=submit]{
  .hold{
    max-width:400px;
  } 
-}
-@media screen and (min-width:769px){
-  video{
-    width:100%;
-  }
 }
