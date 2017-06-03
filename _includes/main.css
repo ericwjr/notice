@@ -1,5 +1,6 @@
 *{
-  box-sizing:border-box;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
   margin:0;
   padding:0;
 }
@@ -49,9 +50,7 @@ header a:hover{
   color:#fff;
   animation: stand 1.8s ease-in  forwards;
 }
-.hold h1,
-.hold a,
-.hold p{
+h1,a,p{
   color:inherit;
 }
 .hold h1{
@@ -91,8 +90,10 @@ header a:hover{
 }
 .download{
   flex-direction:column;
-  width:225px;
+  width:175px;
   cursor:pointer;
+  padding:15px;
+  border:3px solid #111;
 }
 .download p{
   font-size:1.25em;
@@ -391,7 +392,7 @@ input[type=submit]{
    max-width:400px;
  } 
 }
-@media screen and (min-width:992px){
+@media screen and (min-width:769px){
   video{
     width:100%;
   }
