@@ -1,6 +1,8 @@
 ---
 layout: default
---- 
+published: true
+---
+ 
 <div id='carousel' class='carousel slide carousel-fade' data-ride='carousel'>
   <ol class='carousel-indicators' id = 'indicate'>
     {% for f in site.data.slides %}
@@ -14,7 +16,7 @@ layout: default
         <video src = '{{site.baseurl}}/assets/video{{ forloop.index }}.mp4' autoplay loop></video>
         <div class = 'shadow'>
           <div class = 'hold'>
-          <a class = 'download flex'>
+          <a class = 'download flex' href = 'https://play.google.com/store/apps/details?id=co.sonofy.smartroomsolutions&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' target = '_blank'>
             <i class="fa fa-android" aria-hidden = 'true'></i>
             <p>DOWNLOAD MOBILE APP</p>
           </a>
