@@ -110,7 +110,7 @@ body,
 .carousel,
 .carousel-inner,
 .carousel-inner .item {
-  height: 100%;
+  height: 100vh !important;
 }
 .shadow{
   position:absolute;
