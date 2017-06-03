@@ -143,3 +143,6 @@
     return this;
   };
 })(jQuery);
+
+// Hook bswipe to carousel
+$('.carousel').bcSwipe({ threshold: 50 });
