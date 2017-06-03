@@ -146,3 +146,13 @@
 
 // Hook bswipe to carousel
 $('.carousel').bcSwipe({ threshold: 50 });
+
+//lazy load google font
+  (function() {
+    var font = document.createElement('link');
+    font.type = 'text/css'; 
+    font.rel = 'stylesheet';
+    font.href = 'https://fonts.googleapis.com/css?family=Josefin+Sans:400,700';
+    var s = document.getElementsByTagName('link')[0]; 
+    s.parentNode.insertBefore(font, s);
+  })();
