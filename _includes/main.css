@@ -116,6 +116,8 @@ body,
 .carousel-inner,
 .carousel-inner .item {
    min-height:100vh !important;
+   max-height:100vh !important;
+   overflow:hidden;
 }
 .shadow{
   position:absolute;
