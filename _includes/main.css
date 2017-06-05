@@ -94,7 +94,7 @@ h1,a,p{
   position:absolute;
   right:25px !important;
   bottom:40px;
-  width:150px;
+  width:150px !important;
   margin-left:0;
 }
 .download{
