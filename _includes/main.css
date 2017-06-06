@@ -34,7 +34,8 @@ header .fa{
   cursor:pointer;
   color:inherit;
 }
-a:hover{
+a:hover,
+a:focus{
   color:#f0f0f0;
   text-decoration:none;
 }

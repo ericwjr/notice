@@ -1,8 +1,11 @@
 (function(){
   // move the slides
   $('.carousel').carousel({
-    interval: 7500
+    interval: 9000
   });
+
+  // Hook bswipe to carousel
+  $('.carousel').bcSwipe({ threshold: 50 });
 
   //toggle the contact form in and out of view
   $('.fa-comments').on('click', function () {
@@ -143,9 +146,6 @@
     return this;
   };
 })(jQuery);
-
-// Hook bswipe to carousel
-$('.carousel').bcSwipe({ threshold: 50 });
 
 //lazy load google font
   (function() {
