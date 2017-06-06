@@ -1,6 +1,4 @@
 *{
-  box-sizing: border-box;
-  font-family: 'Josefin Sans', sans-serif;
   margin:0;
   padding:0;
 }
@@ -87,14 +85,8 @@ h1,a,p{
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
 }
-.carousel-fade .carousel-control {
-  z-index: 2;
-}
 #indicate{
-  position:absolute;
-  right:25px !important;
   bottom:40px;
-  width:150px !important;
   margin-left:0;
 }
 .download{
@@ -107,6 +99,7 @@ h1,a,p{
 .download p{
   font-size:1.25em;
   margin:7.5px 0;
+  text-align:center;
 }
 .fa-android{
   font-size:5em;
@@ -115,8 +108,9 @@ body,
 .carousel,
 .carousel-inner,
 .carousel-inner .item {
-   min-height:100vh !important;
-   max-height:100vh !important;
+   min-height:100vh;
+   font-family: 'Josefin Sans', sans-serif !important;
+   max-height:100vh;
    overflow:hidden;
 }
 .shadow{
