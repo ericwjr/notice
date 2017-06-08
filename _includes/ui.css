@@ -3,7 +3,7 @@
 }
 
 body {
-  background-image: url("http://androidcentral.us/wp-content/uploads/2014/06/low-poly-texture-18.png?541271");
+  background-image: url({{site.baseurl}}/assets/wall.png);
 }
 
 .iphone {
