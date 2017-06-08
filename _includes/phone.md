@@ -6,7 +6,7 @@
     </div>
     <div class="top-bar"></div>
     <div class="iphone-screen">
-      <img src="http://www.planwallpaper.com/static/images/Awesome-iPhone-Wallpapers.jpg" alt="" />
+      <img src="{{ site.baseurl }}/IMG-002.png" alt="" />
     </div>
     <div class="buttons">
       <span class="on-off"></span>
