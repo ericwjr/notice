@@ -1,4 +1,5 @@
-<style>{% include ui.css %}</style><div class="iphone">
+<style>{% include ui.css %}</style>
+<div class="iphone">
     <div class="iphone-top">
       <span class="camera"></span>
       <span class="sensor"></span>
@@ -18,5 +19,4 @@
     <div class="iphone-bottom">
       <span></span>
     </div>
-  </div>
 </div>
