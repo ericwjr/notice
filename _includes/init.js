@@ -25,7 +25,7 @@
   $('.demo').on('click', function(e) {
   if (e.target === this) {
       $('.demo').toggleClass('flip-open');
-      $('.hold').toggleClass('.blind');
+      $('.hold').toggleClass('blind');
   }
   });
 
