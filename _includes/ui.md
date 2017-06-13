@@ -7,7 +7,7 @@
       </div>
       <div class="top-bar"></div>
       <div class="iphone-screen">
-        <img src="{{ site.baseurl }}/IMG_0002.png" alt="" />
+        <img src="{{ site.baseurl }}/assets/swipe1.png" alt="" />
       </div>
       <div class="buttons">
         <span class="on-off"></span>
