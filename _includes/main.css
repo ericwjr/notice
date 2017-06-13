@@ -162,7 +162,7 @@ body,
   z-index:99;
 }
 .blind{
-  opacity:0.1 !important;
+  opacity:0 !important;
 }
 .flip-open{
   cursor:pointer;
