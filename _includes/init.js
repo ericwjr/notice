@@ -21,6 +21,13 @@
     }
   });
 
+  $('.demo').on('click', function(e) {
+  if (e.target === this) {
+      $('.demo').toggleClass('flip-open');
+  }
+  });
+
+
   //collect form info
   mail = $('#form');
     widget = $('.form');
