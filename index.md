@@ -20,7 +20,7 @@ published: true
             <p>DOWNLOAD MOBILE APP</p>
           </a>
           <h1>{{ slide.heading }}</h1>
-          <a> 
+          <a class = 'ui'> 
             {{ slide.sub-heading }}
             <i class="fa fa-arrow-circle-o-right" aria-hidden = 'true'></i>
           </a>
@@ -31,3 +31,4 @@ published: true
   </div>
 </div>
 <section>{% include contact.md %}<section>
+<section class = 'demo'>{% include ui.md %}</section>

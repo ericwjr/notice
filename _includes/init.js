@@ -5,19 +5,25 @@
   });
 
   //toggle the contact form in and out of view
-  $('.fa-comments').on('click', function () {
-     $('.form-widget').toggleClass('flip-open');
+  $('.toggle-top-menu').on('click', function () {
+     $('.fmodal').toggleClass('flip-open');
   });
-  $('.form-widget').on('click', function(e) {
+
+  //toggle the demo ui modalin and out of view
+  $('.ui').on('click', function () {
+     $('.demo').toggleClass('flip-open');
+  });
+
+ //toggle out of view the modals
+  $('.fmodal').on('click', function(e) {
     if (e.target === this) {
-        $('.form-widget').toggleClass('flip-open');
-        console.log( 'clicked the foobar' );
+        $('.fmodal').toggleClass('flip-open');
     }
   });
 
   //collect form info
   mail = $('#form');
-    widget = $('.form-widget');
+    widget = $('.form');
     mail.submit(function(e) {
       guest = document.getElementById('name').value.toLowerCase();
       mail = document.getElementById('email').value.toLowerCase();
