@@ -1,0 +1,19 @@
+- before: 
+  - heading: You are in Control
+    text: You control what apps can notify you and how you want to be notified...speakers, lights, etc
+
+  - heading: In-home PA System
+    text: Save your voice and send your messages through your home's speakers
+
+  - heading: Smart
+    text: Notice automatically enables when on your home wifi and disables when you leave
+
+- after:
+  - heading: Quick Access
+    text: Quickly pause or broadcast from the app's notification actions
+
+  - heading: Room by Room Control
+    text: Only broadcast notifications to the rooms you choose
+
+  - heading: Personalize
+    text: Customize notification with custom tones
