@@ -1,4 +1,4 @@
 ---
 layout: default
 ---
-{% include phone.md %}
+{% include ui.md %}
