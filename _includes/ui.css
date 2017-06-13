@@ -128,11 +128,11 @@
 }
 .swipe{
   position:absolute;
-  transform:rotateX(48deg) rotateZ(-6deg);
+  transform:rotateX(45deg) rotateZ(-6deg);
   animation:swipe 3s infinite; 
 }
 @keyframes swipe{
   0% {top:100%;}
   90% {left:0%;}
-  100% {top:450px; left:240px;}
+  100% {top:420px; left:240px;}
 }
