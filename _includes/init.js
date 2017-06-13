@@ -11,8 +11,8 @@
 
   //toggle the demo ui modalin and out of view
   $('.ui').on('click', function () {
-    //  $('.demo').toggleClass('flip-open');
-    //  $('.hold').toggleClass('blind');
+     $('.demo').toggleClass('flip-open');
+     $('.hold').toggleClass('blind');
   });
 
  //toggle out of view the modals
