@@ -30,5 +30,5 @@ published: true
     {% endfor %}
   </div>
 </div>
-<section>{% include contact.md %}<section>
-<section class = 'demo'>{% include ui.md %}</section>
+<section>{% include ui.md %}<section>
+<section class = 'demo'>{% include contact.md %}</section>
