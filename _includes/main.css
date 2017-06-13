@@ -54,6 +54,7 @@ a:focus{
   z-index:99;
   max-width:250px;
   color:#fff;
+  animation: stand 1.2s; 
 }
 h1,a,p{
   color:inherit;
