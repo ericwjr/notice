@@ -2,7 +2,7 @@
 <div class = 'container-fluid'>
 <div class = 'row'>
   <div class= 'col-md-4 container'>
-    <div class = 'row flex'>
+    <div class = 'row'>
     {% for info in site.data.before %}
       <div class = 'col-md-11'>
         <h3> {{ info.heading }}</h3>
@@ -39,7 +39,7 @@
     </div>
   </div>
   <div class = 'col-md-4 container'>
-    <div class = 'row flex'>
+    <div class = 'row'>
     {% for info in site.data.after %}
       <div class = 'col-md-11'>
       <h3> {{ info.heading }}</h3>
