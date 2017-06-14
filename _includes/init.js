@@ -3,33 +3,7 @@
   $('.carousel').carousel({
     interval: 7500
   });
-
-  //toggle the contact form in and out of view
-  $('.toggle-top-menu').on('click', function () {
-     $('.fmodal').toggleClass('flip-open');
-  });
-
-  //toggle the demo ui modalin and out of view
-  $('.ui').on('click', function () {
-     $('.demo').toggleClass('flip-open');
-     $('.hold').toggleClass('blind');
-  });
-
- //toggle out of view the modals
-  $('.fmodal').on('click', function(e) {
-    if (e.target === this) {
-        $('.fmodal').toggleClass('flip-open');
-    }
-  });
-
-  $('.demo').on('click', function(e) {
-  if (e.target === this) {
-      $('.demo').toggleClass('flip-open');
-      $('.hold').toggleClass('blind');
-  }
-  });
-
-
+  
   //collect form info
   mail = $('#form');
     widget = $('.form');
