@@ -31,4 +31,4 @@ published: true
   </div>
 </div>
 <section>{% include ui.md %}<section>
-<section class = 'demo'>{% include contact.md %}</section>
+<section class = 'fmodal'>{% include contact.md %}</section>
