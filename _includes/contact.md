@@ -1,4 +1,4 @@
-<div class = 'fmodal form'>
+<div class = 'fmodal'>
   <form method = 'POST' action = 'https://formspree.io/{{site.email}}' id = 'form'>
     <div class = 'funga'>
       <select name='Subject' id='Subject' class='select subject' placeholder='Choose Subject' required>
