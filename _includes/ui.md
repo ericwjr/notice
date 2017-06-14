@@ -1,6 +1,11 @@
 <style>{% include ui.css %}</style>
 <div class = 'row'>
-  <div class= 'col-md-4'></div>
+  <div class= 'col-md-4 row'>
+  {% for info in site.data.text.before %}
+    <h3>info.heading</h3>
+    <p>info.text</p>
+  {% endfor %}
+  </div>
   <div class = 'col-md-4'>
     <div class = 'case'> 
       <div class="iphone">
@@ -28,6 +33,6 @@
       </div>
     </div>
   </div>
-  <div class = 'col-md-4'></div>
+  <div class = 'col-md-4 row'>
+  </div>
 </div>
-
