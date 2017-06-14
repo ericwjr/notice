@@ -1,10 +1,15 @@
 <style>{% include ui.css %}</style>
+<div class = 'container-fluid'>
 <div class = 'row'>
-  <div class= 'col-md-4 row'>
-  {% for info in site.data.before %}
-    <h3>info.heading</h3>
-    <p>info.text</p>
-  {% endfor %}
+  <div class= 'col-md-4 container'>
+    <div class = 'row'>
+    {% for info in site.data.before %}
+      <div class = 'col-md-11'>
+        <h3> {{ info.heading }}</h3>
+        <p>{{ info.text }}</p>
+      </div>
+    {% endfor %}
+    </div>
   </div>
   <div class = 'col-md-4'>
     <div class = 'case'> 
@@ -33,10 +38,15 @@
       </div>
     </div>
   </div>
-  <div class = 'col-md-4 row'>
+  <div class = 'col-md-4 container'>
+    <div class = 'row'>
     {% for info in site.data.after %}
-      <h3>info.heading</h3>
-      <p>info.text</p>
+      <div class = 'col-md-11'>
+      <h3> {{ info.heading }}</h3>
+      <p> {{ info.text }}</p>
+      </div>
     {% endfor %}
+    </div>
   </div>
+</div>
 </div>
