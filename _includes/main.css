@@ -154,6 +154,8 @@ body,
   transform:scaleX(0.6);
   transition: all 1.5s ease-in;
   z-index:999;
+  width:100%;
+  min-height:100vh;
 }
 .ui{
   cursor:pointer;
