@@ -118,13 +118,13 @@
 .case{
   width:350px;
   height:720px;
-  /*overflow:hidden;*/
+  overflow:hidden;
   margin: 0 auto;
   position:relative;
   perspective:750px;
 }
-.demo > div{
-  /*background-image: url({{site.baseurl}}/assets/wall.png);*/
+.fmodal{
+  background-image: url({{site.baseurl}}/assets/wall.png);
 }
 .swipe{
   position:absolute;
