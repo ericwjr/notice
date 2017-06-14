@@ -1,7 +1,7 @@
 <style>{% include ui.css %}</style>
 <div class = 'row'>
   <div class= 'col-md-4 row'>
-  {% for info in site.data.text.before %}
+  {% for info in site.data.before %}
     <h3>info.heading</h3>
     <p>info.text</p>
   {% endfor %}
@@ -34,5 +34,9 @@
     </div>
   </div>
   <div class = 'col-md-4 row'>
+    {% for info in site.data.after %}
+      <h3>info.heading</h3>
+      <p>info.text</p>
+    {% endfor %}
   </div>
 </div>
