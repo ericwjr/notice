@@ -1,7 +1,6 @@
 <style>{% include ui.css %}</style>
-<div class = 'container-fluid'>
-<div class = 'row'>
-  <div class= 'col-md-4 container'>
+<div class = 'flex'>
+  <div class= 'third container'>
     <div class = 'row'>
     {% for info in site.data.before %}
       <div class = 'col-md-11'>
@@ -11,7 +10,7 @@
     {% endfor %}
     </div>
   </div>
-  <div class = 'col-md-4'>
+  <div class = 'third'>
     <div class = 'case'> 
       <div class="iphone">
           <div class="iphone-top">
@@ -38,7 +37,7 @@
       </div>
     </div>
   </div>
-  <div class = 'col-md-4 container'>
+  <div class = 'third container'>
     <div class = 'row'>
     {% for info in site.data.after %}
       <div class = 'col-md-11'>
@@ -48,5 +47,4 @@
     {% endfor %}
     </div>
   </div>
-</div>
 </div>

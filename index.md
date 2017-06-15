@@ -30,5 +30,5 @@ published: true
     {% endfor %}
   </div>
 </div>
-<section>{% include ui.md %}<section>
+<section>{% include ui.md %}</section>
 <section class = 'fmodal'>{% include form.md %}</section>
