@@ -29,9 +29,6 @@
             <span class="down"></span>
           </div>
           <div class="bottom-bar"></div>
-          <div class="iphone-bottom">
-            <span></span>
-          </div>
       </div>
       <div class = 'swipe'>
         <img src = '{{site.baseurl}}/assets/swipe.png' alt = ''>
