@@ -4,6 +4,7 @@
     <div class = 'row'>
     {% for info in site.data.before %}
       <div class = 'col-md-11'>
+       <i class="fa fa-5x fa-{{info.icon}}" aria-hidden="true"></i>
         <h3> {{ info.heading }}</h3>
         <p>{{ info.text }}</p>
       </div>
@@ -41,8 +42,9 @@
     <div class = 'row'>
     {% for info in site.data.after %}
       <div class = 'col-md-11'>
-      <h3> {{ info.heading }}</h3>
-      <p> {{ info.text }}</p>
+        <i class="fa fa-5x fa-{{info.icon}}" aria-hidden="true"></i>
+        <h3> {{ info.heading }}</h3>
+        <p> {{ info.text }}</p>
       </div>
     {% endfor %}
     </div>

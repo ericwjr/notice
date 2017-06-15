@@ -1,8 +1,11 @@
 
 - heading: Quick Access
+  icon: rocket
   text: Quickly pause or broadcast from the app's notification actions
 - heading: Room by Room Control
+  icon: thumbs-up
   text: Only broadcast notifications to the rooms you choose
 - heading: Personalize
+  icon: heart
   text: Customize notification with custom tones
 
