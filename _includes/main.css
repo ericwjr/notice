@@ -172,7 +172,10 @@ body{
   justify-content:center;
   overflow:hidden;
 }
-@media screen and (min-width:567px) {
+.third{
+  width:96%;
+}
+@media screen and (min-width:769px) {
   .third{
     width:31%;
   }
