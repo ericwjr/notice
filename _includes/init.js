@@ -1,7 +1,16 @@
 (function(){
+
+  //swipe left on screen
+  
+  //swife right on screen
+
   // move the slides
-  $('.carousel').carousel({
+  $('.once').carousel({
     interval: 7500
+  });
+
+  $('.swipe-me').carousel({
+    interval: 3000
   });
   
   //collect form info
