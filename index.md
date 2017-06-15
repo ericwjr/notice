@@ -2,7 +2,7 @@
 layout: default
 published: true
 ---
-<div id='carousel' class='carousel slide carousel-fade' data-ride='carousel'>
+<div id='carousel' class='carousel slide carousel-fade once' data-ride='carousel'>
   <ol class='carousel-indicators' id = 'indicate'>
     {% for f in site.data.slides %}
       {% assign x = forloop.index | minus: 1 %}
