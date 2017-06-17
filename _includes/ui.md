@@ -37,7 +37,7 @@
              {% endfor %}
           </div>
       </div>
-        <div class = 'swr swipe'>
+        <div class = 'swipe'>
           <img src = '{{site.baseurl}}/assets/swipe.png' alt = 'swipe'>
         </div>
     </div>
