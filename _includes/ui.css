@@ -139,12 +139,10 @@
   width:100%;
 }
 .swr{
-  /*swipe right */
   transform:rotateX(15deg) rotateZ(-6deg);
   animation:swr 2s;
 }
 .swl{
- /*swipe left*/
   transform:rotateX(-15deg) rotateZ(6deg);
   animation:swl 2s;
 }
