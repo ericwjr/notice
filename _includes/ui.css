@@ -127,13 +127,34 @@
   background-image: url({{site.baseurl}}/assets/wall.png);
 }
 .swipe{
+  border-bottom-right-radius:50%;
+  border-bottom-left-radius:50%; 
   position:absolute;
+  z-index:9999;
+  width:250px;
+  top:480px;
   opacity:0;
-  transform:rotateX(45deg) rotateZ(-6deg);
-  /* animation:swipe 2.5s infinite; */
 }
-@keyframes swipe{
-  0% {top:100%; opacity:0;}
-  15% {left:0%; top: 420px; opacity:1;}
-  100% {top:440px; left:240px;}
+.swipe img{
+  width:100%;
+}
+.swr{
+  /*swipe right */
+  transform:rotateX(15deg) rotateZ(-6deg);
+  animation:swr 2s;
+}
+.swl{
+ /*swipe left*/
+  transform:rotateX(-15deg) rotateZ(6deg);
+  animation:swl 2s;
+}
+@keyframes swr{
+  0% {opacity:0;}
+  15% {left:33%; opacity:1;}
+  100% {left:75%; opacity:1;}
+}
+@keyframes swl{
+  0% {opacity:0;}
+  15% {left:45%; opacity:1;}
+  100% {left:10%; opacity:1;}
 }

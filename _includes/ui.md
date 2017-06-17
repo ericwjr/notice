@@ -37,9 +37,9 @@
              {% endfor %}
           </div>
       </div>
-      <div class = 'swipe'>
-        <img src = '{{site.baseurl}}/assets/swipe.png' alt = ''>
-      </div>
+        <div class = 'swr swipe'>
+          <img src = '{{site.baseurl}}/assets/swipe.png' alt = 'swipe'>
+        </div>
     </div>
   </div>
   <div class = 'third container'>

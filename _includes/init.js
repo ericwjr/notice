@@ -2,9 +2,21 @@
   var d = new Date();
   var n = d.getFullYear();
   $('#year').append(n);
-  //swipe left on screen
   
-  //swife right on screen
+  $('.fit').swipe( {
+      click:function(event,target){
+          myFunction();
+      },                                         
+      swipeLeft: function() {
+          $('.swipe').addClass('swl');
+          $('.swipe').removeClass('swr');
+      },
+      swipeRight: function() {
+          $('.swipe').removeClass('swl');
+          $('.swipe').addClass('swr');
+      },
+      allowPageScroll: 'vertical'
+  });
 
   // move the slides
   $('.once').carousel({
@@ -12,7 +24,7 @@
   });
 
   $('.swipe-me').carousel({
-    interval: 3000
+    interval: 2050
   });
   
   //collect form info
