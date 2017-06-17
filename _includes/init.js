@@ -8,22 +8,28 @@
   } 
   $('.fit').swipe( {
       click:function(event,target){
-          myFunction();
+         $('.swipe').toggleClass('swl');
       },                                         
       swipeLeft: function() {
           if(ought('swr')){
             $('.swipe').removeClass('swr');
           }
-          $('.swipe').toggleClass('swl');
+          if(ought('swl') === false){
+           $('.swipe').toggleClass('swl');
+          } 
       },
       swipeRight: function() {
           if(ought('swl')){
             $('.swipe').removeClass('swl');
           }
-          $('.swipe').toggleClass('swr');
+          if(ought('swr') === false){
+            $('.swipe').toggleClass('swr');
+          }
       },
       allowPageScroll: 'vertical'
   });
+
+  console.log(!ought('swr'));
 
   // move the slides
   $('.once').carousel({
