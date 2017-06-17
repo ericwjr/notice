@@ -31,4 +31,7 @@ published: true
   </div>
 </div>
 <section>{% include ui.md %}</section>
-<section class = 'fmodal'>{% include form.md %}</section>
+<section class = 'fmodal'>
+  {% include form.md %}
+  <div id = 'year'>&copy; Notice App </div>
+</section>
