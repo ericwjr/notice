@@ -7,8 +7,8 @@
       {% endfor %}
     </select>
     </div>
-    <input type = 'text' name = 'fname' placeholder = 'First Name' required>
+    <input type = 'text' name = 'fname' placeholder = 'Name' required>
     <input type = 'email' name = 'email' placeholder = 'Email Address' required>
-    <textarea placeholder = 'Leave us a further details'></textarea>
+    <textarea placeholder = 'Leave Us a Message'></textarea>
     <input type = 'submit' value = 'submit'>
   </form></div>
