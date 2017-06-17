@@ -2,18 +2,25 @@
   var d = new Date();
   var n = d.getFullYear();
   $('#year').append(n);
-  
+  function ought(c) {
+       var truth = $('.swipe').hasClass(c);
+       return truth;
+  } 
   $('.fit').swipe( {
       click:function(event,target){
           myFunction();
       },                                         
       swipeLeft: function() {
-          $('.swipe').addClass('swl');
-          $('.swipe').removeClass('swr');
+          if(ought('swr')){
+            $('.swipe').removeClass('swr');
+          }
+          $('.swipe').toggleClass('swl');
       },
       swipeRight: function() {
-          $('.swipe').removeClass('swl');
-          $('.swipe').addClass('swr');
+          if(ought('swl')){
+            $('.swipe').removeClass('swl');
+          }
+          $('.swipe').toggleClass('swr');
       },
       allowPageScroll: 'vertical'
   });
