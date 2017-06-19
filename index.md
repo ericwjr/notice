@@ -12,7 +12,7 @@ published: true
   <div class='carousel-inner'>
     {% for slide in site.data.slides %}
       <div class='item {% if forloop.index == 1 %} {{'active'}}{% endif %}'>
-        <video autoplay loop>
+        <video autoplay loop muted>
           <source src = '{{site.baseurl}}/assets/video{{ forloop.index }}.mp4'>
         </video>
         <div class = 'shadow'>
