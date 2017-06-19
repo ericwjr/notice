@@ -57,17 +57,16 @@ a:focus{
   max-width:250px;
   color:#fff;
   overflow:hidden;
-  animation: exit 7.5s ease-in;
 }
 .displace{
   display:block;
   opacity:0;
 }
 .ups{
-  animation:ups 1s ease-in forwards;
+  animation:ups 7.5s ease-in forwards;
 }
 .downs{
-  animation:downs 0.75s 1.2s ease-in forwards;
+  animation:downs 5s 1.5s ease-in forwards;
 }
 h1,a,p{
   color:inherit;
@@ -425,9 +424,12 @@ input[type=submit]{
      transform:translateY(-360px);
      opacity:0;
    }
-   100%{
+   20%,80%{
      transform:translateY(0);
      opacity:1;
+   }
+   100%{
+     opacity:0;
    }
 }
 @keyframes downs{
@@ -435,9 +437,12 @@ input[type=submit]{
     transform:translateY(150px);
     opacity:0;
   }
-  100%{
+  20%,75%{
     transform:translateY(0);
     opacity:1;
+  }
+  90%,100%{
+    opacity:0;
   }
 }
 @keyframes spin {
