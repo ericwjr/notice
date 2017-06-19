@@ -29,8 +29,6 @@
       allowPageScroll: 'vertical'
   });
 
-  console.log(!ought('swr'));
-
   // move the slides
   $('.once').carousel({
     interval: 7500
