@@ -8,7 +8,8 @@
   } 
   $('.fit').swipe( {
       click:function(event,target){
-         $('.swipe').toggleClass('swl');
+        //  $('.swipe').toggleClass('swl');
+        // on click swipe
       },                                         
       swipeLeft: function() {
           if(ought('swr')){
@@ -28,8 +29,6 @@
       },
       allowPageScroll: 'vertical'
   });
-
-  console.log(!ought('swr'));
 
   // move the slides
   $('.once').carousel({
