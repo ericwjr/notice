@@ -124,8 +124,7 @@ body{
 .once .carousel-inner,
 .once .carousel-inner .item {
    font-family: 'Josefin Sans', sans-serif;
-   min-height:100vh;
-   max-height:100vh;
+   height:100vh;
    overflow:hidden;
 }
 .carousel-inner .item.fit{
@@ -434,4 +433,3 @@ input[type=submit]{
     width:31%;
   }
 }
-
