@@ -1,20 +1,20 @@
 *, *:after, *:before {
   box-sizing: border-box;
 }
-.iphone {
+.phone {
   box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px #999, 0 0 30px 0px rgba(0, 0, 0, 0.7);
   border: 2.5px solid #d9dbdc;
   background: #f8f8f8;
   padding: 15px;
   border-radius: 25px;
-  height: 720px;
-  width: 350px;
+  height: 650px;
+  width: 320px;
   position: relative;
   margin: 30px auto;
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
 }
-.iphone-top {
+.phone-top {
   padding: 5px 110px 30px;
   position: relative;
   display: flex;
@@ -22,13 +22,13 @@
   align-items: center;
   justify-content: center;
 }
-.iphone-top .speaker {
+.phone-top .speaker {
   width: 70px;
   height: 6px;
   border-radius: 6px;
   background: #292728;
 }
-.iphone-top .camera {
+.phone-top .camera {
   height: 10px;
   width: 10px;
   border-radius: 50%;
@@ -37,7 +37,7 @@
 }
 .top-bar, .bottom-bar {
   display: block;
-  width: 350px;
+  width: 320px;
   height: 10px;
   border-left: 5px solid #BBB;
   border-right: 5px solid #BBB;
@@ -50,7 +50,7 @@
 .bottom-bar {
   bottom: 65px;
 }
-.iphone-screen {
+.phone-screen {
   background: #eee;
   border: 1px solid #fff;
   margin: 0 auto;
@@ -58,7 +58,7 @@
   border-radius: 3px;
   overflow-y: hidden;
 }
-.iphone-screen img {
+.phone-screen img {
   width: 100%;
 }
 .buttons .on-off, .buttons .up, .buttons .down, .buttons .sleep {
@@ -90,34 +90,9 @@
   top: 170px;
   border-radius: 0px 2px 2px 0px;
 }
-.iphone-bottom {
-  padding: 10px 0 0;
-}
-.iphone-bottom span {
-  display: block;
-  margin: 0 auto;
-  width: 48px;
-  height: 48px;
-  background: #ccc;
-  border-radius: 50%;
-  background: -webkit-linear-gradient(315deg, #303233 0%, #b5b7b9 50%, #f0f2f2 69%, #303233 100%);
-  background: linear-gradient(135deg, #303233 0%, #b5b7b9 50%, #f0f2f2 69%, #303233 100%);
-  position: relative;
-}
-.iphone-bottom span:after {
-  content: "";
-  display: block;
-  width: 44px;
-  height: 44px;
-  background: #fff;
-  border-radius: 50%;
-  position: absolute;
-  left: 4px;
-  top: 4px;
-}
 .case{
-  width:350px;
-  height:720px;
+  width:320px;
+  height:650px;
   overflow:hidden;
   margin: 0 auto;
   position:relative;

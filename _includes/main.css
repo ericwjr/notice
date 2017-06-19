@@ -16,7 +16,7 @@ header{
   top:0;
   left:0;
   z-index:998 !important;
-  padding:15px 25px;
+  padding:35px 25px 15px 25px;
   font-size:1.6em;
   color:#fff; 
   text-transform:uppercase;
@@ -42,7 +42,8 @@ a:focus{
 .toggle-top-menu{
   position:absolute;
   right:25px;
-  top:15px;
+  padding:0;
+  top:35px;
   cursor:pointer;
 }
 .item{
@@ -51,18 +52,28 @@ a:focus{
 .hold{
   position:absolute;
   left:25px;
-  bottom:50px;
+  bottom:90px;
   z-index:99;
   max-width:250px;
   color:#fff;
-  animation: stand 1.2s; 
+  overflow:hidden;
+}
+.displace{
+  display:block;
+  opacity:0;
+}
+.ups{
+  animation:ups 7.5s ease-in forwards;
+}
+.downs{
+  animation:downs 5s 1.5s ease-in forwards;
 }
 h1,a,p{
   color:inherit;
 }
 .hold h1{
   font-size:3em;
-  font-weight:700;
+  font-weight:300;
 }
 .carousel-fade .carousel-inner .item {
   -webkit-transition-property: opacity;
@@ -94,12 +105,13 @@ h1,a,p{
 .carousel-indicators li{
   border:0;
   background-color:#ccc;
-  width:6px;
-  height:6px;
-  margin:1px 6px;
+  transition: all 1s ease-in-out;
+  width:7.5px;
+  height:7.5px;
+  margin:1px 10px;
 }
 #indicate{
-  bottom:40px;
+  bottom:90px;
   margin-left:0;
 }
 .download{ 
@@ -118,14 +130,13 @@ h1,a,p{
   font-size:5em;
 }
 body{
-  font-family:sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 .once,
 .once .carousel-inner,
 .once .carousel-inner .item {
-   font-family: 'Josefin Sans', sans-serif;
-   min-height:100vh;
-   max-height:100vh;
+   height:99.5vh;
+   width:100%;
    overflow:hidden;
 }
 .carousel-inner .item.fit{
@@ -137,8 +148,8 @@ body{
   top:0;
   left:0;
   bottom:0;
-  height:100vh;
   width:100%;
+  perspective:600px;
 }
 .item:nth-child(1) .shadow {
   background: rgba(0,155,255,0.4);
@@ -194,22 +205,6 @@ body{
 }
 .third{
   width:96%;
-}
-@keyframes spin {
-  0% { transform:rotate(0deg); }
-  100%{ transform:rotate(360deg); }
-}
-@keyframes grow{
-  0% {height:0;}
-  100% {height:initial;}
-}
-@keyframes show{
-  0%{
-    opacity:0;
-  }
-  100%{
-    opacity:1;
-  }
 }
 .form{min-height:72vh;}
 .widget{
@@ -322,6 +317,7 @@ input[type=submit]{
   width: 100%;
   margin:0 auto;
   padding: 0 25px 0 15px;
+  height:50px;
   font-size: 1.2em;
   font-weight: 300;
   color: #fff;
@@ -417,10 +413,69 @@ input[type=submit]{
   justify-content:center;
   flex-direction:column;
 }
-@keyframes stand{
-  0%{ bottom: -360px; }
-  100%{ bottom: 75px; }
+#year{
+  color:#000;
+  font-weight:700;
 }
+
+/* Animations */
+@keyframes ups{
+   0%{
+     transform:translateY(-360px);
+     opacity:0;
+   }
+   15%,80%{
+     transform:translateY(0);
+     opacity:1;
+   }
+   100%{
+     opacity:0;
+   }
+}
+@keyframes downs{
+  0%{
+    transform:translateY(150px);
+    opacity:0;
+  }
+  20%,75%{
+    transform:translateY(0);
+    opacity:1;
+  }
+  90%,100%{
+    opacity:0;
+  }
+}
+@keyframes spin {
+  0% { transform:rotate(0deg); }
+  100%{ transform:rotate(360deg); }
+}
+@keyframes grow{
+  0% {height:0;}
+  100% {height:initial;}
+}
+@keyframes show{
+  0%{
+    opacity:0;
+  }
+  100%{
+    opacity:1;
+  }
+}
+@keyframes exit{
+  0%{
+    transform:translateZ(0);
+  }
+  90%{
+    transform:translateZ(0);
+    opacity:1;
+  }
+  100%{
+    transform:translateZ(-600px);
+    opacity:0;
+  }
+}
+
+/* break points*/
 @media screen and (min-width:768px){
  .hold{
    max-width:400px;
@@ -434,4 +489,3 @@ input[type=submit]{
     width:31%;
   }
 }
-
