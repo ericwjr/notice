@@ -16,7 +16,7 @@ header{
   top:0;
   left:0;
   z-index:998 !important;
-  padding:15px 25px;
+  padding:35px 25px 15px 25px;
   font-size:1.6em;
   color:#fff; 
   text-transform:uppercase;
@@ -42,7 +42,8 @@ a:focus{
 .toggle-top-menu{
   position:absolute;
   right:25px;
-  top:15px;
+  padding:0;
+  top:35px;
   cursor:pointer;
 }
 .item{
@@ -55,14 +56,14 @@ a:focus{
   z-index:99;
   max-width:250px;
   color:#fff;
-  animation: stand 1.2s; 
+  animation: stand 1.2s forwards; 
 }
 h1,a,p{
   color:inherit;
 }
 .hold h1{
   font-size:3em;
-  font-weight:700;
+  font-weight:300;
 }
 .carousel-fade .carousel-inner .item {
   -webkit-transition-property: opacity;
@@ -94,12 +95,12 @@ h1,a,p{
 .carousel-indicators li{
   border:0;
   background-color:#ccc;
-  width:6px;
-  height:6px;
-  margin:1px 6px;
+  width:7.5px;
+  height:7.5px;
+  margin:1px 10px;
 }
 #indicate{
-  bottom:40px;
+  bottom:90px;
   margin-left:0;
 }
 .download{ 
@@ -320,6 +321,7 @@ input[type=submit]{
   width: 100%;
   margin:0 auto;
   padding: 0 25px 0 15px;
+  height:50px;
   font-size: 1.2em;
   font-weight: 300;
   color: #fff;
@@ -415,9 +417,13 @@ input[type=submit]{
   justify-content:center;
   flex-direction:column;
 }
+#year{
+  color:#000;
+  font-weight:700;
+}
 @keyframes stand{
   0%{ bottom: -360px; }
-  100%{ bottom: 75px; }
+  100%{ bottom: 90px; }
 }
 @media screen and (min-width:768px){
  .hold{
