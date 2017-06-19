@@ -424,7 +424,7 @@ input[type=submit]{
      transform:translateY(-360px);
      opacity:0;
    }
-   20%,80%{
+   15%,80%{
      transform:translateY(0);
      opacity:1;
    }
