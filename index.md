@@ -17,15 +17,19 @@ published: true
         </video>
         <div class = 'shadow'>
           <div class = 'hold'>
+          <span class = 'ups displace'>
           <a class = 'download flex' href = 'https://play.google.com/store/apps/details?id=co.sonofy.smartroomsolutions&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' target = '_blank'>
             <i class="fa fa-android" aria-hidden = 'true'></i>
             <p>DOWNLOAD MOBILE APP</p>
           </a>
           <h1>{{ slide.heading }}</h1>
+          </span>
+          <span class = 'downs displace'>
           <a class = 'ui'> 
             {{ slide.sub-heading }}
             <i class="fa fa-arrow-circle-o-right" aria-hidden = 'true'></i>
           </a>
+          </span>
           </div>
         </div>
       </div>

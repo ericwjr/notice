@@ -1,4 +1,11 @@
 (function(){
+  var videos = $('video');
+  if(videos){
+    for (var i=0; i<videos.length;i++){
+      videos[i].play();
+    }
+  }
+
   var d = new Date();
   var n = d.getFullYear();
   $('#year').append(n);

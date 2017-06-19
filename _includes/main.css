@@ -52,11 +52,22 @@ a:focus{
 .hold{
   position:absolute;
   left:25px;
-  bottom:50px;
+  bottom:90px;
   z-index:99;
   max-width:250px;
   color:#fff;
-  animation: stand 1.2s forwards; 
+  overflow:hidden;
+  animation: exit 7.5s ease-in;
+}
+.displace{
+  display:block;
+  opacity:0;
+}
+.ups{
+  animation:ups 1s ease-in forwards;
+}
+.downs{
+  animation:downs 0.75s 1.2s ease-in forwards;
 }
 h1,a,p{
   color:inherit;
@@ -95,6 +106,7 @@ h1,a,p{
 .carousel-indicators li{
   border:0;
   background-color:#ccc;
+  transition: all 1s ease-in-out;
   width:7.5px;
   height:7.5px;
   margin:1px 10px;
@@ -138,6 +150,7 @@ body{
   left:0;
   bottom:0;
   width:100%;
+  perspective:600px;
 }
 .item:nth-child(1) .shadow {
   background: rgba(0,155,255,0.4);
@@ -193,22 +206,6 @@ body{
 }
 .third{
   width:96%;
-}
-@keyframes spin {
-  0% { transform:rotate(0deg); }
-  100%{ transform:rotate(360deg); }
-}
-@keyframes grow{
-  0% {height:0;}
-  100% {height:initial;}
-}
-@keyframes show{
-  0%{
-    opacity:0;
-  }
-  100%{
-    opacity:1;
-  }
 }
 .form{min-height:72vh;}
 .widget{
@@ -421,10 +418,59 @@ input[type=submit]{
   color:#000;
   font-weight:700;
 }
-@keyframes stand{
-  0%{ bottom: -360px; }
-  100%{ bottom: 90px; }
+
+/* Animations */
+@keyframes ups{
+   0%{
+     transform:translateY(-360px);
+     opacity:0;
+   }
+   100%{
+     transform:translateY(0);
+     opacity:1;
+   }
 }
+@keyframes downs{
+  0%{
+    transform:translateY(150px);
+    opacity:0;
+  }
+  100%{
+    transform:translateY(0);
+    opacity:1;
+  }
+}
+@keyframes spin {
+  0% { transform:rotate(0deg); }
+  100%{ transform:rotate(360deg); }
+}
+@keyframes grow{
+  0% {height:0;}
+  100% {height:initial;}
+}
+@keyframes show{
+  0%{
+    opacity:0;
+  }
+  100%{
+    opacity:1;
+  }
+}
+@keyframes exit{
+  0%{
+    transform:translateZ(0);
+  }
+  90%{
+    transform:translateZ(0);
+    opacity:1;
+  }
+  100%{
+    transform:translateZ(-600px);
+    opacity:0;
+  }
+}
+
+/* break points*/
 @media screen and (min-width:768px){
  .hold{
    max-width:400px;
