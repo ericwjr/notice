@@ -13,13 +13,13 @@
   </div>
   <div class = 'third'>
     <div class = 'case'> 
-      <div class="iphone">
-          <div class="iphone-top">
+      <div class="phone">
+          <div class="phone-top">
             <span class="camera"></span>
             <span class="speaker"></span>
           </div>
           <div class="top-bar"></div>
-          <div class="iphone-screen">
+          <div class="phone-screen">
             {% include screen.md %}
           </div>
           <div class="buttons">

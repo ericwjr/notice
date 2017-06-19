@@ -12,7 +12,9 @@ published: true
   <div class='carousel-inner'>
     {% for slide in site.data.slides %}
       <div class='item {% if forloop.index == 1 %} {{'active'}}{% endif %}'>
-        <video src = '{{site.baseurl}}/assets/video{{ forloop.index }}.mp4' autoplay loop></video>
+        <video autoplay loop>
+          <source src = '{{site.baseurl}}/assets/video{{ forloop.index }}.mp4'>
+        </video>
         <div class = 'shadow'>
           <div class = 'hold'>
           <a class = 'download flex' href = 'https://play.google.com/store/apps/details?id=co.sonofy.smartroomsolutions&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' target = '_blank'>
