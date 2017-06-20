@@ -39,7 +39,7 @@ a:focus{
   color:#f0f0f0;
   text-decoration:none;
 }
-.toggle-top-menu{
+.tp-menu{
   position:absolute;
   right:25px;
   padding:0;
@@ -199,9 +199,6 @@ body{
 }
 .flex *{
   text-align:center;
-}
-.trio{
-  width:33%;
 }
 .third{
   width:96%;

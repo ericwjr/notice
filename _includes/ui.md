@@ -1,4 +1,3 @@
-<style>{% include ui.css %}</style>
 <div class = 'flex'>
   <div class= 'third container'>
     <div class = 'row'>

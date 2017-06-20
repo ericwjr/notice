@@ -43,7 +43,7 @@
   });
 
   $('.swipe-me').carousel({
-    interval: 2050
+    interval: 4500
   });
   
   //collect form info

@@ -4,7 +4,7 @@
   <img src = '{{site.baseurl}}/assets/notice.png' alt = 'logo'>{{ site.title }}
   </a>
   </div>
-  <a class='toggle-top-menu' href = '#form'>
+  <a class='tp-menu' href = '#form'>
   Contact Us
   </a>
     <div class='menu-bar'>
