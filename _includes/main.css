@@ -63,10 +63,10 @@ a:focus{
   opacity:0;
 }
 .ups{
-  animation:ups 7.5s ease-in forwards;
+  animation:ups 15s ease-in forwards;
 }
 .downs{
-  animation:downs 5s 1.5s ease-in forwards;
+  animation:downs 12s 1.5s ease-in forwards;
 }
 h1,a,p{
   color:inherit;
@@ -421,7 +421,7 @@ input[type=submit]{
      transform:translateY(-360px);
      opacity:0;
    }
-   15%,80%{
+   15%,92%{
      transform:translateY(0);
      opacity:1;
    }
@@ -434,11 +434,11 @@ input[type=submit]{
     transform:translateY(150px);
     opacity:0;
   }
-  20%,75%{
+  20%,96%{
     transform:translateY(0);
     opacity:1;
   }
-  90%,100%{
+  100%{
     opacity:0;
   }
 }

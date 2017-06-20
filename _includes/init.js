@@ -39,7 +39,7 @@
 
   // move the slides
   $('.once').carousel({
-    interval: 7500
+    interval: 15000
   });
 
   $('.swipe-me').carousel({
