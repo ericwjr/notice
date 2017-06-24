@@ -7,7 +7,7 @@
   background: #f8f8f8;
   padding: 15px;
   border-radius: 25px;
-  height: 650px;
+  height: 633px;
   width: 320px;
   position: relative;
   margin: 30px auto;
@@ -54,7 +54,7 @@
   background: #eee;
   border: 1px solid #fff;
   margin: 0 auto;
-  border: 2px solid rgba(0, 0, 0, 0.9);
+  border: 2px solid #ccc;
   border-radius: 3px;
   overflow-y: hidden;
 }
@@ -63,7 +63,7 @@
 }
 .buttons .on-off, .buttons .up, .buttons .down, .buttons .sleep {
   display: block;
-  background: #CCC;
+  background: #ccc;
   position: absolute;
   border-radius: 2px 0px 0px 2px;
 }
@@ -92,7 +92,7 @@
 }
 .case{
   width:320px;
-  height:650px;
+  height:633px;
   overflow:hidden;
   margin: 0 auto;
   position:relative;
@@ -120,6 +120,9 @@
 .swl{
   transform:rotateX(-15deg) rotateZ(6deg);
   animation:swl 2s;
+}
+.trio{
+  width:33.3%
 }
 @keyframes swr{
   0% {opacity:0;}
