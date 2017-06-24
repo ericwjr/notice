@@ -418,16 +418,33 @@ input[type=submit]{
   height:100vh;
   position:relative;
   background-color:#111;
+  overflow:hidden;
 }
+.show .overlay{
+  position:absolute;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  top:0;
+  bottom:0;
+  width:100%;
+  z-index:9999;
+  background-color:rgba(0,0,0,.6);
+  cursor:pointer;
+}
+.show .play{
+  color:#eee;
+}
+
 
 /* Animations */
 @keyframes ups{
    0%{
-     transform:translateY(-360px);
+     transform:translateX(-540px);
      opacity:0;
    }
    15%,92%{
-     transform:translateY(0);
+     transform:translateX(0);
      opacity:1;
    }
    100%{
