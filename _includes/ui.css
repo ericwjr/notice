@@ -13,6 +13,7 @@
   margin: 30px auto;
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
+  cursor:pointer;
 }
 .phone-top {
   padding: 5px 110px 30px;
@@ -54,7 +55,7 @@
   background: #eee;
   border: 1px solid #fff;
   margin: 0 auto;
-  border: 2px solid #ccc;
+  border: 2px solid #d9dbdc;
   border-radius: 3px;
   overflow-y: hidden;
 }

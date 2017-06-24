@@ -414,6 +414,11 @@ input[type=submit]{
   color:#000;
   font-weight:700;
 }
+.show{
+  height:100vh;
+  position:relative;
+  background-color:#111;
+}
 
 /* Animations */
 @keyframes ups{

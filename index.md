@@ -6,10 +6,10 @@ published: true
  {% include partials/slides.md %}
 </section>
 <section>
- {% include partials/show.md %}
-</section>
-<section>
   {% include partials/ui.md %}
+</section>
+<section class = 'show'>
+ {% include partials/show.md %}
 </section>
 <section class = 'fmodal'>
   {% include partials/form.md %}
