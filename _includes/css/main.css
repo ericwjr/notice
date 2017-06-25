@@ -61,10 +61,6 @@ a:focus{
   max-width:250px;
   color:#fff;
 }
-.displace{
-  display:block;
-  opacity:0;
-}
 .ups{
   animation:ups 15s ease-in forwards;
 }
@@ -157,17 +153,6 @@ body{
 .item:nth-child(4) .shadow {
   background: rgba(155,0,255,0.4); 
 }
-.spinner{
-  display:block;
-  width:45px;
-  height:45px;
-  margin:25px auto;
-  border-color:transparent #eee #eee #0FBE7C;
-  border-style:solid;
-  border-radius:50%;
-  border-width:5px;
-  animation: spin 1s infinite linear;
-}
 .fmodal{
   background-color:rgba(0,0,0,.7);
   opacity:0.6;
@@ -196,36 +181,8 @@ body{
   width:96%;
 }
 .form{min-height:72vh;}
-.widget{
-  padding:0;
-  color:#000;
-  width:100%;
-  max-width:450px;
-}
-.confirm,
-.sending{
-  width:100%;
-  padding:20px;
-  text-align:center;
-  font-size:1.2em;
-}
-.success{
-  color: #0FBE7C;
-}
-.error{
-  color:#f00;
-}
 ::-webkit-input-placeholder {
   color: #444;
-}
-.previous{
-  cursor:pointer;
-  width:50px;
-  height:50px;
-  top:20px;
-  right:20px;
-  border-radius:50%;
-  border:3px solid #eee;
 }
 form{
   padding:25px;
