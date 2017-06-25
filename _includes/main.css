@@ -1,4 +1,5 @@
-*{
+*, *:after, *:before{
+  box-sizing:border-box;
   margin:0;
   padding:0;
 }
@@ -11,11 +12,11 @@ video {
   transform: translate(-50%, -50%);
 }
 header{
-  position:absolute !important;
+  position:absolute;
   width:100%;
   top:0;
   left:0;
-  z-index:998 !important;
+  z-index:998;
   padding:35px 25px 15px 25px;
   font-size:1.6em;
   color:#fff; 
@@ -139,9 +140,6 @@ body{
    width:100%;
    overflow:hidden;
 }
-.carousel-inner .item.fit{
-   min-height:50vh !important;
-}
 .shadow{
   position:absolute;
   z-index:1;
@@ -163,8 +161,6 @@ body{
 .item:nth-child(4) .shadow {
   background: rgba(155,0,255,0.4); 
 }
-
-/* contact page css */
 .spinner{
   display:block;
   width:45px;
@@ -254,7 +250,7 @@ textarea{
 input, textarea{
   opacity:0.9;
   background-color:#fff;
-  transition:background-color 0.3s ease-in-out, opacity 0.25s ease-in-out, border 0.3s ease-in;
+  transition:all 0.3s ease-in;
   display:block;
   width:100%;
   outline:none;
@@ -436,8 +432,6 @@ input[type=submit]{
   color:#eee;
 }
 
-
-/* Animations */
 @keyframes ups{
    0%{
      transform:translateX(-540px);
@@ -494,7 +488,6 @@ input[type=submit]{
   }
 }
 
-/* break points*/
 @media screen and (min-width:768px){
  .hold{
    max-width:400px;
