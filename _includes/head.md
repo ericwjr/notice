@@ -9,7 +9,7 @@
   <meta property='og:type' content='article' />
   <meta property='og:title' content='{{page.title}}' />
   <meta property='og:url' content='{{site.url}}/{{page.title}}' />
-  <link rel='shortcut icon' href='{{ site.url }}/assets/notice.png'>
+  <link rel='shortcut icon' href='{{ site.baseurl }}/assets/notice.png'>
   <link rel='canonical' href='{{ page.url | replace:'index.html','' | absolute_url }}'> 
   <script src='https://use.fontawesome.com/22572db09e.js'></script>
   <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u' crossorigin='anonymous'>

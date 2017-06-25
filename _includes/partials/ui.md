@@ -13,7 +13,7 @@
   <div class = 'third'>
     <div class = 'case'> 
       <div class="phone">
-          <div class="phone-top">
+          <div class="top flex">
             <span class="camera"></span>
             <span class="speaker"></span>
           </div>
@@ -27,7 +27,7 @@
             <span class="up"></span>
             <span class="down"></span>
           </div>
-          <div class="lbar"></div>
+          <div class="lbar">
           <div class = 'flex'>
               {% for button in site.data.buttons %}
                 <div class = 'trio'>
@@ -35,6 +35,7 @@
                 </div>
               {% endfor %}
            </div>
+          </div>
       </div>
         <div class = 'swipe'>
           <img src = '{{site.baseurl}}/assets/swipe.png' alt = 'swipe'>

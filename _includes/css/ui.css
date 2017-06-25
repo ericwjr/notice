@@ -1,5 +1,5 @@
 .phone {
-  box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px #889, 0 0 30px 0px rgba(0, 0, 0, 0.7);
+  box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px #999, 0 0 30px 0px rgba(0, 0, 0, 0.7);
   border: 2.5px solid #d9dbdc;
   background: #f8f8f8;
   padding: 15px;
@@ -8,17 +8,13 @@
   width: 320px;
   position: relative;
   margin: 30px auto;
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
+  transform: scale(0.8);
   cursor:pointer;
 }
-.phone-top {
+.top {
   padding: 5px 110px 30px;
   position: relative;
-  display: flex;
   flex-direction:row;
-  align-items: center;
-  justify-content: center;
 }
 .speaker {
   width: 70px;
@@ -27,13 +23,14 @@
   background: #292728;
 }
 .camera {
-  height: 10px;
+  height: 9px;
   width: 10px;
   border-radius: 50%;
   margin-right: 15px;
   background: #333;
 }
-.tbar, .lbar {
+.tbar,
+.lbar {
   display: block;
   width: 320px;
   height: 10px;
@@ -50,18 +47,20 @@
 }
 .screen {
   background: #eee;
-  border: 1px solid #fff;
+  border: 1px solid #d9dbdc;
   margin: 0 auto;
-  border: 2px solid #d9dbdc;
   border-radius: 3px;
   overflow-y: hidden;
 }
 .screen img {
   width: 100%;
 }
-.on-off, .up, .down, .sleep {
+.on-off,
+.up, 
+.down,
+.sleep {
   display: block;
-  background: #ccc;
+  background: #bbb;
   position: absolute;
   border-radius: 2px 0px 0px 2px;
 }
@@ -71,7 +70,9 @@
   top: 100px;
   left: -8px;
 }
-.up, .down, .sleep {
+.up,
+.down,
+.sleep {
   height: 44px;
   width: 5px;
   left: -10px;
@@ -103,7 +104,7 @@
   border-bottom-right-radius:50%;
   border-bottom-left-radius:50%; 
   position:absolute;
-  z-index:9999;
+  z-index:999;
   width:250px;
   top:480px;
   opacity:0;
