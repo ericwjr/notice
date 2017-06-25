@@ -16,5 +16,6 @@
   <style>
      {% include main.css %}
      {% include ui.css %}
+     {% include css/animate.css %}
   </style>
 </head>
