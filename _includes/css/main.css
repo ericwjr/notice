@@ -3,6 +3,9 @@
   margin:0;
   padding:0;
 }
+.contain{
+  overflow:hidden;
+}
 video {
   left: 50%;
   min-height: 100%;
@@ -57,7 +60,6 @@ a:focus{
   z-index:99;
   max-width:250px;
   color:#fff;
-  overflow:hidden;
 }
 .displace{
   display:block;
@@ -98,11 +100,6 @@ h1,a,p{
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
 }
-.carousel-indicators{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-}
 .carousel-indicators li{
   border:0;
   background-color:#ccc;
@@ -136,9 +133,8 @@ body{
 .once,
 .once .carousel-inner,
 .once .carousel-inner .item {
-   height:99.5vh;
+   height:100vh;
    width:100%;
-   overflow:hidden;
 }
 .shadow{
   position:absolute;
@@ -184,12 +180,12 @@ body{
   cursor:pointer;
   z-index:999;
 }
-.flex,
-.fmodal{
+.flex{
   display:flex;
   align-items:center;
   justify-content:center;
-  overflow:hidden;
+}
+.fmodal{
   flex-flow:row wrap;
   padding:25px 0;
 }
@@ -205,9 +201,6 @@ body{
   color:#000;
   width:100%;
   max-width:450px;
-}
-.widget h1{
-  color:inherit;
 }
 .confirm,
 .sending{
@@ -238,7 +231,6 @@ form{
   padding:25px;
   width:90%;
   max-width:450px;
-  overflow:hidden;
   animation: grow 0.5s ease-in-out;
 }
 form:focus{
@@ -298,7 +290,7 @@ input[type=submit]{
   opacity:0;
   user-select: none;
   animation: show 1s 0.75s ease-out forwards;
-  z-index:9999;
+  z-index:999;
 }
 .funga select {
   display: none;
@@ -401,103 +393,22 @@ input[type=submit]{
 }
 .fluid{
   width:100%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
   flex-direction:column;
-}
-#year{
-  color:#000;
-  font-weight:700;
 }
 .show{
   height:100vh;
   position:relative;
   background-color:#111;
-  overflow:hidden;
 }
 .show .overlay{
   position:absolute;
-  display:flex;
-  align-items:center;
-  justify-content:center;
   top:0;
   bottom:0;
   width:100%;
-  z-index:9999;
+  z-index:999;
   background-color:rgba(0,0,0,.6);
   cursor:pointer;
 }
 .show .play{
   color:#eee;
-}
-
-@keyframes ups{
-   0%{
-     transform:translateX(-540px);
-     opacity:0;
-   }
-   15%,92%{
-     transform:translateX(0);
-     opacity:1;
-   }
-   100%{
-     opacity:0;
-   }
-}
-@keyframes downs{
-  0%{
-    transform:translateY(150px);
-    opacity:0;
-  }
-  20%,96%{
-    transform:translateY(0);
-    opacity:1;
-  }
-  100%{
-    opacity:0;
-  }
-}
-@keyframes spin {
-  0% { transform:rotate(0deg); }
-  100%{ transform:rotate(360deg); }
-}
-@keyframes grow{
-  0% {height:0;}
-  100% {height:initial;}
-}
-@keyframes show{
-  0%{
-    opacity:0;
-  }
-  100%{
-    opacity:1;
-  }
-}
-@keyframes exit{
-  0%{
-    transform:translateZ(0);
-  }
-  90%{
-    transform:translateZ(0);
-    opacity:1;
-  }
-  100%{
-    transform:translateZ(-600px);
-    opacity:0;
-  }
-}
-
-@media screen and (min-width:768px){
- .hold{
-   max-width:400px;
- } 
- .third{
-   width:48%;
- }
-}
-@media screen and (min-width:992px) {
-  .third{
-    width:31%;
-  }
 }

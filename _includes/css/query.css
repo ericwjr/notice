@@ -1,0 +1,13 @@
+@media screen and (min-width:768px){
+ .hold{
+   max-width:400px;
+ } 
+ .third{
+   width:48%;
+ }
+}
+@media screen and (min-width:992px) {
+  .third{
+    width:31%;
+  }
+}

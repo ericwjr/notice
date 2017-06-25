@@ -1,4 +1,4 @@
-<div class = 'flex'>
+<div class = 'flex contain'>
   <div class= 'third container'>
     <div class = 'row'>
     {% for info in site.data.before %}

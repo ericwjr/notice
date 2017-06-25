@@ -8,10 +8,10 @@ published: true
 <section>
   {% include partials/ui.md %}
 </section>
-<section class = 'show'>
+<section class = 'show contain'>
  {% include partials/show.md %}
 </section>
-<section class = 'fmodal'>
+<section class = 'fmodal contain flex'>
   {% include partials/form.md %}
   <div id = 'year'>&copy; Notice App </div>
 </section>

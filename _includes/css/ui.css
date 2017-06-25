@@ -125,17 +125,3 @@
 .fa-pause{
   animation:fade 1.25s ease-in forwards;
 }
-@keyframes swr{
-  0% {opacity:0;}
-  15% {left:33%; opacity:1;}
-  100% {left:75%; opacity:1;}
-}
-@keyframes swl{
-  0% {opacity:0;}
-  15% {left:45%; opacity:1;}
-  100% {left:10%; opacity:1;}
-}
-@keyframes fade{
-  0%{opacity:1;}
-  100%{opacity:0;}
-}

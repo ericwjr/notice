@@ -52,7 +52,6 @@
       allowPageScroll: 'vertical'
   });
    
-  // move the slides
   $('.once').carousel({
     interval: 15000
   });
@@ -61,7 +60,6 @@
     interval: 4500
   });
   
-  //collect form info
   mail = $('#form');
     widget = $('.form');
     mail.submit(function(e) {
@@ -94,7 +92,7 @@
               <div class = "confirm">
                 <div class = 'response error'><i class = 'fa fa-exclamation-circle' aria-hidden = 'true'></i></div>
                 <p>There was problem.</p>
-                <p>Refrsh and try again.</p>
+                <p>Refresh and try again.</p>
               </div>
             `);
           }
@@ -228,15 +226,13 @@ $('a[href*="#"]')
   });
 })(jQuery);
 
-// Hook bswipe to carousel
 $('.carousel').bcSwipe({ threshold: 50 });
 
-//lazy load google font
-  (function() {
-    var font = document.createElement('link');
-    font.type = 'text/css'; 
-    font.rel = 'stylesheet';
-    font.href = 'https://fonts.googleapis.com/css?family=Josefin+Sans:400,700';
-    var s = document.getElementsByTagName('link')[0]; 
-    s.parentNode.insertBefore(font, s);
-  })();
+(function() {
+  var font = document.createElement('link');
+  font.type = 'text/css'; 
+  font.rel = 'stylesheet';
+  font.href = 'https://fonts.googleapis.com/css?family=Josefin+Sans:400,700';
+  var s = document.getElementsByTagName('link')[0]; 
+  s.parentNode.insertBefore(font, s);
+})();

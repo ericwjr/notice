@@ -14,8 +14,9 @@
   <script src='https://use.fontawesome.com/22572db09e.js'></script>
   <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u' crossorigin='anonymous'>
   <style>
-     {% include main.css %}
-     {% include ui.css %}
+     {% include css/main.css %}
+     {% include css/ui.css %}
      {% include css/animate.css %}
+     {% include css/query.css %}
   </style>
 </head>
