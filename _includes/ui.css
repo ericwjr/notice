@@ -128,9 +128,6 @@
 .fa-pause{
   animation:fade 1.25s ease-in forwards;
 }
-.phone .fa-play{
-  transform:rotate(180deg);
-}
 @keyframes swr{
   0% {opacity:0;}
   15% {left:33%; opacity:1;}
