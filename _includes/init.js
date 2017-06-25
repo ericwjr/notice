@@ -1,10 +1,17 @@
 (function(){
-  // var videos = $('video');
-  // if(videos){
-  //   for (var i=0; i<videos.length;i++){
-  //     videos[i].play();
-  //   }
-  // }
+  $('.carousel').on('keypress', function(e) {
+    if (e.keyCode === 37) {
+	   $(".carousel").carousel('previous');
+     $(this).unbind('keypress');
+	   return false;
+	}
+	if (e.keyCode === 39) {
+	   $(".carousel").carousel('next');
+     $(this).unbind('keypress');
+	   return false;
+	}
+  });
+
   $('.overlay').on('click', function(){
     var video = $('.show video')[0];
     $('.overlay .fa').toggleClass('fa-play').toggleClass('fa-pause');
@@ -23,9 +30,8 @@
        return truth;
   } 
   $('.fit').swipe( {
-      click:function(event,target){
-        //  $('.swipe').toggleClass('swl');
-        // on click swipe
+      click: function(event,target){
+        $('.swipe-me').carousel('next');
       },                                         
       swipeLeft: function() {
           if(ought('swr')){
