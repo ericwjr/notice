@@ -5,9 +5,9 @@
   //     videos[i].play();
   //   }
   // }
-  $('.overlay .play').on('click', function(){
+  $('.overlay').on('click', function(){
     var video = $('.show video')[0];
-    $(this).toggleClass('fa-play-circle-0').toggleClass('fa-pause');
+    $('.overlay .fa').toggleClass('fa-play').toggleClass('fa-pause');
     if (video.paused) {
       video.play();
     } else {
