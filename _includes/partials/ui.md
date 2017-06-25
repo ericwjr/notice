@@ -17,8 +17,8 @@
             <span class="camera"></span>
             <span class="speaker"></span>
           </div>
-          <div class="top-bar"></div>
-          <div class="phone-screen">
+          <div class="tbar"></div>
+          <div class="screen">
             {% include partials/screen.md %}
           </div>
           <div class="buttons">
@@ -27,7 +27,7 @@
             <span class="up"></span>
             <span class="down"></span>
           </div>
-          <div class="bottom-bar"></div>
+          <div class="lbar"></div>
           <div class = 'flex'>
               {% for button in site.data.buttons %}
                 <div class = 'trio'>
