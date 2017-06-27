@@ -16,7 +16,7 @@
           <span class = 'ups displace'>
           <a class = 'download flex' href = 'https://play.google.com/store/apps/details?id=co.sonofy.smartroomsolutions&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' target = '_blank'>
             <i class="fa fa-android" aria-hidden = 'true'></i>
-            <p>DOWNLOAD MOBILE APP</p>
+            <p>Download Mobile App</p>
           </a>
           <h1>{{ slide.heading }}</h1>
           </span>
