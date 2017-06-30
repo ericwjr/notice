@@ -25,10 +25,6 @@ header{
   color:#fff; 
   text-transform:uppercase;
 }
-header,
-header img{
-  vertical-align:text-top;
-}
 header img{
   width:30px;
   margin-right:7.5px;
