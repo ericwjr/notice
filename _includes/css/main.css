@@ -30,13 +30,15 @@ header img{
   vertical-align:text-top;
 }
 header img{
-  width:24px;
+  width:30px;
   margin-right:7.5px;
 }
 header a,
 header .fa{
   cursor:pointer;
   color:inherit;
+  display: flex;
+  align-items: center;
 }
 a:hover,
 a:focus{
