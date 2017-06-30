@@ -13,11 +13,11 @@
   });
 
   $('.tp-menu').on('click', function() {
-      $(this).toggleClass('fa-bars').toggleClass('fa-close');
+      $(this).toggleClass('fa-bars').toggleClass('fa-close').toggleClass('in-place');
       $('.menu').toggleClass('abrir');
   });
   $('.menu a').on('click', function() {
-      $('.tp-menu').toggleClass('fa-bars').toggleClass('fa-close');
+      $('.tp-menu').toggleClass('fa-bars').toggleClass('fa-close').toggleClass('in-place');
       $('.menu').toggleClass('abrir');
   });
 
