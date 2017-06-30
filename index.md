@@ -5,7 +5,7 @@ published: true
 <section>
  {% include partials/slides.md %}
 </section>
-<section>
+<section class = 'ui-case'>
   {% include partials/ui.md %}
 </section>
 <section class = 'show contain'>

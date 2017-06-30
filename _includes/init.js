@@ -15,6 +15,7 @@
   $('.overlay').on('click', function(){
     var video = $('.show video')[0];
     $('.overlay .fa').toggleClass('fa-play').toggleClass('fa-pause');
+    $(this).toggleClass('cast');
     if (video.paused) {
       video.play();
     } else {

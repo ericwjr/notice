@@ -97,8 +97,15 @@
   position:relative;
   perspective:750px;
 }
-.fmodal{
+.fmodal,
+.ui-case{
   background-image: url({{site.baseurl}}/assets/wall.png);
+}
+.ui-case .contain{
+  flex-flow:row wrap;
+  max-width:992px;
+  margin:0 auto;
+  padding:40px 0;
 }
 .swipe{
   border-bottom-right-radius:50%;
