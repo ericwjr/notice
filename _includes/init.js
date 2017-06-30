@@ -12,6 +12,15 @@
 	}
   });
 
+  $('.tp-menu').on('click', function() {
+      $(this).toggleClass('fa-bars').toggleClass('fa-close');
+      $('.menu').toggleClass('abrir');
+  });
+  $('.menu a').on('click', function() {
+      $('.tp-menu').toggleClass('fa-bars').toggleClass('fa-close');
+      $('.menu').toggleClass('abrir');
+  });
+
   $('.overlay').on('click', function(){
     var video = $('.show video')[0];
     $('.overlay .fa').toggleClass('fa-play').toggleClass('fa-pause');

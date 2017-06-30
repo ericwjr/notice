@@ -4,14 +4,14 @@
   <img src = '{{site.baseurl}}/assets/notice.png' alt = 'logo'>{{ site.title }}
   </a>
   </div>
-  <a class='tp-menu' href = '#form'>
-  Contact Us
-  </a>
-    <div class='menu-bar'>
-      <nav class = 'menu'>
-        {% for section in site.data.sections %}
-          <a href='{{ site.baseurl }}/#{{ section.id }}'>{{ section.text }}</a>
-        {% endfor %}
-      </nav>
-    </div>
+  <i class = 'fa fa-bars tp-menu' aria-hidden = 'true'></i>
+  <div class='menu-bar'>
+    <nav class = 'menu flex'>
+    <span class = 'flex'>
+      {% for section in site.data.menu %}
+        <a href='{{ site.baseurl }}/#{{ section.id }}'>{{ section.text }}</a>
+      {% endfor %}
+      </span>
+    </nav>
+  </div>
 </header>

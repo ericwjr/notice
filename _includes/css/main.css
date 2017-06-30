@@ -48,7 +48,11 @@ a:focus{
   right:25px;
   padding:0;
   top:35px;
+  z-index:9999;
   cursor:pointer;
+}
+.in-place{
+  position:fixed;
 }
 .item{
   position:relative;
@@ -362,7 +366,7 @@ input[type=submit]{
   top:0;
   bottom:0;
   width:100%;
-  z-index:999;
+  z-index:499;
   cursor:pointer;
 }
 .cast{
@@ -370,4 +374,27 @@ input[type=submit]{
 }
 .show .play{
   color:#eee;
+}
+.menu a{
+  margin-top: 25px; 
+  text-transform: capitalize;
+}
+.menu{
+  height:0;
+  overflow:hidden;
+}
+.menu span{
+  flex-direction:column;
+}
+.menu.abrir{
+  position:fixed;
+  height:100vh;
+  width:100%;
+  top:0;
+  left:0;
+  z-index:999;
+  background:linear-gradient(rgba(0,0,0,.96),rgba(255,255,255,0.84));
+}
+.abrir span{
+  animation: pulse 1s ease-in;
 }
