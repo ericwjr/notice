@@ -29,6 +29,9 @@ header img{
   width:30px;
   margin-right:7.5px;
 }
+header span{
+  padding:2.5px;
+}
 header a,
 header .fa{
   cursor:pointer;
