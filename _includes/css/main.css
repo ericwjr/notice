@@ -378,8 +378,7 @@ input[type=submit]{
 }
 .menu a{
   margin-top: 25px; 
-  text-transform: capitalize;
-}
+  text-transform: cap
 .menu{
   height:0;
   overflow:hidden;
@@ -394,7 +393,7 @@ input[type=submit]{
   top:0;
   left:0;
   z-index:999;
-  background:linear-gradient(rgba(0,0,0,.96),rgba(0,0,0,0.72),rgba(0,0,0,0.45),rgba(255,255,255,.96));
+  background:linear-gradient(rgba(0,0,0,.96),rgba(0,0,0,0.9),rgba(0,0,0,0.75),rgba(255,255,255,.96));
 }
 .abrir span{
   animation: pulse 1s ease-in;
