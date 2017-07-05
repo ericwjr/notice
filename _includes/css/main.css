@@ -66,11 +66,15 @@ a:focus{
   max-width:250px;
   color:#fff;
 }
+.ups, .downs{
+  opacity:0;
+  display: block;
+}
 .ups{
-  animation:ups 15s ease-in forwards;
+  animation: fadeInUp 0.75s ease-in forwards;
 }
 .downs{
-  animation:downs 12s 1.5s ease-in forwards;
+  animation: fadeInDown 0.5s 1s ease-in forwards;
 }
 h1,a,p{
   color:inherit;
@@ -397,5 +401,5 @@ input[type=submit]{
   background-color:rgba(0,0,0,.9);
 }
 .abrir span{
-  animation: pulse 1s ease-in;
+  animation: fadeInDown 0.5s ease-in;
 }
