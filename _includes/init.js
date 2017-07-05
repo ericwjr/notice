@@ -2,12 +2,10 @@
   $('.carousel').on('keypress', function(e) {
     if (e.keyCode === 37) {
 	   $(".carousel").carousel('previous');
-     $(this).unbind('keypress');
 	   return false;
 	}
 	if (e.keyCode === 39) {
 	   $(".carousel").carousel('next');
-     $(this).unbind('keypress');
 	   return false;
 	}
   });
