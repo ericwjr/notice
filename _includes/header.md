@@ -1,7 +1,8 @@
 <header class = 'header'>
   <div class='logo'>
   <a href = '{{site.baseurl}}'>
-  <img src = '{{site.baseurl}}/assets/notice.png' alt = 'logo'><span>{{ site.title }}</spaan>
+  <img src = '{{site.baseurl}}/assets/notice.png' alt = 'logo'>
+  <!--<span>{{ site.title }}</spaan>-->
   </a>
   </div>
   <i class = 'fa fa-bars tp-menu' aria-hidden = 'true'></i>

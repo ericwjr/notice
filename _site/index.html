@@ -1,0 +1,1205 @@
+<!doctype html>
+<html lang = ' | default: site.lang | default: 'en' }}'>
+  <head>
+  <meta charset='utf-8'>
+  <title>NOTICE</title>
+  <meta itemprop = 'description' name='description' content=''>
+  <meta property='og:description' content=''>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
+  <meta name='keywords' content='NOTICE'>
+  <meta property='og:locale' content='en_US' />
+  <meta property='og:type' content='article' />
+  <meta property='og:title' content='' />
+  <meta property='og:url' content='http://localhost:4000/' />
+  <link rel='shortcut icon' href='/assets/notice.png'>
+  <link rel='canonical' href='http://localhost:4000/'> 
+  <script src='https://use.fontawesome.com/22572db09e.js'></script>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u' crossorigin='anonymous'>
+  <style>
+     *, *:after, *:before{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+.contain{
+  overflow:hidden;
+}
+video {
+  left: 50%;
+  min-height: 100%;
+  min-width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+header{
+  position:absolute;
+  width:100%;
+  top:0;
+  left:0;
+  z-index:998;
+  padding:35px 25px 15px 25px;
+  font-size:1.6em;
+  color:#fff; 
+  text-transform:uppercase;
+}
+header img{
+  width:28px;
+  margin-right:7.5px;
+}
+header span{
+  padding:2.5px;
+}
+header a,
+header .fa{
+  cursor:pointer;
+  color:inherit;
+  display: flex;
+  align-items: center;
+}
+a:hover,
+a:focus{
+  color:#f0f0f0;
+  text-decoration:none;
+}
+.tp-menu{
+  position:absolute;
+  right:25px;
+  padding:0;
+  top:35px;
+  z-index:9999;
+  cursor:pointer;
+}
+.in-place{
+  position:fixed;
+}
+.item{
+  position:relative;
+}
+.hold{
+  position:absolute;
+  left:25px;
+  bottom:90px;
+  z-index:99;
+  max-width:250px;
+  color:#fff;
+  /*removed previous andriod incon border. -B*/
+}
+.ups, .downs{
+  display: block;
+}
+.ups{
+  animation: fadeInUp 0.75s ease-in forwards;
+}
+.downs{
+  animation: fadeInDown 0.5s 1s ease-in forwards;
+}
+h1,a,p{
+  color:inherit;
+}
+.hold h1{
+  font-size:3em;
+  font-weight:300;
+}
+.carousel-fade .carousel-inner .item {
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.carousel-indicators li{
+  border:0;
+  background-color:#ccc;
+  transition: all 1s ease-in-out;
+  width:7.5px;
+  height:7.5px;
+  margin:1px 10px;
+}
+#indicate{
+  bottom:90px;
+  margin-left:0;
+}
+.download{ 
+  flex-direction:column;
+  width:175px;
+  cursor:pointer;
+  padding:15px;
+  border:3px solid #eee;
+}
+.download p{
+  font-size:1.25em;
+  margin:7.5px 0;
+  text-align:center;
+}
+.fa-android{
+  font-size:5em;
+}
+body{
+  font-family: 'Josefin Sans', sans-serif;
+}
+.once,
+.once .carousel-inner,
+.once .carousel-inner .item {
+   height:100vh;
+   width:100%;
+}
+.shadow{
+  position:absolute;
+  z-index:1;
+  top:0;
+  left:0;
+  bottom:0;
+  width:100%;
+  perspective:600px;
+}
+.item:nth-child(1) .shadow {
+  background: rgba(0,155,255,0.4);
+}
+.item:nth-child(2) .shadow {
+  background: rgba(0,155,55,0.4);
+}
+.item:nth-child(3) .shadow {
+  background: rgba(255,0,0,0.4);
+}
+.item:nth-child(4) .shadow {
+  background: rgba(155,0,255,0.4); 
+}
+.fmodal{
+  background-color:rgba(0,0,0,.7);
+  opacity:0.6;
+  transition: all 1.5s ease-in;
+  z-index:999;
+  width:100%;
+  min-height:100vh;
+}
+.ui{
+  cursor:pointer;
+  z-index:999;
+}
+.flex{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.fmodal{
+  flex-flow:row wrap;
+  padding:25px 0;
+}
+.flex *{
+  text-align:center;
+}
+.third{
+  width:96%;
+}
+.form{min-height:72vh;}
+::-webkit-input-placeholder {
+  color: #444;
+}
+form{
+  padding:25px;
+  width:90%;
+  max-width:450px;
+  animation: grow 0.5s ease-in-out;
+}
+form:focus{
+  outline:none;
+}
+textarea{
+  min-height:90px;
+}
+input, textarea{
+  opacity:0.9;
+  background-color:#fff;
+  transition:all 0.3s ease-in;
+  display:block;
+  width:100%;
+  outline:none;
+  border:1px solid transparent;
+  padding:15px 25px;
+  font-size:1.05em;
+  margin:25px auto;
+  border-radius:5px;
+  opacity:0;
+  animation: show 1s 0.75s ease-out forwards;
+}
+input:hover,
+textarea:hover,
+textarea:focus{
+  opacity:1;
+  background-color:#eeffee;
+  box-shadow: 0 0 1px 1px rbga(0,255,0,0.3);
+  width:100%;
+}
+input[type=submit]:hover{
+  opacity:1;
+}
+input[type=submit]{
+  width:100%;
+  background-color:#000;
+  color:#fff;
+  font-weight:400;
+  cursor:pointer;
+  text-align:center;
+  margin:15px auto;
+  padding:12.5px 0;
+  border-radius:25px !important;
+  font-size:120%;
+  outline:none;
+  border:none;
+  -webkit-appearance: none;
+  transition:background-color 0.3s ease-in-out;
+}
+.funga,
+.select {
+  position: relative;
+  display: block;
+  width:100%;
+  margin:0 auto;
+  opacity:0;
+  user-select: none;
+  animation: show 1s 0.75s ease-out forwards;
+  z-index:999;
+}
+.funga select {
+  display: none;
+  padding:15px;
+}
+.gun {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin:0 auto;
+  padding: 0 25px 0 15px;
+  height:50px;
+  font-size: 1.2em;
+  font-weight: 300;
+  color: #fff;
+  line-height: 50px;
+  background-color: #000;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.gun:after {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 10px; height: 10px;
+  top: 50%; right: 25px;
+  margin-top: -3px;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: rotate(45deg) translateY(-50%);
+  transition: all 0.4s ease-in-out;
+  transform-origin: 50% 0;
+}
+.select.opened .gun:after {
+  margin-top: 3px;
+  transform: rotate(-135deg) translateY(-50%);
+}
+.options {
+  position: absolute;
+  display: block;
+  top: 100%; left: 0; right: 0;
+  min-width: 100%;
+  margin: 15px 0;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-shadow: 0 1px 1px rgba(0,0,0,.07);
+  background: #fff;
+  transition: all .4s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(-15px);
+  padding:10px 0;
+}
+.select.opened .options {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+  transform: translateY(0);
+  z-index: 2;
+}
+.options:before {
+  position: absolute;
+  display: block;
+  content: '';
+  bottom: 100%; right: 25px;
+  width: 10px; height: 10px;
+  margin-bottom: -4px;
+  border-top: 1px solid #b5b5b5;
+  border-left: 1px solid #b5b5b5;
+  background: #fff;
+  transform: rotate(45deg);
+  transition: all .4s ease-in-out;
+}
+.option-hover:before {
+  background: #fff;
+}
+.option {
+  position: relative;
+  display: block;
+  padding: 0 22px;
+  border-bottom: 1px solid #fff;
+  font-size: 18px;
+  color: #111;
+  line-height: 47px;
+  cursor: pointer;
+  transition: all .4s ease-in-out;
+}
+.option:first-of-type {
+  border-radius: 4px 4px 0 0;
+}
+.option:last-of-type {
+  border-bottom: 0;
+  border-radius: 0 0 4px 4px;
+}
+.option:hover,
+.option.selection {
+  background: #eeffee;
+}
+.fluid{
+  width:100%;
+  flex-direction:column;
+}
+.show{
+  height:100vh;
+  position:relative;
+  background-color:#111;
+}
+.show .overlay{
+  position:absolute;
+  top:0;
+  bottom:0;
+  width:100%;
+  z-index:499;
+  cursor:pointer;
+}
+.cast{
+  background:rgba(0,0,0,.45);
+}
+.show .play{
+  color:#eee;
+}
+.menu a{
+  margin-top: 25px; 
+  text-transform: capitalize;
+}
+.menu{
+  height:0;
+  overflow:hidden;
+}
+.menu span{
+  flex-direction:column;
+}
+.menu.abrir{
+  position:fixed;
+  height:100vh;
+  width:100%;
+  top:0;
+  left:0;
+  z-index:999;
+  background-color:rgba(0,0,0,.9);
+}
+.abrir span{
+  animation: fadeOutDown 0.75s ease-in-out;
+}
+
+     .phone {
+  box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px #999, 0 0 30px 0px rgba(0, 0, 0, 0.7);
+  border: 2.5px solid #d9dbdc;
+  background: #f8f8f8;
+  padding: 15px;
+  border-radius: 25px;
+  height: 633px;
+  width: 320px;
+  position: relative;
+  margin: 30px auto;
+  transform: scale(0.8);
+  cursor:pointer;
+}
+.top {
+  padding: 5px 110px 30px;
+  position: relative;
+  flex-direction:row;
+}
+.speaker {
+  width: 70px;
+  height: 6px;
+  border-radius: 6px;
+  background: #292728;
+}
+.camera {
+  height: 9px;
+  width: 10px;
+  border-radius: 50%;
+  margin-right: 15px;
+  background: #333;
+}
+.tbar,
+.lbar {
+  display: block;
+  width: 320px;
+  height: 10px;
+  border-left: 5px solid #BBB;
+  border-right: 5px solid #BBB;
+  position: absolute;
+  left: -5px;
+}
+.tbar {
+  top: 65px;
+}
+.lbar {
+  bottom: 65px;
+}
+.screen {
+  background: #eee;
+  border: 1px solid #d9dbdc;
+  margin: 0 auto;
+  border-radius: 3px;
+  overflow-y: hidden;
+}
+.screen img {
+  width: 100%;
+}
+.on-off,
+.up, 
+.down,
+.sleep {
+  display: block;
+  background: #bbb;
+  position: absolute;
+  border-radius: 2px 0px 0px 2px;
+}
+.on-off {
+  height: 40px;
+  width: 3px;
+  top: 100px;
+  left: -8px;
+}
+.up,
+.down,
+.sleep {
+  height: 44px;
+  width: 5px;
+  left: -10px;
+}
+.up {
+  top: 170px;
+}
+.down {
+  top: 250px;
+}
+.sleep {
+  left: auto;
+  right: -10px;
+  top: 170px;
+  border-radius: 0px 2px 2px 0px;
+}
+.case{
+  width:320px;
+  height:633px;
+  overflow:hidden;
+  margin: 0 auto;
+  position:relative;
+  perspective:750px;
+}
+.fmodal,
+.ui-case{
+  background-image: url(/assets/wall.png);
+}
+.ui-case .contain{
+  flex-flow:row wrap;
+  max-width:992px;
+  margin:0 auto;
+  padding:40px 0;
+}
+.swipe{
+  border-bottom-right-radius:50%;
+  border-bottom-left-radius:50%; 
+  position:absolute;
+  z-index:999;
+  width:250px;
+  top:480px;
+  opacity:0;
+}
+.swipe img{
+  width:100%;
+}
+.swr{
+  transform:rotateX(15deg) rotateZ(-6deg);
+  animation:swr 2s;
+}
+.swl{
+  transform:rotateX(-15deg) rotateZ(6deg);
+  animation:swl 2s;
+}
+.trio{
+  width:33.3%
+}
+.fa-pause{
+  animation:fade 1.25s ease-in forwards;
+}
+
+     @keyframes swr{
+  0% {opacity:0;}
+  15% {left:33%; opacity:1;}
+  100% {left:75%; opacity:1;}
+}
+@keyframes swl{
+  0% {opacity:0;}
+  15% {left:45%; opacity:1;}
+  100% {left:10%; opacity:1;}
+}
+@keyframes fade{
+  0%{opacity:1;}
+  100%{opacity:0;}
+}
+@keyframes spin {
+  0% { transform:rotate(0deg); }
+  100%{ transform:rotate(360deg); }
+}
+@keyframes grow{
+  0% {height:0;}
+  100% {height:initial;}
+}
+@keyframes show{
+  0%{
+    opacity:0;
+  }
+  100%{
+    opacity:1;
+  }
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes fadeOutDown {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+}
+     @media screen and (min-width:768px){
+ .hold{
+   max-width:400px;
+ } 
+ .third{
+   width:48%;
+ }
+}
+@media screen and (min-width:992px) {
+  .third{
+    width:31%;
+  }
+}
+  </style>
+</head>
+
+  <body>
+    <header class = 'header'>
+  <div class='logo'>
+  <a href = ''>
+  <img src = '/assets/notice.png' alt = 'logo'>
+  <!--<span>NOTICE</span>-->
+  </a>
+  </div>
+  <i class = 'fa fa-bars tp-menu' aria-hidden = 'true'></i>
+  <div class='menu-bar'>
+    <nav class = 'menu flex'>
+    <span class = 'flex'>
+      
+        <a href='/#home'>Home</a>
+      
+        <a href='/#ui'>UI</a>
+      
+        <a href='/#show'>Video</a>
+      
+        <a href='/#contact'>Contact Us</a>
+      
+      </span>
+    </nav>
+  </div>
+</header>
+
+    <section id="home">
+ <div id="carousel" class="carousel slide carousel-fade once contain" data-ride="carousel">
+  <ol class="carousel-indicators flex" id="indicate">
+    
+      
+      <li data-target="#carousel" data-slide-to="0" class="active"></li>
+    
+      
+      <li data-target="#carousel" data-slide-to="1"></li>
+    
+      
+      <li data-target="#carousel" data-slide-to="2"></li>
+    
+      
+      <li data-target="#carousel" data-slide-to="3"></li>
+    
+  </ol>
+  <div class="carousel-inner">
+    
+      <div class="item  active">
+        <video autoplay="" loop="" muted="">
+          <source src="/assets/video1.mp4" />
+        </video>
+        <div class="shadow" tabindex="1">
+          <div class="hold contain">
+          <span class="ups displace">
+          <a class="download flex" href="https://play.google.com/store/apps/details?id=co.sonofy.smartroomsolutions&amp;pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" target="_blank">
+            <!--<i class="fa fa-android" aria-hidden = 'true'></i> -->
+            <!--<p>Download Mobile App</p>-->
+          </a>
+          <h1>Give Your Home A Voice</h1>
+          </span>
+          <span class="downs displace">
+          <a class="ui"> 
+            Get Started
+            <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+          </a>
+          </span>
+          <img style="width:25%" src="../assets/dl.png" />
+          </div>
+        </div>
+      </div>
+    
+      <div class="item ">
+        <video autoplay="" loop="" muted="">
+          <source src="/assets/video2.mp4" />
+        </video>
+        <div class="shadow" tabindex="1">
+          <div class="hold contain">
+          <span class="ups displace">
+          <a class="download flex" href="https://play.google.com/store/apps/details?id=co.sonofy.smartroomsolutions&amp;pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" target="_blank">
+            <!--<i class="fa fa-android" aria-hidden = 'true'></i> -->
+            <!--<p>Download Mobile App</p>-->
+          </a>
+          <h1>Notifications Your Way</h1>
+          </span>
+          <span class="downs displace">
+          <a class="ui"> 
+            Set it as you please
+            <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+          </a>
+          </span>
+          <img style="width:25%" src="../assets/dl.png" />
+          </div>
+        </div>
+      </div>
+    
+      <div class="item ">
+        <video autoplay="" loop="" muted="">
+          <source src="/assets/video3.mp4" />
+        </video>
+        <div class="shadow" tabindex="1">
+          <div class="hold contain">
+          <span class="ups displace">
+          <a class="download flex" href="https://play.google.com/store/apps/details?id=co.sonofy.smartroomsolutions&amp;pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" target="_blank">
+            <!--<i class="fa fa-android" aria-hidden = 'true'></i> -->
+            <!--<p>Download Mobile App</p>-->
+          </a>
+          <h1>Notifications With Style</h1>
+          </span>
+          <span class="downs displace">
+          <a class="ui"> 
+            Personalize your notifications
+            <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+          </a>
+          </span>
+          <img style="width:25%" src="../assets/dl.png" />
+          </div>
+        </div>
+      </div>
+    
+      <div class="item ">
+        <video autoplay="" loop="" muted="">
+          <source src="/assets/video4.mp4" />
+        </video>
+        <div class="shadow" tabindex="1">
+          <div class="hold contain">
+          <span class="ups displace">
+          <a class="download flex" href="https://play.google.com/store/apps/details?id=co.sonofy.smartroomsolutions&amp;pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" target="_blank">
+            <!--<i class="fa fa-android" aria-hidden = 'true'></i> -->
+            <!--<p>Download Mobile App</p>-->
+          </a>
+          <h1>Notifications For The Home</h1>
+          </span>
+          <span class="downs displace">
+          <a class="ui"> 
+            Never miss important notifications
+            <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+          </a>
+          </span>
+          <img style="width:25%" src="../assets/dl.png" />
+          </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+</section>
+<section class="ui-case" id="ui">
+  <div class="flex contain">
+  <div class="third container">
+    <div class="row">
+    
+      <div class="col-md-11">
+       <i class="fa fa-5x fa-music" aria-hidden="true"></i>
+        <h3> You are in Control</h3>
+        <p>You control what apps can notify you and how you want to be notified...speakers, lights, etc</p>
+      </div>
+    
+      <div class="col-md-11">
+       <i class="fa fa-5x fa-headphones" aria-hidden="true"></i>
+        <h3> In-home PA System</h3>
+        <p>Save your voice and send your messages through your home's speakers</p>
+      </div>
+    
+      <div class="col-md-11">
+       <i class="fa fa-5x fa-magic" aria-hidden="true"></i>
+        <h3> Smart</h3>
+        <p>Notice automatically enables when on your home wifi and disables when you leave</p>
+      </div>
+    
+    </div>
+  </div>
+  <div class="third">
+    <div class="case"> 
+      <div class="phone">
+          <div class="top flex">
+            <span class="camera"></span>
+            <span class="speaker"></span>
+          </div>
+          <div class="tbar"></div>
+          <div class="screen">
+            <div id="carousel" class="carousel slide swipe-me" data-ride="carousel">
+  <div class="carousel-inner">
+    
+      <div class="fit item  active">
+       <img src="/assets/screens/notice.png" alt="notice" />
+      </div>
+    
+      <div class="fit item ">
+       <img src="/assets/screens/notice1.png" alt="notice1" />
+      </div>
+    
+      <div class="fit item ">
+       <img src="/assets/screens/notice2.png" alt="notice2" />
+      </div>
+    
+      <div class="fit item ">
+       <img src="/assets/screens/notice3.png" alt="notice3" />
+      </div>
+    
+      <div class="fit item ">
+       <img src="/assets/screens/notice4.png" alt="notice4" />
+      </div>
+    
+      <div class="fit item ">
+       <img src="/assets/screens/notice5.png" alt="notice5" />
+      </div>
+    
+      <div class="fit item ">
+       <img src="/assets/screens/notice6.png" alt="notice6" />
+      </div>
+    
+  </div>
+</div>
+          </div>
+          <div class="buttons">
+            <span class="on-off"></span>
+            <span class="sleep"></span>
+            <span class="up"></span>
+            <span class="down"></span>
+          </div>
+          <div class="lbar">
+          <div class="flex">
+              
+                <div class="trio">
+                  <i class="fa fa-caret-left fa-2x" aria-hidden="true"></i>
+                </div>
+              
+                <div class="trio">
+                  <i class="fa fa-circle-o fa-2x" aria-hidden="true"></i>
+                </div>
+              
+                <div class="trio">
+                  <i class="fa fa-square-o fa-2x" aria-hidden="true"></i>
+                </div>
+              
+           </div>
+          </div>
+      </div>
+        <div class="swipe">
+          <img src="/assets/swipe.png" alt="swipe" />
+        </div>
+    </div>
+  </div>
+  <div class="third container">
+    <div class="row">
+    
+      <div class="col-md-11">
+        <i class="fa fa-5x fa-rocket" aria-hidden="true"></i>
+        <h3> Quick Access</h3>
+        <p> Quickly pause or broadcast from the app's notification actions</p>
+      </div>
+    
+      <div class="col-md-11">
+        <i class="fa fa-5x fa-thumbs-up" aria-hidden="true"></i>
+        <h3> Room by Room Control</h3>
+        <p> Only broadcast notifications to the rooms you choose</p>
+      </div>
+    
+      <div class="col-md-11">
+        <i class="fa fa-5x fa-heart" aria-hidden="true"></i>
+        <h3> Personalize</h3>
+        <p> Customize notification with custom tones</p>
+      </div>
+    
+    </div>
+  </div>
+</div>
+
+</section>
+<section class="show contain" id="show">
+ <video poster="/assets/poster.jpg">
+  <source src="/assets/video2.mp4" />
+</video>
+<div class="overlay flex cast">
+  <i class="fa fa-play fa-3x play" aria-hidden="true"></i>
+</div>
+</section>
+<section class="fmodal contain flex" id="contact">
+   <div class="fluid flex"><h2>Reach Out To Us</h2>
+  <form method="POST" action="https://formspree.io/fromweru@gmail.com" id="form" class="contain">
+    <div class="funga">
+      <select name="Subject" id="Subject" class="select subject" placeholder="" required="">
+      
+        <option value="General Inquiry">General Inquiry</option>
+      
+        <option value="Join Mailing List">Join Mailing List</option>
+      
+        <option value="Partner With Us">Partner With Us</option>
+      
+    </select>
+    </div>
+    <input type="text" name="fname" placeholder="Name" required="" />
+    <input type="email" name="email" placeholder="Email Address" required="" />
+    <textarea placeholder="Leave Us a Message"></textarea>
+    <input type="submit" value="submit" />
+  </form></div>
+
+  <div id="year">&copy; Notice App </div>
+</section>
+
+    <script
+  src='https://code.jquery.com/jquery-3.2.1.min.js'
+  integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='
+  crossorigin='anonymous'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js' integrity='sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa' crossorigin='anonymous'></script>
+<script>
+!function(factory){"function"==typeof define&&define.amd&&define.amd.jQuery?define(["jquery"],factory):factory("undefined"!=typeof module&&module.exports?require("jquery"):jQuery)}(function($){"use strict";function init(options){return!options||void 0!==options.allowPageScroll||void 0===options.swipe&&void 0===options.swipeStatus||(options.allowPageScroll=NONE),void 0!==options.click&&void 0===options.tap&&(options.tap=options.click),options||(options={}),options=$.extend({},$.fn.swipe.defaults,options),this.each(function(){var $this=$(this),plugin=$this.data(PLUGIN_NS);plugin||(plugin=new TouchSwipe(this,options),$this.data(PLUGIN_NS,plugin))})}function TouchSwipe(element,options){function touchStart(jqEvent){if(!(getTouchInProgress()||$(jqEvent.target).closest(options.excludedElements,$element).length>0)){var event=jqEvent.originalEvent?jqEvent.originalEvent:jqEvent;if(!event.pointerType||"mouse"!=event.pointerType||0!=options.fallbackToMouseEvents){var ret,touches=event.touches,evt=touches?touches[0]:event;return phase=PHASE_START,touches?fingerCount=touches.length:options.preventDefaultEvents!==!1&&jqEvent.preventDefault(),distance=0,direction=null,currentDirection=null,pinchDirection=null,duration=0,startTouchesDistance=0,endTouchesDistance=0,pinchZoom=1,pinchDistance=0,maximumsMap=createMaximumsData(),cancelMultiFingerRelease(),createFingerData(0,evt),!touches||fingerCount===options.fingers||options.fingers===ALL_FINGERS||hasPinches()?(startTime=getTimeStamp(),2==fingerCount&&(createFingerData(1,touches[1]),startTouchesDistance=endTouchesDistance=calculateTouchesDistance(fingerData[0].start,fingerData[1].start)),(options.swipeStatus||options.pinchStatus)&&(ret=triggerHandler(event,phase))):ret=!1,ret===!1?(phase=PHASE_CANCEL,triggerHandler(event,phase),ret):(options.hold&&(holdTimeout=setTimeout($.proxy(function(){$element.trigger("hold",[event.target]),options.hold&&(ret=options.hold.call($element,event,event.target))},this),options.longTapThreshold)),setTouchInProgress(!0),null)}}}function touchMove(jqEvent){var event=jqEvent.originalEvent?jqEvent.originalEvent:jqEvent;if(phase!==PHASE_END&&phase!==PHASE_CANCEL&&!inMultiFingerRelease()){var ret,touches=event.touches,evt=touches?touches[0]:event,currentFinger=updateFingerData(evt);if(endTime=getTimeStamp(),touches&&(fingerCount=touches.length),options.hold&&clearTimeout(holdTimeout),phase=PHASE_MOVE,2==fingerCount&&(0==startTouchesDistance?(createFingerData(1,touches[1]),startTouchesDistance=endTouchesDistance=calculateTouchesDistance(fingerData[0].start,fingerData[1].start)):(updateFingerData(touches[1]),endTouchesDistance=calculateTouchesDistance(fingerData[0].end,fingerData[1].end),pinchDirection=calculatePinchDirection(fingerData[0].end,fingerData[1].end)),pinchZoom=calculatePinchZoom(startTouchesDistance,endTouchesDistance),pinchDistance=Math.abs(startTouchesDistance-endTouchesDistance)),fingerCount===options.fingers||options.fingers===ALL_FINGERS||!touches||hasPinches()){if(direction=calculateDirection(currentFinger.start,currentFinger.end),currentDirection=calculateDirection(currentFinger.last,currentFinger.end),validateDefaultEvent(jqEvent,currentDirection),distance=calculateDistance(currentFinger.start,currentFinger.end),duration=calculateDuration(),setMaxDistance(direction,distance),ret=triggerHandler(event,phase),!options.triggerOnTouchEnd||options.triggerOnTouchLeave){var inBounds=!0;if(options.triggerOnTouchLeave){var bounds=getbounds(this);inBounds=isInBounds(currentFinger.end,bounds)}!options.triggerOnTouchEnd&&inBounds?phase=getNextPhase(PHASE_MOVE):options.triggerOnTouchLeave&&!inBounds&&(phase=getNextPhase(PHASE_END)),phase!=PHASE_CANCEL&&phase!=PHASE_END||triggerHandler(event,phase)}}else phase=PHASE_CANCEL,triggerHandler(event,phase);ret===!1&&(phase=PHASE_CANCEL,triggerHandler(event,phase))}}function touchEnd(jqEvent){var event=jqEvent.originalEvent?jqEvent.originalEvent:jqEvent,touches=event.touches;if(touches){if(touches.length&&!inMultiFingerRelease())return startMultiFingerRelease(event),!0;if(touches.length&&inMultiFingerRelease())return!0}return inMultiFingerRelease()&&(fingerCount=fingerCountAtRelease),endTime=getTimeStamp(),duration=calculateDuration(),didSwipeBackToCancel()||!validateSwipeDistance()?(phase=PHASE_CANCEL,triggerHandler(event,phase)):options.triggerOnTouchEnd||options.triggerOnTouchEnd===!1&&phase===PHASE_MOVE?(options.preventDefaultEvents!==!1&&jqEvent.cancelable!==!1&&jqEvent.preventDefault(),phase=PHASE_END,triggerHandler(event,phase)):!options.triggerOnTouchEnd&&hasTap()?(phase=PHASE_END,triggerHandlerForGesture(event,phase,TAP)):phase===PHASE_MOVE&&(phase=PHASE_CANCEL,triggerHandler(event,phase)),setTouchInProgress(!1),null}function touchCancel(){fingerCount=0,endTime=0,startTime=0,startTouchesDistance=0,endTouchesDistance=0,pinchZoom=1,cancelMultiFingerRelease(),setTouchInProgress(!1)}function touchLeave(jqEvent){var event=jqEvent.originalEvent?jqEvent.originalEvent:jqEvent;options.triggerOnTouchLeave&&(phase=getNextPhase(PHASE_END),triggerHandler(event,phase))}function removeListeners(){$element.unbind(START_EV,touchStart),$element.unbind(CANCEL_EV,touchCancel),$element.unbind(MOVE_EV,touchMove),$element.unbind(END_EV,touchEnd),LEAVE_EV&&$element.unbind(LEAVE_EV,touchLeave),setTouchInProgress(!1)}function getNextPhase(currentPhase){var nextPhase=currentPhase,validTime=validateSwipeTime(),validDistance=validateSwipeDistance(),didCancel=didSwipeBackToCancel();return!validTime||didCancel?nextPhase=PHASE_CANCEL:!validDistance||currentPhase!=PHASE_MOVE||options.triggerOnTouchEnd&&!options.triggerOnTouchLeave?!validDistance&&currentPhase==PHASE_END&&options.triggerOnTouchLeave&&(nextPhase=PHASE_CANCEL):nextPhase=PHASE_END,nextPhase}function triggerHandler(event,phase){var ret,touches=event.touches;return(didSwipe()||hasSwipes())&&(ret=triggerHandlerForGesture(event,phase,SWIPE)),(didPinch()||hasPinches())&&ret!==!1&&(ret=triggerHandlerForGesture(event,phase,PINCH)),didDoubleTap()&&ret!==!1?ret=triggerHandlerForGesture(event,phase,DOUBLE_TAP):didLongTap()&&ret!==!1?ret=triggerHandlerForGesture(event,phase,LONG_TAP):didTap()&&ret!==!1&&(ret=triggerHandlerForGesture(event,phase,TAP)),phase===PHASE_CANCEL&&touchCancel(event),phase===PHASE_END&&(touches?touches.length||touchCancel(event):touchCancel(event)),ret}function triggerHandlerForGesture(event,phase,gesture){var ret;if(gesture==SWIPE){if($element.trigger("swipeStatus",[phase,direction||null,distance||0,duration||0,fingerCount,fingerData,currentDirection]),options.swipeStatus&&(ret=options.swipeStatus.call($element,event,phase,direction||null,distance||0,duration||0,fingerCount,fingerData,currentDirection),ret===!1))return!1;if(phase==PHASE_END&&validateSwipe()){if(clearTimeout(singleTapTimeout),clearTimeout(holdTimeout),$element.trigger("swipe",[direction,distance,duration,fingerCount,fingerData,currentDirection]),options.swipe&&(ret=options.swipe.call($element,event,direction,distance,duration,fingerCount,fingerData,currentDirection),ret===!1))return!1;switch(direction){case LEFT:$element.trigger("swipeLeft",[direction,distance,duration,fingerCount,fingerData,currentDirection]),options.swipeLeft&&(ret=options.swipeLeft.call($element,event,direction,distance,duration,fingerCount,fingerData,currentDirection));break;case RIGHT:$element.trigger("swipeRight",[direction,distance,duration,fingerCount,fingerData,currentDirection]),options.swipeRight&&(ret=options.swipeRight.call($element,event,direction,distance,duration,fingerCount,fingerData,currentDirection));break;case UP:$element.trigger("swipeUp",[direction,distance,duration,fingerCount,fingerData,currentDirection]),options.swipeUp&&(ret=options.swipeUp.call($element,event,direction,distance,duration,fingerCount,fingerData,currentDirection));break;case DOWN:$element.trigger("swipeDown",[direction,distance,duration,fingerCount,fingerData,currentDirection]),options.swipeDown&&(ret=options.swipeDown.call($element,event,direction,distance,duration,fingerCount,fingerData,currentDirection))}}}if(gesture==PINCH){if($element.trigger("pinchStatus",[phase,pinchDirection||null,pinchDistance||0,duration||0,fingerCount,pinchZoom,fingerData]),options.pinchStatus&&(ret=options.pinchStatus.call($element,event,phase,pinchDirection||null,pinchDistance||0,duration||0,fingerCount,pinchZoom,fingerData),ret===!1))return!1;if(phase==PHASE_END&&validatePinch())switch(pinchDirection){case IN:$element.trigger("pinchIn",[pinchDirection||null,pinchDistance||0,duration||0,fingerCount,pinchZoom,fingerData]),options.pinchIn&&(ret=options.pinchIn.call($element,event,pinchDirection||null,pinchDistance||0,duration||0,fingerCount,pinchZoom,fingerData));break;case OUT:$element.trigger("pinchOut",[pinchDirection||null,pinchDistance||0,duration||0,fingerCount,pinchZoom,fingerData]),options.pinchOut&&(ret=options.pinchOut.call($element,event,pinchDirection||null,pinchDistance||0,duration||0,fingerCount,pinchZoom,fingerData))}}return gesture==TAP?phase!==PHASE_CANCEL&&phase!==PHASE_END||(clearTimeout(singleTapTimeout),clearTimeout(holdTimeout),hasDoubleTap()&&!inDoubleTap()?(doubleTapStartTime=getTimeStamp(),singleTapTimeout=setTimeout($.proxy(function(){doubleTapStartTime=null,$element.trigger("tap",[event.target]),options.tap&&(ret=options.tap.call($element,event,event.target))},this),options.doubleTapThreshold)):(doubleTapStartTime=null,$element.trigger("tap",[event.target]),options.tap&&(ret=options.tap.call($element,event,event.target)))):gesture==DOUBLE_TAP?phase!==PHASE_CANCEL&&phase!==PHASE_END||(clearTimeout(singleTapTimeout),clearTimeout(holdTimeout),doubleTapStartTime=null,$element.trigger("doubletap",[event.target]),options.doubleTap&&(ret=options.doubleTap.call($element,event,event.target))):gesture==LONG_TAP&&(phase!==PHASE_CANCEL&&phase!==PHASE_END||(clearTimeout(singleTapTimeout),doubleTapStartTime=null,$element.trigger("longtap",[event.target]),options.longTap&&(ret=options.longTap.call($element,event,event.target)))),ret}function validateSwipeDistance(){var valid=!0;return null!==options.threshold&&(valid=distance>=options.threshold),valid}function didSwipeBackToCancel(){var cancelled=!1;return null!==options.cancelThreshold&&null!==direction&&(cancelled=getMaxDistance(direction)-distance>=options.cancelThreshold),cancelled}function validatePinchDistance(){return null===options.pinchThreshold||pinchDistance>=options.pinchThreshold}function validateSwipeTime(){var result;return result=!options.maxTimeThreshold||!(duration>=options.maxTimeThreshold)}function validateDefaultEvent(jqEvent,direction){if(options.preventDefaultEvents!==!1)if(options.allowPageScroll===NONE)jqEvent.preventDefault();else{var auto=options.allowPageScroll===AUTO;switch(direction){case LEFT:(options.swipeLeft&&auto||!auto&&options.allowPageScroll!=HORIZONTAL)&&jqEvent.preventDefault();break;case RIGHT:(options.swipeRight&&auto||!auto&&options.allowPageScroll!=HORIZONTAL)&&jqEvent.preventDefault();break;case UP:(options.swipeUp&&auto||!auto&&options.allowPageScroll!=VERTICAL)&&jqEvent.preventDefault();break;case DOWN:(options.swipeDown&&auto||!auto&&options.allowPageScroll!=VERTICAL)&&jqEvent.preventDefault();break;case NONE:}}}function validatePinch(){var hasCorrectFingerCount=validateFingers(),hasEndPoint=validateEndPoint(),hasCorrectDistance=validatePinchDistance();return hasCorrectFingerCount&&hasEndPoint&&hasCorrectDistance}function hasPinches(){return!!(options.pinchStatus||options.pinchIn||options.pinchOut)}function didPinch(){return!(!validatePinch()||!hasPinches())}function validateSwipe(){var hasValidTime=validateSwipeTime(),hasValidDistance=validateSwipeDistance(),hasCorrectFingerCount=validateFingers(),hasEndPoint=validateEndPoint(),didCancel=didSwipeBackToCancel(),valid=!didCancel&&hasEndPoint&&hasCorrectFingerCount&&hasValidDistance&&hasValidTime;return valid}function hasSwipes(){return!!(options.swipe||options.swipeStatus||options.swipeLeft||options.swipeRight||options.swipeUp||options.swipeDown)}function didSwipe(){return!(!validateSwipe()||!hasSwipes())}function validateFingers(){return fingerCount===options.fingers||options.fingers===ALL_FINGERS||!SUPPORTS_TOUCH}function validateEndPoint(){return 0!==fingerData[0].end.x}function hasTap(){return!!options.tap}function hasDoubleTap(){return!!options.doubleTap}function hasLongTap(){return!!options.longTap}function validateDoubleTap(){if(null==doubleTapStartTime)return!1;var now=getTimeStamp();return hasDoubleTap()&&now-doubleTapStartTime<=options.doubleTapThreshold}function inDoubleTap(){return validateDoubleTap()}function validateTap(){return(1===fingerCount||!SUPPORTS_TOUCH)&&(isNaN(distance)||distance<options.threshold)}function validateLongTap(){return duration>options.longTapThreshold&&distance<DOUBLE_TAP_THRESHOLD}function didTap(){return!(!validateTap()||!hasTap())}function didDoubleTap(){return!(!validateDoubleTap()||!hasDoubleTap())}function didLongTap(){return!(!validateLongTap()||!hasLongTap())}function startMultiFingerRelease(event){previousTouchEndTime=getTimeStamp(),fingerCountAtRelease=event.touches.length+1}function cancelMultiFingerRelease(){previousTouchEndTime=0,fingerCountAtRelease=0}function inMultiFingerRelease(){var withinThreshold=!1;if(previousTouchEndTime){var diff=getTimeStamp()-previousTouchEndTime;diff<=options.fingerReleaseThreshold&&(withinThreshold=!0)}return withinThreshold}function getTouchInProgress(){return!($element.data(PLUGIN_NS+"_intouch")!==!0)}function setTouchInProgress(val){$element&&(val===!0?($element.bind(MOVE_EV,touchMove),$element.bind(END_EV,touchEnd),LEAVE_EV&&$element.bind(LEAVE_EV,touchLeave)):($element.unbind(MOVE_EV,touchMove,!1),$element.unbind(END_EV,touchEnd,!1),LEAVE_EV&&$element.unbind(LEAVE_EV,touchLeave,!1)),$element.data(PLUGIN_NS+"_intouch",val===!0))}function createFingerData(id,evt){var f={start:{x:0,y:0},last:{x:0,y:0},end:{x:0,y:0}};return f.start.x=f.last.x=f.end.x=evt.pageX||evt.clientX,f.start.y=f.last.y=f.end.y=evt.pageY||evt.clientY,fingerData[id]=f,f}function updateFingerData(evt){var id=void 0!==evt.identifier?evt.identifier:0,f=getFingerData(id);return null===f&&(f=createFingerData(id,evt)),f.last.x=f.end.x,f.last.y=f.end.y,f.end.x=evt.pageX||evt.clientX,f.end.y=evt.pageY||evt.clientY,f}function getFingerData(id){return fingerData[id]||null}function setMaxDistance(direction,distance){direction!=NONE&&(distance=Math.max(distance,getMaxDistance(direction)),maximumsMap[direction].distance=distance)}function getMaxDistance(direction){if(maximumsMap[direction])return maximumsMap[direction].distance}function createMaximumsData(){var maxData={};return maxData[LEFT]=createMaximumVO(LEFT),maxData[RIGHT]=createMaximumVO(RIGHT),maxData[UP]=createMaximumVO(UP),maxData[DOWN]=createMaximumVO(DOWN),maxData}function createMaximumVO(dir){return{direction:dir,distance:0}}function calculateDuration(){return endTime-startTime}function calculateTouchesDistance(startPoint,endPoint){var diffX=Math.abs(startPoint.x-endPoint.x),diffY=Math.abs(startPoint.y-endPoint.y);return Math.round(Math.sqrt(diffX*diffX+diffY*diffY))}function calculatePinchZoom(startDistance,endDistance){var percent=endDistance/startDistance*1;return percent.toFixed(2)}function calculatePinchDirection(){return pinchZoom<1?OUT:IN}function calculateDistance(startPoint,endPoint){return Math.round(Math.sqrt(Math.pow(endPoint.x-startPoint.x,2)+Math.pow(endPoint.y-startPoint.y,2)))}function calculateAngle(startPoint,endPoint){var x=startPoint.x-endPoint.x,y=endPoint.y-startPoint.y,r=Math.atan2(y,x),angle=Math.round(180*r/Math.PI);return angle<0&&(angle=360-Math.abs(angle)),angle}function calculateDirection(startPoint,endPoint){if(comparePoints(startPoint,endPoint))return NONE;var angle=calculateAngle(startPoint,endPoint);return angle<=45&&angle>=0?LEFT:angle<=360&&angle>=315?LEFT:angle>=135&&angle<=225?RIGHT:angle>45&&angle<135?DOWN:UP}function getTimeStamp(){var now=new Date;return now.getTime()}function getbounds(el){el=$(el);var offset=el.offset(),bounds={left:offset.left,right:offset.left+el.outerWidth(),top:offset.top,bottom:offset.top+el.outerHeight()};return bounds}function isInBounds(point,bounds){return point.x>bounds.left&&point.x<bounds.right&&point.y>bounds.top&&point.y<bounds.bottom}function comparePoints(pointA,pointB){return pointA.x==pointB.x&&pointA.y==pointB.y}var options=$.extend({},options),useTouchEvents=SUPPORTS_TOUCH||SUPPORTS_POINTER||!options.fallbackToMouseEvents,START_EV=useTouchEvents?SUPPORTS_POINTER?SUPPORTS_POINTER_IE10?"MSPointerDown":"pointerdown":"touchstart":"mousedown",MOVE_EV=useTouchEvents?SUPPORTS_POINTER?SUPPORTS_POINTER_IE10?"MSPointerMove":"pointermove":"touchmove":"mousemove",END_EV=useTouchEvents?SUPPORTS_POINTER?SUPPORTS_POINTER_IE10?"MSPointerUp":"pointerup":"touchend":"mouseup",LEAVE_EV=useTouchEvents?SUPPORTS_POINTER?"mouseleave":null:"mouseleave",CANCEL_EV=SUPPORTS_POINTER?SUPPORTS_POINTER_IE10?"MSPointerCancel":"pointercancel":"touchcancel",distance=0,direction=null,currentDirection=null,duration=0,startTouchesDistance=0,endTouchesDistance=0,pinchZoom=1,pinchDistance=0,pinchDirection=0,maximumsMap=null,$element=$(element),phase="start",fingerCount=0,fingerData={},startTime=0,endTime=0,previousTouchEndTime=0,fingerCountAtRelease=0,doubleTapStartTime=0,singleTapTimeout=null,holdTimeout=null;try{$element.bind(START_EV,touchStart),$element.bind(CANCEL_EV,touchCancel)}catch(e){$.error("events not supported "+START_EV+","+CANCEL_EV+" on jQuery.swipe")}this.enable=function(){return this.disable(),$element.bind(START_EV,touchStart),$element.bind(CANCEL_EV,touchCancel),$element},this.disable=function(){return removeListeners(),$element},this.destroy=function(){removeListeners(),$element.data(PLUGIN_NS,null),$element=null},this.option=function(property,value){if("object"==typeof property)options=$.extend(options,property);else if(void 0!==options[property]){if(void 0===value)return options[property];options[property]=value}else{if(!property)return options;$.error("Option "+property+" does not exist on jQuery.swipe.options")}return null}}var VERSION="1.6.18",LEFT="left",RIGHT="right",UP="up",DOWN="down",IN="in",OUT="out",NONE="none",AUTO="auto",SWIPE="swipe",PINCH="pinch",TAP="tap",DOUBLE_TAP="doubletap",LONG_TAP="longtap",HORIZONTAL="horizontal",VERTICAL="vertical",ALL_FINGERS="all",DOUBLE_TAP_THRESHOLD=10,PHASE_START="start",PHASE_MOVE="move",PHASE_END="end",PHASE_CANCEL="cancel",SUPPORTS_TOUCH="ontouchstart"in window,SUPPORTS_POINTER_IE10=window.navigator.msPointerEnabled&&!window.navigator.pointerEnabled&&!SUPPORTS_TOUCH,SUPPORTS_POINTER=(window.navigator.pointerEnabled||window.navigator.msPointerEnabled)&&!SUPPORTS_TOUCH,PLUGIN_NS="TouchSwipe",defaults={fingers:1,threshold:75,cancelThreshold:null,pinchThreshold:20,maxTimeThreshold:null,fingerReleaseThreshold:250,longTapThreshold:500,doubleTapThreshold:200,swipe:null,swipeLeft:null,swipeRight:null,swipeUp:null,swipeDown:null,swipeStatus:null,pinchIn:null,pinchOut:null,pinchStatus:null,click:null,tap:null,doubleTap:null,longTap:null,hold:null,triggerOnTouchEnd:!0,triggerOnTouchLeave:!1,allowPageScroll:"auto",fallbackToMouseEvents:!0,excludedElements:".noSwipe",preventDefaultEvents:!0};$.fn.swipe=function(method){var $this=$(this),plugin=$this.data(PLUGIN_NS);if(plugin&&"string"==typeof method){if(plugin[method])return plugin[method].apply(plugin,Array.prototype.slice.call(arguments,1));$.error("Method "+method+" does not exist on jQuery.swipe")}else if(plugin&&"object"==typeof method)plugin.option.apply(plugin,arguments);else if(!(plugin||"object"!=typeof method&&method))return init.apply(this,arguments);return $this},$.fn.swipe.version=VERSION,$.fn.swipe.defaults=defaults,$.fn.swipe.phases={PHASE_START:PHASE_START,PHASE_MOVE:PHASE_MOVE,PHASE_END:PHASE_END,PHASE_CANCEL:PHASE_CANCEL},$.fn.swipe.directions={LEFT:LEFT,RIGHT:RIGHT,UP:UP,DOWN:DOWN,IN:IN,OUT:OUT},$.fn.swipe.pageScroll={NONE:NONE,HORIZONTAL:HORIZONTAL,VERTICAL:VERTICAL,AUTO:AUTO},$.fn.swipe.fingers={ONE:1,TWO:2,THREE:3,FOUR:4,FIVE:5,ALL:ALL_FINGERS}});
+(function(){
+  $('.carousel').on('keypress', function(e) {
+    if (e.keyCode === 37) {
+	   $(".carousel").carousel('previous');
+	   return false;
+	}
+	if (e.keyCode === 39) {
+	   $(".carousel").carousel('next');
+	   return false;
+	}
+  });
+
+  $('.tp-menu').on('click', function() {
+      $(this).toggleClass('fa-bars').toggleClass('fa-close').toggleClass('in-place');
+      $('.menu').toggleClass('abrir');
+  });
+  $('.menu a').on('click', function() {
+      $('.tp-menu').toggleClass('fa-bars').toggleClass('fa-close').toggleClass('in-place');
+      $('.menu').toggleClass('abrir');
+  });
+
+  $('.overlay').on('click', function(){
+    var video = $('.show video')[0];
+    $('.overlay .fa').toggleClass('fa-play').toggleClass('fa-pause');
+    $(this).toggleClass('cast');
+    if (video.paused) {
+      video.play();
+    } else {
+      video.pause();
+    }
+  });
+
+  var d = new Date();
+  var n = d.getFullYear();
+  $('#year').append(n);
+  function ought(c) {
+       var truth = $('.swipe').hasClass(c);
+       return truth;
+  } 
+  $('.fit').swipe( {
+      click: function(event,target){
+        $('.swipe-me').carousel('next');
+      },                                         
+      swipeLeft: function() {
+          if(ought('swr')){
+            $('.swipe').removeClass('swr');
+          }
+          if(ought('swl') === false){
+           $('.swipe').toggleClass('swl');
+          } 
+      },
+      swipeRight: function() {
+          if(ought('swl')){
+            $('.swipe').removeClass('swl');
+          }
+          if(ought('swr') === false){
+            $('.swipe').toggleClass('swr');
+          }
+      },
+      allowPageScroll: 'vertical'
+  });
+   
+  $('.once').carousel({
+    interval: 15000
+  });
+
+  $('.swipe-me').carousel({
+    interval: 4500
+  });
+  
+  mail = $('#form');
+    widget = $('.form');
+    mail.submit(function(e) {
+      guest = document.getElementById('name').value.toLowerCase();
+      mail = document.getElementById('email').value.toLowerCase();
+      message = document.getElementById('message').value.toLowerCase();
+      e.preventDefault();
+        $.ajax({
+          url: '//formspree.io/fromweru@gmail.com',
+          method: 'POST',
+          data: $(this).serialize(),
+          dataType: 'json',
+          beforeSend: function() {
+            mail.html(`
+              <h2>Sending</h2>
+              <span class = 'spinner'></span>
+            `);
+          },
+          success: function(data) {
+            mail.html(`
+              <div class = "confirm">
+                <h2 class = 'mark capital'>Hello ${guest}</h2>
+                <div  class = 'response success'><i class = 'fa fa-thumbs-up' aria-hidden = 'true'></i></div>
+                <p>Great to hear from you. We will get back to you asap.</p>
+              </div>
+            `);
+          },
+          error: function(err) {
+            mail.html(`
+              <div class = "confirm">
+                <div class = 'response error'><i class = 'fa fa-exclamation-circle' aria-hidden = 'true'></i></div>
+                <p>There was problem.</p>
+                <p>Refresh and try again.</p>
+              </div>
+            `);
+          }
+        });
+    });
+
+  // control the form select input section
+  $(".select").each(function() {
+      var classes = $(this).attr("class"),
+      id      = $(this).attr("id"),
+      name    = $(this).attr("name");
+      var template =  '<div class="' + classes + '">';
+      template += '<span class="gun">' + $(this).attr("placeholder") + '</span>';
+      template += '<div class="options">';
+      $(this).find("option").each(function() {
+        template += '<span class="option ' + $(this).attr("class") + '" data-value="' + $(this).attr("value") + '">' + $(this).html() + '</span>';
+      });
+      template += '</div></div>';
+      
+      $(this).hide();
+      $(this).after(template);
+    });
+    $(".option:first-of-type").hover(function() {
+      $(this).parents(".options").addClass("option-hover");
+    }, function() {
+      $(this).parents(".options").removeClass("option-hover");
+    });
+    $(".gun").on("click", function() {
+      $('html').one('click',function() {
+        $(".select").removeClass("opened");
+      });
+      $(this).parents(".select").toggleClass("opened");
+      event.stopPropagation();
+    });
+    $(".option").on("click", function() {
+      $(this).parents(".funga").find("select").val($(this).data("value"));
+      $(this).parents(".options").find(".option").removeClass("selection");
+      $(this).addClass("selection");
+      $(this).parents(".select").removeClass("opened");
+      $(this).parents(".select").find(".gun").text($(this).text());
+    });
+})();
+
+// Mobile swipe functionality
+
+(function($) {
+  $.fn.bcSwipe = function(settings) {
+    var config = { threshold: 50 };
+    if (settings) {
+      $.extend(config, settings);
+    }
+
+    this.each(function() {
+      var stillMoving = false;
+      var start;
+
+      if ('ontouchstart' in document.documentElement) {
+        this.addEventListener('touchstart', onTouchStart, false);
+      }
+
+      function onTouchStart(e) {
+        if (e.touches.length == 1) {
+          start = e.touches[0].pageX;
+          stillMoving = true;
+          this.addEventListener('touchmove', onTouchMove, false);
+        }
+      }
+
+      function onTouchMove(e) {
+        if (stillMoving) {
+          var x = e.touches[0].pageX;
+          var difference = start - x;
+          if (Math.abs(difference) >= config.threshold) {
+            cancelTouch();
+            if (difference > 0) {
+              $(this).carousel('next');
+            }
+            else {
+              $(this).carousel('prev');
+            }
+          }
+        }
+      }
+
+      function cancelTouch() {
+        this.removeEventListener('touchmove', onTouchMove);
+        start = null;
+        stillMoving = false;
+      }
+    });
+
+    return this;
+  };
+
+  // Smooth Scrolling
+  // Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+})(jQuery);
+
+$('.carousel').bcSwipe({ threshold: 50 });
+
+(function() {
+  var font = document.createElement('link');
+  font.type = 'text/css'; 
+  font.rel = 'stylesheet';
+  font.href = 'https://fonts.googleapis.com/css?family=Josefin+Sans:400,700';
+  var s = document.getElementsByTagName('link')[0]; 
+  s.parentNode.insertBefore(font, s);
+})();
+
+</script>
+  </body>
+</html>
