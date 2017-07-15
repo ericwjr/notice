@@ -47,7 +47,7 @@
   <div class = 'third container'>
     <div class = 'row'>
     {% for info in site.data.after %}
-      <div class = 'col-md-11 right'>
+      <div class = 'right col-md-11'>
         <i class="fa fa-5x fa-{{info.icon}}" aria-hidden="true"></i>
         <h3> {{ info.heading }}</h3>
         <p> {{ info.text }}</p>
