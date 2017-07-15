@@ -7,6 +7,7 @@
         <h3> {{ info.heading }}</h3>
         <p>{{ info.text }}</p>
         <br>
+        <br>
       </div>
     {% endfor %}
     </div>
@@ -14,7 +15,7 @@
   <div class = 'third'>
     <div class = 'case'> 
       <div class="phone">
-          <div class="top flex">
+          <div class="center flex">
             <span class="camera"></span>
             <span class="speaker"></span>
           </div>
