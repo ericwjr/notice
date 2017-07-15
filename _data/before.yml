@@ -2,7 +2,7 @@
   icon: music
   text: You control what apps can notify you and how you want to be notified...speakers, lights, etc
 - heading: In-home PA System
-  icon: headphones
+  icon: bullhorn
   text: Save your voice and send your messages through your home's speakers
 - heading: Smart
   icon: magic
