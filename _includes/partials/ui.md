@@ -6,6 +6,7 @@
        <i class="fa fa-5x fa-{{info.icon}}" aria-hidden="true"></i>
         <h3> {{ info.heading }}</h3>
         <p>{{ info.text }}</p>
+        </br>
       </div>
     {% endfor %}
     </div>
@@ -49,6 +50,7 @@
         <i class="fa fa-5x fa-{{info.icon}}" aria-hidden="true"></i>
         <h3> {{ info.heading }}</h3>
         <p> {{ info.text }}</p>
+        </br>
       </div>
     {% endfor %}
     </div>
