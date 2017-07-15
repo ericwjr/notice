@@ -1,12 +1,20 @@
-
+---
 title: NOTICE
-email: 'fromweru@gmail.com' #provisional; change
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+email: fromweru@gmail.com
 description: 
 baseurl: ''
-url: 'https://onweru.github.io/sonofy/' #provisional
+url: https://onweru.github.io/sonofy/
 twitter_username: jekyllrb
 markdown: kramdown
 theme: minima
 exclude:
-  - Gemfile
-  - Gemfile.lock
+- Gemfile
+- Gemfile.lock

@@ -1,7 +1,7 @@
 ---
 layout: default
-published: true
 ---
+
 <section id = 'home'>
  {% include partials/slides.md %}
 </section>
