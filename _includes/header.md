@@ -1,6 +1,6 @@
 <header class = 'header'>
   <div class="row">
-        <div class="col-med-3 offset-md-4">
+        <div class="col-md-3 offset-md-4">
           	<div class='logo'>
               	<a href = '{{site.baseurl}}'>
                   	<img src = '{{site.baseurl}}/assets/notice.png' alt = 'logo'>
