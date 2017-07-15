@@ -5,7 +5,7 @@
                   	<img src = '{{site.baseurl}}/assets/notice.png' alt = 'logo'>
               	</a>
           	</div>
-          	<div class='col-md-3 offset-md-4 menu-bar'>
+          	<div class='menu-bar'>
               <nav class = 'menu flex'>
                   <span class = 'flex'>
                       {% for section in site.data.menu %}
