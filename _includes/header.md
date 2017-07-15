@@ -5,7 +5,6 @@
                   	<img src = '{{site.baseurl}}/assets/notice.png' alt = 'logo'>
               	</a>
           	</div>
-          	<i class = 'fa fa-bars tp-menu' aria-hidden = 'true'></i>
           	<div class='col-md-3 offset-md-4 menu-bar'>
               <nav class = 'menu flex'>
                   <span class = 'flex'>
@@ -15,6 +14,6 @@
                   </span>
               </nav>
           	</div>
-    
   </div>
+  <i class = 'fa fa-bars tp-menu' aria-hidden = 'true'></i>
 </header>
