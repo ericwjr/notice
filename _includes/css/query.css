@@ -24,8 +24,8 @@
     width:31%;
   }
 }
-@media screen and (min-width: 1128px){
+@media screen and (min-width: 1024px){
   .slick-dots{
-    right: calc(100%/2 - 1050px/2);
+    right: calc(100%/2 - 960px/2);
   }
 }
