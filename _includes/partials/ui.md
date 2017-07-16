@@ -2,12 +2,10 @@
   <div class= 'third container'>
     <div class = 'row'>
     {% for info in site.data.before %}
-      <div class = ' left col-md-11'>
+      <div class = 'col-md-11'>
        <i class="fa fa-5x fa-{{info.icon}}" aria-hidden="true"></i>
         <h3> {{ info.heading }}</h3>
         <p>{{ info.text }}</p>
-        <br>
-        <br>
       </div>
     {% endfor %}
     </div>
@@ -15,7 +13,7 @@
   <div class = 'third'>
     <div class = 'case'> 
       <div class="phone">
-          <div class="center flex">
+          <div class="top flex">
             <span class="camera"></span>
             <span class="speaker"></span>
           </div>
@@ -47,12 +45,10 @@
   <div class = 'third container'>
     <div class = 'row'>
     {% for info in site.data.after %}
-      <div class = 'right col-md-11'>
+      <div class = 'col-md-11'>
         <i class="fa fa-5x fa-{{info.icon}}" aria-hidden="true"></i>
         <h3> {{ info.heading }}</h3>
         <p> {{ info.text }}</p>
-        <br>
-        <br>
       </div>
     {% endfor %}
     </div>

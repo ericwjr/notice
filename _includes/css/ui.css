@@ -103,7 +103,7 @@
 }
 .ui-case .contain{
   flex-flow:row wrap;
-  max-width:992px;
+  max-width:1128px;
   margin:0 auto;
   padding:40px 0;
 }

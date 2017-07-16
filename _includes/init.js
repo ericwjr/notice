@@ -1,16 +1,7 @@
-(function(){
-  $('.carousel').on('keypress', function(e) {
-    if (e.keyCode === 37) {
-	   $(".carousel").carousel('previous');
-	   return false;
-	}
-	if (e.keyCode === 39) {
-	   $(".carousel").carousel('next');
-	   return false;
-	}
-  });
+'use strict';
 
-  $('.tp-menu').on('click', function() {
+(function(){
+    $('.tp-menu').on('click', function() {
       $(this).toggleClass('fa-bars').toggleClass('fa-close').toggleClass('in-place');
       $('.menu').toggleClass('abrir');
   });
@@ -68,45 +59,6 @@
     interval: 4500
   });
   
-  mail = $('#form');
-    widget = $('.form');
-    mail.submit(function(e) {
-      guest = document.getElementById('name').value.toLowerCase();
-      mail = document.getElementById('email').value.toLowerCase();
-      message = document.getElementById('message').value.toLowerCase();
-      e.preventDefault();
-        $.ajax({
-          url: '//formspree.io/{{site.email}}',
-          method: 'POST',
-          data: $(this).serialize(),
-          dataType: 'json',
-          beforeSend: function() {
-            mail.html(`
-              <h2>Sending</h2>
-              <span class = 'spinner'></span>
-            `);
-          },
-          success: function(data) {
-            mail.html(`
-              <div class = "confirm">
-                <h2 class = 'mark capital'>Hello ${guest}</h2>
-                <div  class = 'response success'><i class = 'fa fa-thumbs-up' aria-hidden = 'true'></i></div>
-                <p>Great to hear from you. We will get back to you asap.</p>
-              </div>
-            `);
-          },
-          error: function(err) {
-            mail.html(`
-              <div class = "confirm">
-                <div class = 'response error'><i class = 'fa fa-exclamation-circle' aria-hidden = 'true'></i></div>
-                <p>There was problem.</p>
-                <p>Refresh and try again.</p>
-              </div>
-            `);
-          }
-        });
-    });
-
   // control the form select input section
   $(".select").each(function() {
       var classes = $(this).attr("class"),
@@ -244,3 +196,66 @@ $('.carousel').bcSwipe({ threshold: 50 });
   var s = document.getElementsByTagName('link')[0]; 
   s.parentNode.insertBefore(font, s);
 })();
+
+(function() {
+      $(".regular").slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        autoplay: true,
+        autoplaySpeed: 15000,
+        speed: 1000,
+        fade: true,
+        cssEase: 'linear',
+        variableWidth: true,
+        slidesPerRow: 1,
+        swipe: true,
+        onTouchMove: true
+      });
+  })();
+
+  // Form spree
+
+function  notifyUser(notification, mark) {
+  var $casing = $('#notification');
+  $('.input-field').val('');
+  $casing.append(notification);
+  $casing.addClass(mark).addClass('showing');
+  function  removeNotification() {
+     $casing.find('.alert').remove(); 
+     $casing.removeClass(mark).removeClass('showing');
+      console.log('perfecto');
+  }
+
+  setTimeout( removeNotification , 7000);
+
+  }
+
+var $contactForm = $('#contact-form');
+var $formWidget = $('form-widget');
+$contactForm.submit(function(e) {
+	e.preventDefault();
+	$.ajax({
+		url: '//formspree.io/{{ site.email }}',
+		method: 'POST',
+		data: $(this).serialize(),
+		dataType: 'json',
+		beforeSend: function() {
+			$contactForm.append ('<div class="alert alert-loading"><i></i>Sending message…</div>');
+		},
+		success: function(data) {
+      $contactForm.find('.alert-loading').remove();
+      var $notification = `<div class="alert alert-success">
+                                        <i class="fa fa-check-circle-o" aria-hidden="true"></i> Message received, We'll get back to you Asap
+                                     </div>`;
+      notifyUser($notification, 'success');
+		},
+		error: function(err) {
+			$contactForm.find('.alert-loading').remove();
+      var $notification = `<div class="alert alert-error">
+                                          <i class="fa fa-exclamation-circle" aria-hidden="true"></i> Ops, there was an error.
+                                      </div>` ;
+      notifyUser(notification, 'error');
+		}
+	});
+});

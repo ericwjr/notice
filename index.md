@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 <section id = 'home'>
  {% include partials/slides.md %}
 </section>

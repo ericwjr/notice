@@ -1,0 +1,51 @@
+.slider {
+  width: 100%;
+}
+.slick-slide {
+  margin: 0px 20px;
+}
+.slick-slide img {
+  width: 100%;
+}
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+.slick-dots {
+  position: absolute;
+  bottom: 75px;
+  right: 25px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0;
+  width: auto;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+.slick-dotted.slick-slider {
+  margin-bottom: 0; 
+  height:100vh;
+  overflow: hidden;
+}
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 100vh;
+    width: 100% !important;
+}
+.slick-slide {
+  height:100vh;
+  margin: 0;
+  opacity:0 !important;
+  width:100%;
+}
+.slick-slide.slick-current{
+    position: absolute !important;  
+    opacity:1 !important;
+}
+.slick-slide .item{
+  height:100vh;
+}

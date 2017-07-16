@@ -1,13 +1,31 @@
+/* Break points  */
 @media screen and (min-width:768px){
- .hold{
-   max-width:400px;
- } 
  .third{
    width:48%;
  }
+  .slick-dots{
+    bottom:90px;
+  }
+  body{
+    font-size:18px;
+  }
+  .hold h1{
+    font-size: 2.5em;
+  }
+  header{
+    padding-top: 10px;
+  }
+  .menu.abrir{
+    font-size: 1.5em;
+  }
 }
 @media screen and (min-width:992px) {
   .third{
     width:31%;
+  }
+}
+@media screen and (min-width: 1128px){
+  .slick-dots{
+    right: calc(100%/2 - 1050px/2);
   }
 }
