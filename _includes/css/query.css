@@ -25,7 +25,7 @@
   }
 }
 @media screen and (min-width: 1024px){
-  .slick-dots{
-    right: calc(100%/2 - 960px/2);
+  #indicate{
+    right: calc(100%/2 - 1024px/2) !important;
   }
 }

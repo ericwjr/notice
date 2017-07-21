@@ -17,9 +17,6 @@
      {% include css/main.css %}
      {% include css/ui.css %}
      {% include css/animate.css %}
-     {% include slick.css %}
-     {% include slick-theme.css %}
-     {% include css/slick.css %}
      {% include css/query.css %}
   </style>
 </head>

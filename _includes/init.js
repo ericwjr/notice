@@ -232,7 +232,7 @@ function  notifyUser(notification, mark) {
   }
 
 var $contactForm = $('#contact-form');
-var $formWidget = $('form-widget');
+var $formWidget = $('.form-widget');
 $contactForm.submit(function(e) {
 	e.preventDefault();
 	$.ajax({
@@ -259,3 +259,4 @@ $contactForm.submit(function(e) {
 		}
 	});
 });
+

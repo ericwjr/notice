@@ -3,10 +3,10 @@
     <div id = 'notification'></div>
     <form method = 'POST' action = 'https://formspree.io/{{site.email}}' id = 'contact-form' class = 'contain'>
       <div class = 'funga'>
-        <select name='Subject' id='Subject' class='select subject' placeholder='' required>
+        <select name='Subject' id='Subject' class='select subject' placeholder='Join Mailing List' required>
         {% for option in site.data.options %}
-          {% if forloop.index == 2 %}
-          <option value = '{{option}}' selected = 'selected'>{{ option }}</option>
+          {% if forloop.index == 1 %}
+          <option value = '{{option}}' selected >{{ option }}</option>
           {% else %}
           <option value = '{{option}}'>{{ option | capitalize }}</option>
           {% endif %}
