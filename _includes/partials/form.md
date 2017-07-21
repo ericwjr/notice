@@ -5,7 +5,11 @@
       <div class = 'funga'>
         <select name='Subject' id='Subject' class='select subject' placeholder='' required>
         {% for option in site.data.options %}
-          <option value = '{{option}}'>{{ option }}</option>
+          {% if forloop.index == 2 %}
+          <option value = '{{option}}' selected = 'selected'>{{ option }}</option>
+          {% else %}
+          <option value = '{{option}}'>{{ option | capitalize }}</option>
+          {% endif %}
         {% endfor %}
       </select>
       </div>
