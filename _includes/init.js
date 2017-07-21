@@ -197,23 +197,6 @@ $('.carousel').bcSwipe({ threshold: 50 });
   s.parentNode.insertBefore(font, s);
 })();
 
-(function() {
-      $(".regular").slick({
-        dots: true,
-        infinite: true,
-        slidesToShow: 1,
-        autoplay: true,
-        autoplaySpeed: 15000,
-        speed: 1000,
-        fade: true,
-        cssEase: 'linear',
-        variableWidth: true,
-        slidesPerRow: 1,
-        swipe: true,
-        onTouchMove: true
-      });
-  })();
-
   // Form spree
 
 function  notifyUser(notification, mark) {
