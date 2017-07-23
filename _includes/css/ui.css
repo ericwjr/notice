@@ -7,7 +7,7 @@
   height: 633px;
   width: 320px;
   position: relative;
-  margin: 30px auto;
+  margin: 0 auto;
   transform: scale(0.8);
   cursor:pointer;
 }
@@ -99,7 +99,7 @@
 }
 .fmodal,
 .ui-case{
-  background-image: url({{site.baseurl}}/assets/wall.png);
+  background-image: url({{ site.baseurl }}/assets/wall.png);
 }
 .ui-case .contain{
   flex-flow:row wrap;
@@ -132,4 +132,8 @@
 }
 .fa-pause{
   animation:fade 1.25s ease-in forwards;
+}
+h3{
+  font-size: 21px;
+  font-weight: 700;
 }

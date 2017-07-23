@@ -207,7 +207,6 @@ function  notifyUser(notification, mark) {
   function  removeNotification() {
      $casing.find('.alert').remove(); 
      $casing.removeClass(mark).removeClass('showing');
-      console.log('perfecto');
   }
 
   setTimeout( removeNotification , 7000);
@@ -228,14 +227,14 @@ $contactForm.submit(function(e) {
 		},
 		success: function(data) {
       $contactForm.find('.alert-loading').remove();
-      var $notification = `<div class="alert alert-success">
+      var $notification = `<div class="alert note-success">
                                         <i class="fa fa-check-circle-o" aria-hidden="true"></i> Message received, We'll get back to you Asap
                                      </div>`;
       notifyUser($notification, 'success');
 		},
 		error: function(err) {
 			$contactForm.find('.alert-loading').remove();
-      var $notification = `<div class="alert alert-error">
+      var $notification = `<div class="alert note-error">
                                           <i class="fa fa-exclamation-circle" aria-hidden="true"></i> Ops, there was an error.
                                       </div>` ;
       notifyUser(notification, 'error');

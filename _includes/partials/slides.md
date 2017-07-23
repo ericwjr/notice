@@ -20,7 +20,7 @@
                 </a>
               <h1>{{ slide.heading }}</h1>
               <span class = 'downs displace'>
-                <a class = 'ui'> 
+                <a class = 'ui' href = '{{ site.baseurl }}/#ui'> 
                   {{ slide.sub-heading }}
                   <i class="fa fa-arrow-circle-o-right" aria-hidden = 'true'></i>
                 </a>
