@@ -133,7 +133,7 @@ h1,a,p{
   width:8vw;
   height:8vw;
   min-width:80px;
-  min-height: 10px;
+  min-height: 80px;
   cursor:pointer;
   padding:2.5px 7.5px;
   border:1px solid #eee;
