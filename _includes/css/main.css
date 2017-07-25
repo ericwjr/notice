@@ -131,7 +131,9 @@ h1,a,p{
   flex-direction:column;
   justify-content:center;
   width:17.5%;
-  min-width:120px;
+  height:12.5%;
+  min-width:150px;
+  min-height: 100px;
   cursor:pointer;
   padding:7.5px 10px;
   border:1px solid #eee;
@@ -141,6 +143,10 @@ h1,a,p{
   text-transform: uppercase;
   margin:7.5px 0;
   text-align:center;
+}
+.download > .flex{
+  width: 120px;
+  height:90px;
 }
 .fa-android{
   font-size:2em;
