@@ -16,7 +16,7 @@
             <div class = 'hold-center'>
             <a href="https://play.google.com/store/apps/details?id=co.sonofy.smartroomsolutions&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" class = 'download flex' target = '_blank'>
               <i class="fa fa-android" aria-hidden = 'true'></i>
- -            <span>Download Mobile App</span>
+             <span>Download Mobile App</span>
             </a>
               <h1>{{ slide.heading }}</h1>
               <span class = 'downs displace'>
