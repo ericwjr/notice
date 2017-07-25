@@ -6,9 +6,9 @@
         <select name='Subject' id='Subject' class='select subject' placeholder='Join Mailing List' required>
         {% for option in site.data.options %}
           {% if forloop.index == 1 %}
-          <option value = '{{option}}' selected >{{ option | capitalize }}</option>
+          <option value = '{{option}}' selected >{{ option  }}</option>
           {% else %}
-          <option value = '{{option}}'>{{ option | capitalize }}</option>
+          <option value = '{{option}}'>{{ option  }}</option>
           {% endif %}
         {% endfor %}
       </select>
