@@ -130,27 +130,26 @@ h1,a,p{
 .download{ 
   flex-direction:column;
   justify-content:center;
-  width:15%;
-  height:15%;
-  min-width:120px;
-  min-height: 120px;
+  width:10%;
+  height:10%;
+  min-width:100px;
+  min-height: 10px;
   cursor:pointer;
-  padding:7.5px 10px;
+  padding:2.5px 7.5px;
   border:1px solid #eee;
 }
 .download span{
   font-size:0.8em;
   text-transform: uppercase;
-  margin:7.5px 0;
+  margin:5px 0;
   text-align:center;
 }
 .download > .flex{
-  width: 96px;
-  height:96px;
+  width: 90px;
   flex-direction: column;
 }
 .fa-android{
-  font-size:2em;
+  font-size:1.5em;
 }
 .col-md-11{
   padding-bottom:10px;
