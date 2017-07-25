@@ -40,11 +40,11 @@ header{
   z-index:998;
   padding:35px 25px 15px 25px;
   font-size:1.6em;
-  color:#fff; 
+  color:#fff;
   text-transform:uppercase;
 }
 header img{
-  width:28px;
+  width:50px;
   margin-right:7.5px;
 }
 header span{
@@ -81,7 +81,7 @@ a:focus{
   left:25px;
   bottom:90px;
   z-index:99;
-  max-width:250px;
+  max-width:500px;
   color:#fff;
 }
 .ups, .downs{
@@ -89,6 +89,7 @@ a:focus{
 }
 .ups{
   animation: fadeInUp 0.75s ease-in forwards;
+  margin-bottom: 45px;
 }
 .downs{
   animation: fadeInDown 0.5s 1s ease-in forwards;
@@ -97,8 +98,9 @@ h1,a,p{
   color:inherit;
 }
 .hold h1{
-  font-size:3em;
+  font-size:5em;
   font-weight:300;
+  line-height: 0.9;
 }
 .carousel-fade .carousel-inner .item {
   -webkit-transition-property: opacity;
@@ -134,7 +136,7 @@ h1,a,p{
   bottom:90px;
   margin-left:0;
 }
-.download{ 
+.download{
   flex-direction:column;
   width:175px;
   cursor:pointer;
@@ -177,7 +179,7 @@ body{
   background: rgba(255,0,0,0.4);
 }
 .item:nth-child(4) .shadow {
-  background: rgba(155,0,255,0.4); 
+  background: rgba(155,0,255,0.4);
 }
 .fmodal{
   background-color:rgba(0,0,0,.7);
@@ -188,8 +190,12 @@ body{
   min-height:100vh;
 }
 .ui{
-  cursor:pointer;
-  z-index:999;
+  cursor: pointer;
+      z-index: 999;
+      position: absolute;
+      bottom: 110px;
+      font-family: bold;
+      left: 10px;
 }
 .flex{
   display:flex;
@@ -398,7 +404,7 @@ input[type=submit]{
   color:#eee;
 }
 .menu a{
-  margin-top: 25px; 
+  margin-top: 25px;
   text-transform: capitalize;
 }
 .menu{
@@ -415,10 +421,8 @@ input[type=submit]{
   top:0;
   left:0;
   z-index:999;
-  background-color:rgba(0,0,0,.9);
-}
-.abrir span{
-  animation: fadeOutDown 0.75s ease-in-out;
+  background-color: #FFC107;
+  opacity: 0.9;
 }
 
      .phone {
@@ -650,7 +654,7 @@ input[type=submit]{
     <header class = 'header'>
   <div class='logo'>
   <a href = ''>
-  <img src = '/assets/notice.png' alt = 'logo'>
+  <img src = '/assets/notice1.png' alt = 'logo'>
   <!--<span>NOTICE</span>-->
   </a>
   </div>
