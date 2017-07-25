@@ -132,20 +132,20 @@ h1,a,p{
   justify-content:center;
   width:10%;
   height:10%;
-  min-width:100px;
+  min-width:90px;
   min-height: 10px;
   cursor:pointer;
   padding:2.5px 7.5px;
   border:1px solid #eee;
 }
 .download span{
-  font-size:0.7em;
+  font-size:11px;
   text-transform: uppercase;
   margin:5px 0;
   text-align:center;
 }
 .download > .flex{
-  width: 90px;
+  width: 84px;
   flex-direction: column;
 }
 .fa-android{
