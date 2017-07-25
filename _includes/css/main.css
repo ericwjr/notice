@@ -76,12 +76,6 @@ a:focus{
 .ups, .downs{
   display: block;
 }
-.ups{
-  animation: fadeInUp 0.75s ease-in forwards;
-}
-.downs{
-  animation: fadeInDown 0.5s 1s ease-in forwards;
-}
 h1,a,p{
   color:inherit;
 }
