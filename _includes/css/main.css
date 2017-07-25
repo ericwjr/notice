@@ -131,7 +131,7 @@ h1,a,p{
   flex-direction:column;
   justify-content:center;
   width:8vw;
-  height:8vw;
+  height:6vw;
   min-width:80px;
   min-height: 80px;
   cursor:pointer;
@@ -150,6 +150,7 @@ h1,a,p{
 }
 .fa-android{
   font-size:1.25em;
+  margin: 8px;
 }
 .col-md-11{
   padding-bottom:10px;
