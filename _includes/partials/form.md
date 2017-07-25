@@ -6,7 +6,7 @@
         <select name='Subject' id='Subject' class='select subject' placeholder='Join Mailing List' required>
         {% for option in site.data.options %}
           {% if forloop.index == 1 %}
-          <option value = '{{option}}' selected >{{ option }}</option>
+          <option value = '{{option}}' selected >{{ option | capitalize }}</option>
           {% else %}
           <option value = '{{option}}'>{{ option | capitalize }}</option>
           {% endif %}
@@ -16,7 +16,7 @@
       <input type = 'text' name = 'Name' placeholder = 'Name' required class = 'input-field'>
       <input type = 'email' name = 'Email' placeholder = 'Email Address' required class = 'input-field'>
       <textarea placeholder = 'Leave Us a Message' name = 'Message' class = 'input-field'></textarea>
-      <input type = 'submit' value = 'submit'>
+      <input type = 'submit' value = 'Submit'>
     </form>
   </div>
 </div>
