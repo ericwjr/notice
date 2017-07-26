@@ -7,10 +7,12 @@
   </ol>
   <div class='carousel-inner'>
     {% for slide in site.data.slides %}
-      <div id="first-landing-slide" class="item {% if forloop.index == 1 %} {{'active'}}{% endif %}">
-        <!--<video autoplay loop muted>
+      <!-- i've attached in the below comment a background image to the first-landing-slide ..let me know your thoughts eric -->
+      <!-- place the id="first-landing-slide" the below div -->
+      <div class="item {% if forloop.index == 1 %} {{'active'}}{% endif %}">
+        <video autoplay loop muted>
           <source src = '{{site.baseurl}}/assets/video{{ forloop.index }}.mp4'>
-        </video> -->
+        </video>
         <div class = 'shadow' tabindex = '1'>
           <div class = 'hold contain'>
             <div class = 'hold-center'>
