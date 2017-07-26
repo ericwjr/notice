@@ -1,9 +1,9 @@
 - heading: You are in Control
-  icon: check-square-o
+  icon: '1'
   text: You control what apps can notify you and how
 - heading: In-home PA System
-  icon: bullhorn
+  icon: '2'
   text: Send your messages throughout your home
 - heading: Smart
-  icon: magic
+  icon: '3'
   text: Notice automatically enables when on your home wifi and disables when you leave
