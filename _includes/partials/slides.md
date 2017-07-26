@@ -7,10 +7,10 @@
   </ol>
   <div class='carousel-inner'>
     {% for slide in site.data.slides %}
-      <div class="item {% if forloop.index == 1 %} {{'active'}}{% endif %}">
-        <video autoplay loop muted>
+      <div id="first-landing-slide" class="item {% if forloop.index == 1 %} {{'active'}}{% endif %}">
+        <!--<video autoplay loop muted>
           <source src = '{{site.baseurl}}/assets/video{{ forloop.index }}.mp4'>
-        </video>
+        </video> -->
         <div class = 'shadow' tabindex = '1'>
           <div class = 'hold contain'>
             <div class = 'hold-center'>
