@@ -56,7 +56,7 @@
   width: 100%;
 }
 .on-off,
-.up, 
+.up,
 .down,
 .sleep {
   display: block;
@@ -97,9 +97,8 @@
   position:relative;
   perspective:750px;
 }
-.fmodal,
 .ui-case{
-  background-image: url({{ site.baseurl }}/assets/wall.png);
+  background-image: url({{ site.baseurl }}/assets/dl.png);
 }
 .ui-case .contain{
   flex-flow:row wrap;
@@ -109,7 +108,7 @@
 }
 .swipe{
   border-bottom-right-radius:50%;
-  border-bottom-left-radius:50%; 
+  border-bottom-left-radius:50%;
   position:absolute;
   z-index:999;
   width:250px;

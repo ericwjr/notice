@@ -3,6 +3,7 @@
     <div class = 'row'>
     {% for info in site.data.before_ui_screen %}
       <div class = 'col-md-11'>
+      <!-- svg image/icons referenced below -->
       <img src = '{{ site.baseurl }}/assets/icons/{{ info.icon }}.svg' alt = '{{ info.icon }} icon'>
         <h3> {{ info.heading }}</h3>
         <p>{{ info.text }}</p>
@@ -11,7 +12,7 @@
     </div>
   </div>
   <div class = 'third'>
-    <div class = 'case'> 
+    <div class = 'case'>
       <div class="phone">
           <div class="top flex">
             <span class="camera"></span>
