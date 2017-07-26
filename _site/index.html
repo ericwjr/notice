@@ -12,8 +12,8 @@
   <meta property='og:title' content='' />
   <meta property='og:url' content='http://localhost:4000/' />
   <link rel='shortcut icon' href='/assets/notice.png'>
-  <link rel='canonical' href='http://localhost:4000/'> 
-  <script src='https://use.fontawesome.com/22572db09e.js'></script>
+  <link rel='canonical' href='http://localhost:4000/'>
+  <!--<script src='https://use.fontawesome.com/22572db09e.js'></script>-->
   <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u' crossorigin='anonymous'>
   <style>
      *, *:after, *:before{
@@ -483,7 +483,7 @@ input[type=submit]{
   width: 100%;
 }
 .on-off,
-.up, 
+.up,
 .down,
 .sleep {
   display: block;
@@ -526,8 +526,10 @@ input[type=submit]{
 }
 .fmodal,
 .ui-case{
-  background-image: url(/assets/wall.png);
-}
+  /*background-image: url(/assets/wall.png);*/
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='52' height='52' viewBox='0 0 52 52'%3E%3Cpath fill='%23ffc107' fill-opacity='0.03' d='M0 17.83V0h17.83a3 3 0 0 1-5.66 2H5.9A5 5 0 0 1 2 5.9v6.27a3 3 0 0 1-2 5.66zm0 18.34a3 3 0 0 1 2 5.66v6.27A5 5 0 0 1 5.9 52h6.27a3 3 0 0 1 5.66 0H0V36.17zM36.17 52a3 3 0 0 1 5.66 0h6.27a5 5 0 0 1 3.9-3.9v-6.27a3 3 0 0 1 0-5.66V52H36.17zM0 31.93v-9.78a5 5 0 0 1 3.8.72l4.43-4.43a3 3 0 1 1 1.42 1.41L5.2 24.28a5 5 0 0 1 0 5.52l4.44 4.43a3 3 0 1 1-1.42 1.42L3.8 31.2a5 5 0 0 1-3.8.72zm52-14.1a3 3 0 0 1 0-5.66V5.9A5 5 0 0 1 48.1 2h-6.27a3 3 0 0 1-5.66-2H52v17.83zm0 14.1a4.97 4.97 0 0 1-1.72-.72l-4.43 4.44a3 3 0 1 1-1.41-1.42l4.43-4.43a5 5 0 0 1 0-5.52l-4.43-4.43a3 3 0 1 1 1.41-1.41l4.43 4.43c.53-.35 1.12-.6 1.72-.72v9.78zM22.15 0h9.78a5 5 0 0 1-.72 3.8l4.44 4.43a3 3 0 1 1-1.42 1.42L29.8 5.2a5 5 0 0 1-5.52 0l-4.43 4.44a3 3 0 1 1-1.41-1.42l4.43-4.43a5 5 0 0 1-.72-3.8zm0 52c.13-.6.37-1.19.72-1.72l-4.43-4.43a3 3 0 1 1 1.41-1.41l4.43 4.43a5 5 0 0 1 5.52 0l4.43-4.43a3 3 0 1 1 1.42 1.41l-4.44 4.43c.36.53.6 1.12.72 1.72h-9.78zm9.75-24a5 5 0 0 1-3.9 3.9v6.27a3 3 0 1 1-2 0V31.9a5 5 0 0 1-3.9-3.9h-6.27a3 3 0 1 1 0-2h6.27a5 5 0 0 1 3.9-3.9v-6.27a3 3 0 1 1 2 0v6.27a5 5 0 0 1 3.9 3.9h6.27a3 3 0 1 1 0 2H31.9z'%3E%3C/path%3E%3C/svg%3E");
+  }
 .ui-case .contain{
   flex-flow:row wrap;
   max-width:992px;
@@ -536,7 +538,7 @@ input[type=submit]{
 }
 .swipe{
   border-bottom-right-radius:50%;
-  border-bottom-left-radius:50%; 
+  border-bottom-left-radius:50%;
   position:absolute;
   z-index:999;
   width:250px;
@@ -637,7 +639,7 @@ input[type=submit]{
      @media screen and (min-width:768px){
  .hold{
    max-width:400px;
- } 
+ }
  .third{
    width:48%;
  }
@@ -662,15 +664,15 @@ input[type=submit]{
   <div class='menu-bar'>
     <nav class = 'menu flex'>
     <span class = 'flex'>
-      
+
         <a href='/#home'>Home</a>
-      
+
         <a href='/#ui'>UI</a>
-      
+
         <a href='/#show'>Video</a>
-      
+
         <a href='/#contact'>Contact Us</a>
-      
+
       </span>
     </nav>
   </div>
@@ -679,22 +681,22 @@ input[type=submit]{
     <section id="home">
  <div id="carousel" class="carousel slide carousel-fade once contain" data-ride="carousel">
   <ol class="carousel-indicators flex" id="indicate">
-    
-      
+
+
       <li data-target="#carousel" data-slide-to="0" class="active"></li>
-    
-      
+
+
       <li data-target="#carousel" data-slide-to="1"></li>
-    
-      
+
+
       <li data-target="#carousel" data-slide-to="2"></li>
-    
-      
+
+
       <li data-target="#carousel" data-slide-to="3"></li>
-    
+
   </ol>
   <div class="carousel-inner">
-    
+
       <div class="item  active">
         <video autoplay="" loop="" muted="">
           <source src="/assets/video1.mp4" />
@@ -718,7 +720,7 @@ input[type=submit]{
           </div>
         </div>
       </div>
-    
+
       <div class="item ">
         <video autoplay="" loop="" muted="">
           <source src="/assets/video2.mp4" />
@@ -742,7 +744,7 @@ input[type=submit]{
           </div>
         </div>
       </div>
-    
+
       <div class="item ">
         <video autoplay="" loop="" muted="">
           <source src="/assets/video3.mp4" />
@@ -766,7 +768,7 @@ input[type=submit]{
           </div>
         </div>
       </div>
-    
+
       <div class="item ">
         <video autoplay="" loop="" muted="">
           <source src="/assets/video4.mp4" />
@@ -790,7 +792,7 @@ input[type=submit]{
           </div>
         </div>
       </div>
-    
+
   </div>
 </div>
 
@@ -799,29 +801,29 @@ input[type=submit]{
   <div class="flex contain">
   <div class="third container">
     <div class="row">
-    
+
       <div class="col-md-11">
-       <i class="fa fa-5x fa-music" aria-hidden="true"></i>
+        <img src="./assets/icons/Controlsico.svg" alt="Settings,customzied your experience, specific to you.">
         <h3> You are in Control</h3>
         <p>You control what apps can notify you and how you want to be notified...speakers, lights, etc</p>
       </div>
-    
+
       <div class="col-md-11">
-       <i class="fa fa-5x fa-headphones" aria-hidden="true"></i>
+       <img src="./assets/icons/Talkico.svg" alt="talk to anyroom in your house or office.">
         <h3> In-home PA System</h3>
         <p>Save your voice and send your messages through your home's speakers</p>
       </div>
-    
+
       <div class="col-md-11">
-       <i class="fa fa-5x fa-magic" aria-hidden="true"></i>
+        <img src="./assets/icons/Switchico.svg" alt="">
         <h3> Smart</h3>
         <p>Notice automatically enables when on your home wifi and disables when you leave</p>
       </div>
-    
+
     </div>
   </div>
   <div class="third">
-    <div class="case"> 
+    <div class="case">
       <div class="phone">
           <div class="top flex">
             <span class="camera"></span>
@@ -831,35 +833,35 @@ input[type=submit]{
           <div class="screen">
             <div id="carousel" class="carousel slide swipe-me" data-ride="carousel">
   <div class="carousel-inner">
-    
+
       <div class="fit item  active">
        <img src="/assets/screens/notice.png" alt="notice" />
       </div>
-    
+
       <div class="fit item ">
        <img src="/assets/screens/notice1.png" alt="notice1" />
       </div>
-    
+
       <div class="fit item ">
        <img src="/assets/screens/notice2.png" alt="notice2" />
       </div>
-    
+
       <div class="fit item ">
        <img src="/assets/screens/notice3.png" alt="notice3" />
       </div>
-    
+
       <div class="fit item ">
        <img src="/assets/screens/notice4.png" alt="notice4" />
       </div>
-    
+
       <div class="fit item ">
        <img src="/assets/screens/notice5.png" alt="notice5" />
       </div>
-    
+
       <div class="fit item ">
        <img src="/assets/screens/notice6.png" alt="notice6" />
       </div>
-    
+
   </div>
 </div>
           </div>
@@ -871,19 +873,19 @@ input[type=submit]{
           </div>
           <div class="lbar">
           <div class="flex">
-              
+
                 <div class="trio">
                   <i class="fa fa-caret-left fa-2x" aria-hidden="true"></i>
                 </div>
-              
+
                 <div class="trio">
                   <i class="fa fa-circle-o fa-2x" aria-hidden="true"></i>
                 </div>
-              
+
                 <div class="trio">
                   <i class="fa fa-square-o fa-2x" aria-hidden="true"></i>
                 </div>
-              
+
            </div>
           </div>
       </div>
@@ -894,25 +896,25 @@ input[type=submit]{
   </div>
   <div class="third container">
     <div class="row">
-    
+
       <div class="col-md-11">
-        <i class="fa fa-5x fa-rocket" aria-hidden="true"></i>
+        <img src="./assets/icons/searchico.svg" alt="">
         <h3> Quick Access</h3>
         <p> Quickly pause or broadcast from the app's notification actions</p>
       </div>
-    
+
       <div class="col-md-11">
-        <i class="fa fa-5x fa-thumbs-up" aria-hidden="true"></i>
+        <img src="./assets/icons/Applicationico.svg" alt="">
         <h3> Room by Room Control</h3>
         <p> Only broadcast notifications to the rooms you choose</p>
       </div>
-    
+
       <div class="col-md-11">
-        <i class="fa fa-5x fa-heart" aria-hidden="true"></i>
+        <img src="./assets/icons/Controlsico.svg" alt="">
         <h3> Personalize</h3>
         <p> Customize notification with custom tones</p>
       </div>
-    
+
     </div>
   </div>
 </div>
@@ -931,13 +933,13 @@ input[type=submit]{
   <form method="POST" action="https://formspree.io/fromweru@gmail.com" id="form" class="contain">
     <div class="funga">
       <select name="Subject" id="Subject" class="select subject" placeholder="" required="">
-      
+
         <option value="General Inquiry">General Inquiry</option>
-      
+
         <option value="Join Mailing List">Join Mailing List</option>
-      
+
         <option value="Partner With Us">Partner With Us</option>
-      
+
     </select>
     </div>
     <input type="text" name="fname" placeholder="Name" required="" />
@@ -994,18 +996,18 @@ input[type=submit]{
   function ought(c) {
        var truth = $('.swipe').hasClass(c);
        return truth;
-  } 
+  }
   $('.fit').swipe( {
       click: function(event,target){
         $('.swipe-me').carousel('next');
-      },                                         
+      },
       swipeLeft: function() {
           if(ought('swr')){
             $('.swipe').removeClass('swr');
           }
           if(ought('swl') === false){
            $('.swipe').toggleClass('swl');
-          } 
+          }
       },
       swipeRight: function() {
           if(ought('swl')){
@@ -1017,7 +1019,7 @@ input[type=submit]{
       },
       allowPageScroll: 'vertical'
   });
-   
+
   $('.once').carousel({
     interval: 15000
   });
@@ -1025,7 +1027,7 @@ input[type=submit]{
   $('.swipe-me').carousel({
     interval: 4500
   });
-  
+
   mail = $('#form');
     widget = $('.form');
     mail.submit(function(e) {
@@ -1077,7 +1079,7 @@ input[type=submit]{
         template += '<span class="option ' + $(this).attr("class") + '" data-value="' + $(this).attr("value") + '">' + $(this).html() + '</span>';
       });
       template += '</div></div>';
-      
+
       $(this).hide();
       $(this).after(template);
     });
@@ -1162,8 +1164,8 @@ $('a[href*="#"]')
   .click(function(event) {
     // On-page links
     if (
-      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-      && 
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+      &&
       location.hostname == this.hostname
     ) {
       // Figure out element to scroll to
@@ -1196,10 +1198,10 @@ $('.carousel').bcSwipe({ threshold: 50 });
 
 (function() {
   var font = document.createElement('link');
-  font.type = 'text/css'; 
+  font.type = 'text/css';
   font.rel = 'stylesheet';
   font.href = 'https://fonts.googleapis.com/css?family=Josefin+Sans:400,700';
-  var s = document.getElementsByTagName('link')[0]; 
+  var s = document.getElementsByTagName('link')[0];
   s.parentNode.insertBefore(font, s);
 })();
 
