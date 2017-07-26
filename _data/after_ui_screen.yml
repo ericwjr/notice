@@ -1,10 +1,10 @@
 
 - heading: Quick Access
-  icon: bolt
+  icon: '4'
   text: Quickly broadcast from the app's notification actions
 - heading: Room by Room Control
-  icon: home
+  icon: '5'
   text: Only broadcast notifications to the rooms you choose
 - heading: Personalize
-  icon: heart
+  icon: '6'
   text: Customize notification with custom tones
