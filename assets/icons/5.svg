@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="48px" viewBox="0 0 60 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>Switchico</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="60" height="22" rx="11"></rect>
+        <rect id="path-2" x="0" y="26" width="60" height="22" rx="11"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-1" transform="translate(-1239.000000, -552.000000)">
+            <g id="Switch" transform="translate(1239.000000, 552.000000)">
+                <g id="switch">
+                    <g id="Rectangle-12">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <rect stroke="#B7A79F" stroke-width="3" x="1.5" y="1.5" width="57" height="19" rx="9.5"></rect>
+                    </g>
+                    <g id="Rectangle-12-Copy">
+                        <use fill="#E7E3C0" fill-rule="evenodd" xlink:href="#path-2"></use>
+                        <rect stroke="#B7A79F" stroke-width="3" x="1.5" y="27.5" width="57" height="19" rx="9.5"></rect>
+                    </g>
+                    <circle id="Oval-39" fill="#B7A79F" fill-rule="evenodd" cx="11" cy="37" r="6"></circle>
+                    <circle id="Oval-39-Copy" fill="#FFC107" fill-rule="evenodd" cx="49" cy="11" r="6"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

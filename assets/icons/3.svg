@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="62px" height="60px" viewBox="0 0 62 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>Controlsico</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="3" y="0" width="8" height="60" rx="4"></rect>
+        <rect id="path-2" x="27" y="0" width="8" height="60" rx="4"></rect>
+        <rect id="path-3" x="51" y="0" width="8" height="60" rx="4"></rect>
+        <circle id="path-4" cx="7" cy="30" r="7"></circle>
+        <circle id="path-5" cx="31" cy="44" r="7"></circle>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-1" transform="translate(-911.000000, -619.000000)">
+            <g id="Controls" transform="translate(911.000000, 619.000000)">
+                <g id="Control" stroke-width="1" fill-rule="evenodd"></g>
+                <g id="Rectangle-140">
+                    <use fill="#E7E3C0" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <rect stroke="#B7A79F" stroke-width="3" x="4.5" y="1.5" width="5" height="57" rx="2.5"></rect>
+                </g>
+                <g id="Rectangle-140-Copy">
+                    <use fill="#E7E3C0" fill-rule="evenodd" xlink:href="#path-2"></use>
+                    <rect stroke="#B7A79F" stroke-width="3" x="28.5" y="1.5" width="5" height="57" rx="2.5"></rect>
+                </g>
+                <g id="Rectangle-140-Copy-2">
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    <rect stroke="#B7A79F" stroke-width="3" x="52.5" y="1.5" width="5" height="57" rx="2.5"></rect>
+                </g>
+                <g id="Oval-128">
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-4"></use>
+                    <circle stroke="#B7A79F" stroke-width="3" cx="7" cy="30" r="5.5"></circle>
+                </g>
+                <g id="Oval-128-Copy">
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-5"></use>
+                    <circle stroke="#B7A79F" stroke-width="3" cx="31" cy="44" r="5.5"></circle>
+                </g>
+                <circle id="Oval-128-Copy-2" fill="#FFC107" fill-rule="evenodd" cx="55" cy="18" r="7"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="59px" viewBox="0 0 56 59" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>Voiceico</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0,19.0001757 C0,15.6863701 2.67804027,13 6.00333095,13 L16,13 L16,45 L6.00333095,45 C2.68778282,45 0,42.3130221 0,38.9998243 L0,19.0001757 Z" id="path-1"></path>
+        <path d="M18,13.0669929 L39.4087766,0.513430025 C40.8398698,-0.325726674 42,0.338284358 42,1.98492435 L42,56.3158968 C42,57.9677374 40.8424301,58.6280492 39.4087766,57.7873911 L18,45.2338283 L18,13.0669929 Z" id="path-2"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-1" transform="translate(-1102.000000, -612.000000)">
+            <g id="Voice" transform="translate(1102.000000, 612.000000)">
+                <g id="Speaker">
+                    <g id="Rectangle-102">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <path stroke="#B7A79F" stroke-width="3" d="M14.5,43.5 L14.5,14.5 L6.00333095,14.5 C3.51003235,14.5 1.5,16.5112304 1.5,19.0001757 L1.5,38.9998243 C1.5,41.4846518 3.51626695,43.5 6.00333095,43.5 L14.5,43.5 Z"></path>
+                    </g>
+                    <g id="Rectangle-102-Copy">
+                        <use fill="#E7E3C0" fill-rule="evenodd" xlink:href="#path-2"></use>
+                        <path stroke="#B7A79F" stroke-width="3" d="M19.5,13.9262896 L19.5,44.3745316 L40.1675173,56.4934389 C40.6025993,56.7485599 40.5,56.8069044 40.5,56.3158968 L40.5,1.98492435 C40.5,1.49796312 40.5990447,1.55434558 40.1675173,1.80738229 L19.5,13.9262896 Z"></path>
+                    </g>
+                    <circle id="Oval-112" fill="#FFC107" fill-rule="evenodd" cx="53" cy="29" r="3"></circle>
+                    <circle id="Oval-112-Copy" fill="#FFC107" fill-rule="evenodd" cx="50" cy="19" r="3"></circle>
+                    <circle id="Oval-112-Copy-2" fill="#FFC107" fill-rule="evenodd" cx="50" cy="39" r="3"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

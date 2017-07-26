@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="61px" viewBox="0 0 44 61" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>Talkico</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="7" y="0" width="30" height="46" rx="15"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-1" transform="translate(-1021.000000, -641.000000)">
+            <g id="Talk" transform="translate(1021.000000, 641.000000)">
+                <g id="PA">
+                    <path d="M24,57 L24,52.999615 C24,52.9697498 23.9993543,52.9400467 23.9980763,52.9105185 C35.2141715,51.9011019 44,42.4763563 44,30.9989123 L44,27 C44,26.1715729 43.3284271,25.5 42.5,25.5 C41.6715729,25.5 41,26.1715729 41,27 L41,30.991877 C41,41.4897735 32.4957175,50 22,50 C11.5065898,50 3,41.4861197 3,30.991877 L3,27 C3,26.1715729 2.32842712,25.5 1.5,25.5 C0.671572875,25.5 0,26.1715729 0,27 L0,30.9989123 C0,42.4853192 8.78800894,51.9018925 20.0019313,52.9105673 C20.0006481,52.9400882 20,52.9697753 20,52.999615 L20,57 L18.0085302,57 C16.9019504,57 16,57.8954305 16,59 C16,60.1122704 16.8992496,61 18.0085302,61 L25.9914698,61 C27.0980496,61 28,60.1045695 28,59 C28,57.8877296 27.1007504,57 25.9914698,57 L24,57 Z" id="Rectangle-86-Copy" fill="#B7A79F" fill-rule="evenodd"></path>
+                    <g id="Rectangle-86">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <rect stroke="#B7A79F" stroke-width="3" x="8.5" y="1.5" width="27" height="43" rx="13.5"></rect>
+                    </g>
+                    <circle id="Oval-102" fill="#FFC107" fill-rule="evenodd" cx="18.5" cy="7.5" r="1.5"></circle>
+                    <circle id="Oval-102-Copy-5" fill="#FFC107" fill-rule="evenodd" cx="18.5" cy="12.5" r="1.5"></circle>
+                    <circle id="Oval-102-Copy-6" fill="#FFC107" fill-rule="evenodd" cx="25.5" cy="12.5" r="1.5"></circle>
+                    <circle id="Oval-102-Copy-2" fill="#FFC107" fill-rule="evenodd" cx="15" cy="10" r="1"></circle>
+                    <circle id="Oval-102-Copy-3" fill="#FFC107" fill-rule="evenodd" cx="22" cy="10" r="1"></circle>
+                    <circle id="Oval-102-Copy-4" fill="#FFC107" fill-rule="evenodd" cx="29" cy="10" r="1"></circle>
+                    <circle id="Oval-102-Copy" fill="#FFC107" fill-rule="evenodd" cx="25.5" cy="7.5" r="1.5"></circle>
+                </g>
+                <g id="Group" transform="translate(14.000000, 6.000000)"></g>
+            </g>
+        </g>
+    </g>
+</svg>
