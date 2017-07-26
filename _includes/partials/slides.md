@@ -14,8 +14,8 @@
         <div class = 'shadow' tabindex = '1'>
           <div class = 'hold contain'>
             <div class = 'hold-center'>
-            <img src="{{site.baseurl}}/assets/dl.svg"/>
               <h1>{{ slide.heading }}</h1>
+              <img src="{{site.baseurl}}/assets/dl.svg"/>
               <span class = 'downs displace'>
                 <a class = 'ui' href = '{{ site.baseurl }}/#ui'>
                   {{ slide.sub-heading }}
