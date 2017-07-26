@@ -84,6 +84,11 @@ h1,a,p{
   font-weight:300;
   max-width: 275px;
 }
+/*
+#first-landing-slide {
+  background: url(assets/landing.png);
+  background-size:cover;
+}*/
 .carousel-fade .carousel-inner .item {
   -webkit-transition-property: opacity;
   transition-property: opacity;
