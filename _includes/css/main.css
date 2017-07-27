@@ -27,7 +27,7 @@ header{
   z-index:998;
   padding:0;
   font-size:1.6em;
-  color:#fff; 
+  color:#fff;
   text-transform:uppercase;
 }
 header img{
@@ -127,7 +127,7 @@ h1,a,p{
   right: 25px !important;
   left: inherit;
 }
-.download{ 
+.download{
   flex-direction:column;
   justify-content:center;
   width:8vw;
@@ -180,7 +180,7 @@ h1,a,p{
   background: rgba(255,0,0,0.4);
 }
 .item:nth-child(4) .shadow {
-  background: rgba(155,0,255,0.4); 
+  background: rgba(155,0,255,0.4);
 }
 .fmodal{
   opacity:0.6;
@@ -401,7 +401,7 @@ input[type=submit]{
   color:#eee;
 }
 .menu a{
-  margin-top: 25px; 
+  margin-top: 25px;
   text-transform: capitalize;
 }
 .menu{
@@ -418,11 +418,11 @@ input[type=submit]{
   top:0;
   left:0;
   z-index:999;
-  background-color:#774403;
+  background-color:#FFC107;
 }
 .abrir span{
   transform-origin: center;
-   animation: pulse 1.5s ease-in;
+   animation: pulse 0.2s ease-in;
  }
  .form-widget{
    width:100%;
