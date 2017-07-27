@@ -52,7 +52,7 @@
   });
    
   $('.once').carousel({
-    interval: {{ site.data.slides.speed }}
+    interval: {{ page.slides_speed }}
   });
 
   $('.swipe-me').carousel({

@@ -1,11 +1,10 @@
-headings: # controls landing page heading
-  - heading:  Give Your Home A Voice
-    sub-heading: Get Started
-  - heading: Notifications Your Way
-    sub-heading: Set it as you please
-  - heading: Notifications With Style
-    sub-heading: Personalize your notifications
-  - heading: Notifications For The Home
-    sub-heading: Never miss important notifications
+- heading:  Give Your Home A Voice
+  sub-heading: Get Started
+- heading: Notifications Your Way
+  sub-heading: Set it as you please
+- heading: Notifications With Style
+  sub-heading: Personalize your notifications
+- heading: Notifications For The Home
+  sub-heading: Never miss important notifications
 
-speed: 7500 # controls slide speed. currently set at 7.5 seconds
+# number of headings equals number of slides
