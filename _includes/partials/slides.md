@@ -14,8 +14,13 @@
         <div class = 'shadow' tabindex = '1'>
           <div class = 'hold contain'>
             <div class = 'hold-center'>
+            <a href="https://play.google.com/store/apps/details?id=co.sonofy.smartroomsolutions&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" class = 'download flex' target = '_blank'>
+              <div class = 'flex'>
+              <i class="fa fa-android" aria-hidden = 'true'></i>
+             <span>Download Mobile App</span>
+              </div>
+            </a>
               <h1>{{ slide.heading }}</h1>
-              <img src="{{site.baseurl}}/assets/dl.svg"/>
               <span class = 'downs displace'>
                 <a class = 'ui' href = '{{ site.baseurl }}/#ui'>
                   {{ slide.sub-heading }}
