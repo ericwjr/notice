@@ -2,7 +2,7 @@
   icon: 'settings'
   text: You control what apps can notify you and how
 - heading: In-home PA System
-  icon: 'mic'
+  icon: 'PA'
   text: Send your messages throughout your home
 - heading: Smart
   icon: 'dials'
