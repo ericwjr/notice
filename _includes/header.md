@@ -2,7 +2,7 @@
   <div class = 'header-center'>
     <div class='logo'>
     <a href = '{{site.baseurl}}'>
-    <img src = '{{site.baseurl}}/assets/notice.png' alt = 'logo'>
+    <img src = '{{site.baseurl}}/assets/notice.svg' alt = 'logo'>
     </a>
     </div>
     <i class = 'fa fa-bars tp-menu' aria-hidden = 'true'></i>
