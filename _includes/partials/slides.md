@@ -11,7 +11,7 @@
         <video autoplay loop muted>
           <source src = '{{site.baseurl}}/assets/video{{ forloop.index }}.mp4'>
         </video>
-        <div class = 'shadow' tabindex = '1'>
+        <div class = 'shadow' tabindex = '1' style = 'background: {{ slide.background }};'>
           <div class = 'hold contain'>
             <div class = 'hold-center'>
             <a href="https://play.google.com/store/apps/details?id=co.sonofy.smartroomsolutions&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" class = 'download flex' target = '_blank'>

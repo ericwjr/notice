@@ -1,10 +1,14 @@
 - heading:  Give Your Home A Voice
   sub-heading: Get Started
+  background: rgba(0,155,255,0.4)
 - heading: Notifications Your Way
   sub-heading: Set it as you please
+  background: rgba(0,155,55,0.4)
 - heading: Notifications With Style
   sub-heading: Personalize your notifications
+  background: rgba(255,0,0,0.4)
 - heading: Notifications For The Home
   sub-heading: Never miss important notifications
+  background: rgba(155,0,255,0.4) 
 
 # number of headings equals number of slides

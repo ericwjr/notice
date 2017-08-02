@@ -170,7 +170,7 @@ h1,a,p{
   width:100%;
   perspective:600px;
 }
-.item:nth-child(1) .shadow {
+/* .item:nth-child(1) .shadow {
   background: rgba(0,155,255,0.4);
 }
 .item:nth-child(2) .shadow {
@@ -181,7 +181,7 @@ h1,a,p{
 }
 .item:nth-child(4) .shadow {
   background: rgba(155,0,255,0.4); 
-}
+} */
 .fmodal{
   opacity:0.6;
   transition: all 1.5s ease-in;
