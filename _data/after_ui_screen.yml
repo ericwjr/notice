@@ -6,5 +6,5 @@
   icon: 'roombyroom'
   text: Only broadcast notifications to the rooms you choose
 - heading: Personalize
-  icon: 'dials'
+  icon: 'settings'
   text: Customize notification with custom tones
