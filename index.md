@@ -1,6 +1,6 @@
 ---
 layout: default
-slides_speed: 7500 # 7.5 seconds
+slides_speed: 7500
 ---
 
 <section id = 'home'>
