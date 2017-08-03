@@ -4,6 +4,10 @@
   margin:0 auto;
   padding:40px 0;
 }
+.ui-case {
+  background-size:contain;
+  background-repeat:no-repeat;
+}
 .swipe{
   border-bottom-right-radius:50%;
   border-bottom-left-radius:50%;
@@ -26,4 +30,4 @@ h3{
 img.mockup{
   width:96%;
   margin:15px auto;
-} 
+}
