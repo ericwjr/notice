@@ -1,8 +1,8 @@
 - heading: You are in Control
-  icon: 'mic'
+  icon: 'pa'
   text: You control what apps can notify you and how
 - heading: In-home PA System
-  icon: 'PA'
+  icon: 'spotify'
   text: Send your messages throughout your home
 - heading: Smart
   icon: 'dials'

@@ -3,7 +3,7 @@
     <div class = 'row'>
     {% for info in site.data.before_ui_screen %}
       <div class = 'col-md-11'>
-      <img src = '{{ site.baseurl }}/assets/icons/{{ info.icon }}.svg' alt = '{{ info.icon }} icon'>
+        <i class = 'icon icon-{{ info.icon }}' aria-hidden = 'true' style = 'font-size: 40px;'></i>
         <h3> {{ info.heading }}</h3>
         <p>{{ info.text }}</p>
       </div>
@@ -17,7 +17,7 @@
     <div class = 'row'>
     {% for info in site.data.after_ui_screen %}
       <div class = 'col-md-11'>
-      <img src = '{{ site.baseurl }}/assets/icons/{{ info.icon }}.svg' alt = '{{ info.icon }} icon'>
+        <i class = 'icon icon-{{ info.icon }}' aria-hidden = 'true' style = 'font-size: 40px;'></i>
         <h3> {{ info.heading }}</h3>
         <p> {{ info.text }}</p>
       </div>
