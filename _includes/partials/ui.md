@@ -1,4 +1,4 @@
-<div class = 'flex contain'>
+<div class = 'flex contain' style="background: url(../assets/bg.svg)">
   <div class= 'third container'>
     <div class = 'row'>
     {% for info in site.data.before_ui_screen %}
@@ -11,7 +11,7 @@
     </div>
   </div>
   <div class = 'third'>
-    <img src = '{{ site.baseurl }}/assets/mockup-gif' alt = 'mock-up' class = 'mockup'>
+    <img src = '{{ site.baseurl }}/assets/mockup-gif.gif' alt = 'mock-up' class = 'mockup'>
   </div>
   <div class = 'third container'>
     <div class = 'row'>
