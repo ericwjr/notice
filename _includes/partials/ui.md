@@ -1,4 +1,4 @@
-<div class = 'flex contain'>
+<div class = 'flex contain' style="background: url(../assets/bg.svg)">
   <div class= 'third container'>
     <div class = 'row'>
     {% for info in site.data.before_ui_screen %}

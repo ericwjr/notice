@@ -176,7 +176,7 @@ h1,a,p{
   z-index:999;
   width:100%;
   min-height:100vh;
-  background-color:#fff;
+  /* background-image: url({{ site.baseurl }}/assets/wall.png); */
 }
 .ui{
   cursor:pointer;
@@ -215,7 +215,7 @@ textarea{
 }
 input, textarea{
   opacity:0.9;
-  background-color:#f0f0f0;
+  background-color:#ffffee;
   transition:all 0.3s ease-in;
   display:block;
   width:100%;
