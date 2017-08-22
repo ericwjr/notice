@@ -10,10 +10,8 @@
   <meta property='og:title' content='{{page.title}}' />
   <meta property='og:url' content='{{site.url}}/{{page.title}}' />
   <link rel='shortcut icon' href='{{ site.baseurl }}/assets/notice.png'>
-  <i class = 'icon icon-{{info}}' aria-hidden = 'true' style = 'font-size: 32px;'></i>
   <link rel='canonical' href='{{ page.url | replace:'index.html','' | absolute_url }}'> 
   <script src='https://use.fontawesome.com/22572db09e.js'></script>
-  <link href="https://file.myfontastic.com/XJbAgRNrWhky7heFpqzdyn/icons.css" rel="stylesheet">
   <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u' crossorigin='anonymous'>
   <style>
      {% include css/main.css %}

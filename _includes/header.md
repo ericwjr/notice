@@ -1,7 +1,7 @@
 <header class = 'header'>
   <div class = 'header-center'>
     <div class='logo'>
-    <a href = '{{ site.baseurl }}/'>
+    <a href = '{{site.baseurl}}'>
     <img src = '{{site.baseurl}}/assets/notice.svg' alt = 'logo'>
     </a>
     </div>

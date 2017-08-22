@@ -3,7 +3,7 @@
   icon: 'search'
   text: Quickly broadcast from the app's notification actions
 - heading: Room by Room Control
-  icon: 'location'
+  icon: 'roombyroom'
   text: Only broadcast notifications to the rooms you choose
 - heading: Personalize
   icon: 'settings'
