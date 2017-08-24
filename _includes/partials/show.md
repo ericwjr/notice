@@ -1,4 +1,4 @@
-<video poster = '{{ site.baseurl }}/assets/{{site.data.commercial_view.still}}'>
+<video poster = '{{ site.baseurl }}/assets/{{site.data.commercial_view.poster}}'>
   <source src = '{{site.baseurl}}/assets/{{ site.data.commercial_view.video }}'>
 </video>
 <div class = 'overlay flex cast'>
