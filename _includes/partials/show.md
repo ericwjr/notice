@@ -1,5 +1,5 @@
-<video poster = '{{ site.baseurl }}/assets/poster.jpg'>
-  <source src = '{{site.baseurl}}/assets/video2.mp4'>
+<video poster = '{{ site.baseurl }}/assets/{{ site.data.commercial_view.still }}'>
+  <source src = '{{site.baseurl}}/assets/{{ site.data.commercial_view.video }}'>
 </video>
 <div class = 'overlay flex cast'>
   <i class="fa fa-play fa-3x play" aria-hidden="true"></i>
