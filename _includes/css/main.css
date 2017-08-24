@@ -232,7 +232,7 @@ input:hover,
 textarea:hover,
 textarea:focus{
   opacity:1;
-  background-color:#ddeedd;
+  background-color:#ffd54f;
   box-shadow: 0 0 1px 1px rbga(0,255,0,0.3);
   width:100%;
 }
