@@ -1,0 +1,4 @@
+## Commercial View front matter
+  still: poster.png
+  video: video1.mp4
+
