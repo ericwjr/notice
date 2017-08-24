@@ -9,7 +9,7 @@
     {% for slide in site.data.slides %}
       <div class="item {% if forloop.index == 1 %} {{'active'}}{% endif %}">
         <video autoplay loop muted>
-          <source src = '{{site.baseurl}}/assets/video{{ forloop.index }}.mp4'>
+          <source src = '{{site.baseurl}}/assets/{{ slide.video }}'>
         </video>
         <div class = 'shadow'  style = 'background: {{ slide.background }};'>
           <div class = 'hold contain'>
