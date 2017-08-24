@@ -18,6 +18,9 @@
   .menu.abrir{
     font-size: 1.5em;
   }
+  #indicate{
+    bottom:90px;
+  }
 }
 @media screen and (min-width:992px) {
   .third{
