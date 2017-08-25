@@ -10,7 +10,7 @@ collections:
     output: true
 email: Eric@noticehome.com
 description: 
-baseurl: ''
+baseurl: ""
 url: noticehome.com
 twitter_username: jekyllrb
 markdown: kramdown
