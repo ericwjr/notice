@@ -8,10 +8,10 @@ collections:
   uploads:
     title: Uploads
     output: true
-email: fromweru@gmail.com
+email: Eric@noticehome.com
 description: 
-baseurl: "/notice"
-url: https://onweru.github.io/notice
+baseurl: ""
+url: noticehome.com
 twitter_username: jekyllrb
 markdown: kramdown
 theme: minima
