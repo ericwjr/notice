@@ -1,4 +1,4 @@
-<video poster = '{{ site.baseurl }}/assets/{{site.data.commercial_view.poster}}'>
+<video poster = '{{ site.baseurl }}/assets/landing.png}'>
   <source src = 'https://s3.us-east-2.amazonaws.com/blakejackovit.ch/839A1335_2.mov'>
 </video>
 <div class = 'overlay flex cast'>

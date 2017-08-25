@@ -131,13 +131,13 @@ h1,a,p{
 .download{
   flex-direction:column;
   justify-content:center;
-  width:8vw;
+  width:8vw;d
   height:6vw;
   min-width:80px;
   min-height: 80px;
   cursor:pointer;
   padding:2.5px 7.5px;
-  border:1px solid #eee;
+  border:3px solid #eee;
 }
 .download span{
   font-size:11px;
@@ -150,7 +150,7 @@ h1,a,p{
   flex-direction: column;
 }
 .fa-android{
-  font-size:1.25em;
+  font-size:2.25em;
   margin: 8px 8px 0 8px;
 }
 .col-md-11{
