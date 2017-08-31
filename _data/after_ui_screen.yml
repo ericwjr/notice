@@ -1,5 +1,5 @@
 
-- heading: Quick Access
+- heading: Convenient Access
   icon: 'search'
   text: Quickly PA from app's notification actions
 - heading: Room by Room Control
@@ -7,4 +7,4 @@
   text: Only broadcast to the rooms you choose
 - heading: Personalize
   icon: 'settings'
-  text: Customize notification with custom tones
+  text: Customize broadcast with custom tones
