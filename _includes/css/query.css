@@ -1,4 +1,16 @@
 /* Break points  */
+@media screen and (max-width: 567px){
+  video{
+    transform: translate(-64%, -50%);
+  }
+  .ups, .downs {
+    display: block;
+    max-width: 250px;
+  }
+  h1{
+   font-size:2.25em !important;
+  }
+}
 @media screen and (min-width:768px){
  .third{
    width:48%;
