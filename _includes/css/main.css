@@ -121,11 +121,11 @@ h1,a,p{
   background-color: #fefefe;
 }
 #indicate{
-  bottom:30px;
+  bottom:84px;
   display: inline-flex;
   width:150px;
-  float: right;
-  right: 25px !important;
+  float:right;
+  right:0 !important;
   left: inherit;
 }
 .download{
